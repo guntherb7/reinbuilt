@@ -1,0 +1,36 @@
+/**
+ * Footer Styles
+ *
+ * @package reinbuilt
+ * @author Gunther Beam LLC
+**/
+
+.footer {
+  text-align: center;
+  margin: 12vw auto 2vw;
+
+  ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+
+    a {
+      @include nav-font;
+    }
+
+    .active {
+      color: #505050;
+    }
+  }
+
+  .footer--logo {
+    margin: 10vw auto 4vw;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,453 @@
+/**
+ * Global Styles (Body, Buttons, Reusable PHP Blocks)
+ *
+ * @package reinbuilt
+ * @author Gunther Beam LLC
+*/
+
+// html, body, div, span, applet, object, iframe, blockquote, pre, abbr,
+// acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong,
+// sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+// tbody, tfoot, thead, tr, th, td {
+// 	margin: 0;
+// 	padding: 0;
+// 	vertical-align: baseline;
+// 	background: transparent;
+// 	border: 0;
+// }
+
+html,
+body {
+  font-size: 18px;
+  line-height: 1;
+  background-color: $black;
+  font-family: $sans;
+  color: $white;
+}
+
+header,
+nav,
+footer,
+article,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+blockquote {
+  quotes: none;
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+body {
+  @media screen and (max-width: $screen-sm) {
+  }
+} /* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.img-responsive {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 0 !important;
+  margin: 0;
+}
+
+.container-full {
+  max-width: $screen-full;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: $screen-xl;
+  padding: 60px 30px;
+  margin: 0 auto;
+  @media screen and (max-width: $screen-md) {
+    padding: 20px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    padding: 0 15px;
+  }
+}
+
+.container-md {
+  max-width: $screen-xs;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+  @media screen and (max-width: $screen-sm) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: $screen-xs) {
+    padding: 40px 0;
+  }
+  // &#page-banner {
+  //     padding:0;
+  // }
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: $trans;
+  transition: $trans;
+  color: $white;
+  &:hover {
+    // color:$lt-red;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  // background-color:$lt-red;
+  text-decoration: none;
+  // color:$white;
+  // border:2px solid $lt-red;
+  transition: $trans;
+  &:hover {
+    //  background-color: $dk-red;
+  }
+}
+
+.btn-white {
+  color: $white;
+  background-color: none;
+  border: 3px solid $white;
+  text-align: center;
+  font-family: $work-sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: $transition-speed linear;
+  border-radius: 35px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-sm) {
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: $white;
+    color: $white;
+  }
+  &:active {
+    background-color: $white;
+  }
+}
+
+.btn-black {
+  color: $black;
+  background-color: none;
+  border: 3px solid $black;
+  text-align: center;
+  font-family: $work-sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: $transition-speed linear;
+  border-radius: 35px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-sm) {
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: $white;
+    color: $black;
+  }
+  &:active {
+    background-color: $black;
+    border: 3px solid $black;
+  }
+}
+
+.btn-orange {
+  color: $reinbuilt;
+  background-color: none;
+  border: 3px solid $reinbuilt;
+  text-align: center;
+  font-family: $work-sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: $transition-speed linear;
+  border-radius: 35px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $screen-sm) {
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: $reinbuilt;
+    color: $black;
+  }
+  &:active {
+    background-color: $reinbuilt;
+    border: 3px solid $black;
+    color: $black;
+  }
+}
+
+.orange-highlight_container {
+  position: relative;
+  display: block;
+  &:after {
+    content: "";
+    background: url("/wp-content/uploads/2022/10/signal-orange.png") no-repeat;
+    height: 230px;
+    width: 230px;
+    display: block;
+    position: absolute;
+    z-index: 20;
+    background-size: contain;
+    background-position: center center;
+    left: 410px;
+    transform: rotate(135deg);
+    top: 395px;
+  }
+
+  .orange-highlight {
+    position: relative;
+    display: block;
+    z-index: 3;
+    border-radius: 200px 0 200px 0;
+    width: 600px !important;
+    top: 30px;
+    left: 30px;
+  }
+
+  .orange-box {
+    display: block;
+    border: 6px solid $reinbuilt;
+    border-radius: 200px 0 200px 0;
+    position: absolute;
+    z-index: 4;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+#contact-block {
+  padding: 120px 30px;
+  margin: 0;
+  background: $reinbuilt;
+  color: $black;
+  @media screen and (max-width: $screen-sm) {
+    padding: 60px 15px 80px 15px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 52px;
+    font-family: $work-sans;
+    margin-bottom: 30px;
+    @media screen and (max-width: $screen-sm) {
+      font-size: 26px;
+      line-height: 35px;
+    }
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    color: $black;
+  }
+
+  a {
+    margin-top: 30px;
+    color: $black;
+    background-color: none;
+    border: 3px solid $black;
+    text-align: center;
+    font-family: $work-sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: $transition-speed linear;
+    border-radius: 35px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $screen-sm) {
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: $black;
+      color: $reinbuilt;
+    }
+    &:active {
+      background-color: $black;
+      border: 3px solid $black;
+    }
+  }
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  width: 140px;
+  align-items: center;
+  justify-items: center;
+  a {
+    width: 32px;
+    height: 32px;
+    background: $white;
+    display: block;
+    border-radius: 50%;
+    img {
+      display: block;
+      margin: 0 auto;
+
+      &.facebook {
+        padding-top: 4px;
+        max-width: 15px;
+      }
+      &.instagram {
+        padding-top: 5px;
+        max-width: 20px;
+      }
+      &.twitter {
+        padding-top: 6px;
+        max-width: 19px;
+      }
+    }
+  }
+}

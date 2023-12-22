@@ -1,0 +1,258 @@
+/**
+ * Template Front Page Styles
+ *
+ * @package reinbuilt
+ * @author Gunther Beam LLC
+**/
+body.home {
+  ul#menu-primary-nav li#menu-item-265,
+  ul#menu-primary-nav-1 li.page-item-175 {
+    display: none !important;
+  }
+}
+
+#front-page {
+}
+
+#fp-hero {
+  background-size: 120vh;
+  background-position: right;
+  @media screen and (max-width: $screen-md) {
+    background-position: top !important;
+    background-size: 100% !important;
+    // background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%) !important;
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    @media screen and (max-width: $screen-md) {
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &_right {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 40px;
+    @media screen and (max-width: $screen-md) {
+      grid-column: 1;
+      max-width: 250px;
+      padding-top: 50px;
+      position: relative;
+      left: -50px;
+    }
+  }
+
+  &_left {
+    max-width: 450px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    @media screen and (max-width: $screen-sm) {
+      max-width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
+    h4 {
+      color: $reinbuilt;
+      font-size: 18px;
+      line-height: 33px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 15px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    h1 {
+      font-family: $work-sans;
+      font-size: 52px;
+      line-height: 56px;
+      color: $white;
+      margin-bottom: 15px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 33px;
+        line-height: 42px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 33px;
+      margin-bottom: 40px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 18px;
+        line-height: 33px;
+        margin-bottom: 30px;
+      }
+    }
+    a.btn-orange {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+#fp-grid {
+  padding: 200px 50px 200px 50px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, #262626 16.72%, rgba(51, 51, 51, 0) 100%),
+    url("/wp-content/uploads/2022/11/brand-graphics-1.png") no-repeat bottom -150px
+      left;
+  background-size: 30%;
+  @media screen and (max-width: $screen-md) {
+    padding: 100px 30px 100px 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      linear-gradient(180deg, #262626 16.72%, rgba(51, 51, 51, 0) 100%),
+      url("/wp-content/uploads/2022/11/brand-graphics-1.png") no-repeat bottom -100px
+        left;
+    background-size: 70vw;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 60px;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+    @media screen and (max-width: $screen-md) {
+      display: block;
+    }
+
+    a.fp-grid_link {
+      border: 3px solid $dk-grey;
+      background: $black;
+      width: 100%;
+      text-align: center;
+      border-radius: 30px;
+      padding: 50px;
+      display: grid;
+      align-items: end;
+      font-family: $work-sans;
+      @media screen and (max-width: $screen-md) {
+        margin-bottom: 20px;
+        padding: 30px;
+      }
+
+      &:hover {
+        border: 3px solid $reinbuilt;
+
+        .products_tiles-link {
+          text-decoration: underline;
+        }
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+#fp-cta {
+  display: block;
+  background-color: $reinbuilt;
+  padding: 100px 30px;
+  color: $black;
+  @media screen and (max-width: $screen-md) {
+    padding: 50px 30px;
+  }
+  &_container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 60px;
+    justify-content: start;
+    @media screen and (max-width: $screen-md) {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+  }
+
+  &_left {
+    p {
+      font-size: 38px;
+      line-height: 52px;
+      color: $black;
+      font-family: $work-sans;
+      font-weight: 700;
+      margin-top: 0px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  &_right {
+    p {
+      color: $black;
+      font-size: 18px;
+      line-height: 33px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      @media screen and (max-width: $screen-sm) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+#fp-quote {
+  background: $black;
+  padding: 150px 50px;
+  @media screen and (max-width: $screen-md) {
+    padding: 100px 30px;
+  }
+  &_container {
+    background-color: $dk-grey;
+    background: url("/wp-content/uploads/2022/10/quotes-orange-1.png") no-repeat
+      top 50px center $dk-grey;
+    padding: 120px 60px 60px 60px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width: $screen-md) {
+      padding: 80px 30px 60px 30px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    p {
+      color: $white;
+      font-weight: 700;
+    }
+    p strong {
+      color: $reinbuilt !important;
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      border-style: solid;
+      border-width: 50px 50px 0;
+      border-color: $dk-grey transparent;
+      position: absolute;
+      bottom: -40px;
+      left: calc(50% - 50px);
+    }
+  }
+}
