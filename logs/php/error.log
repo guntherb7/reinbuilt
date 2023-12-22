@@ -929,3 +929,4 @@ Stack trace:
 [22-Dec-2023 16:58:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
 [22-Dec-2023 16:59:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
 [22-Dec-2023 17:03:50 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
+[22-Dec-2023 17:18:15 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
