@@ -7,6 +7,7 @@
 /*global jQuery: true */
 /*jslint white: true */
 /*jshint browser: true, jquery: true */
+/*jshint esversion: 6 */
 
 jQuery(function ($) {
   "use strict";
@@ -105,4 +106,16 @@ jQuery(function ($) {
       link.classList.add("active");
     }
   }
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {
+    console.log(e);
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 });

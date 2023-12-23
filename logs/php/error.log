@@ -930,3 +930,8 @@ Stack trace:
 [22-Dec-2023 16:59:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
 [22-Dec-2023 17:03:50 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
 [22-Dec-2023 17:18:15 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
+[23-Dec-2023 00:36:31 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
+[23-Dec-2023 00:37:10 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
+[23-Dec-2023 00:37:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
+[23-Dec-2023 00:37:46 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
+[23-Dec-2023 00:42:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 29
