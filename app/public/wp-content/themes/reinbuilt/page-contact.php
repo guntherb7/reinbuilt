@@ -12,99 +12,78 @@ $address = get_field('address', 'options');
 $addressLink = get_field('address_link', 'options');
 get_header(); ?>
 
-<div id="contact" class="container-full"> 
-    <div id="contact_grid">
-            
-        <div id="contact_grid-left">
-            <div id="contact_left-content">
-                <img src="/wp-content/uploads/2022/10/signal-orange-1.png" class="signal-icon" />
-                <?php the_content(); ?> 
-            </div>
-            <div id="contact_line"></div>
-            <div id="contact_grid-links">
-                <p id="site-tagline"><?php echo get_option('blogdescription'); ?></p>
-                <a id="contact-address" href="<?php echo $address_link; ?>" target="_blank"><?php echo $address; ?></a>
-                <a id="contact-phone" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
-                <a id="contact-email" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
-                <div id="contact-social">
-                    <?php get_template_part('block', 'social');?>
-                </div>
-            </div>
+<div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Here To Help</span>
+            <h2 class="cs-title">Contact Us</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque enim risus lorem diam. Viverra egestas penatibus feugiat vitae in dignissim.
+            </p>
         </div>
-        <div id="contact_grid-right">
-            <?php echo apply_shortcodes( '[contact-form-7 id="157" title="Contact form 1"]' ); ?>
-        </div>
-
-
-                
-    </div>
-                
-</div>
-
-<div id="team-short">
-    <div class="container-full">
-        <h3>Meet Our Team</h3>
-        <div class="team-short_grid container-full">
-        <?php
-            $args = array(
-                'post_type' => 'team',
-                'posts_per_page' => '3',
-                'order' => 'ASC',
-                'offset' => 0,
-                'post__not_in' => array( $post->ID )
-            );
-            $the_query = new WP_Query( $args ); ?>
-
-
-
-            <?php if ( $the_query->have_posts() ) : ?>
-
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>" class="team-short_grid-profile">
-
-
-                    <?php if( get_field('state') == 'illinois'): ?>
-                        <div class="team-short_grid-illinois">
-                        <?php $image = get_field('headshot');
-                        if( !empty( $image ) ): ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="team-short_grid-headshot"/>
-                        <?php endif; ?>
-                            <span class="team-short_grid-state">Illinois</span>
-                    <?php elseif	( get_field('state') == 'wisconsin' ): ?>
-                        <div class="team-short_grid-wisconsin">
-                        <?php $image = get_field('headshot');
-                        if( !empty( $image ) ): ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="team-short_grid-headshot"/>
-                        <?php endif; ?>
-                        <span class="team-short_grid-state">Wisconsin</span>
-                    <?php elseif ( get_field('state') == 'none'): ?>
-                        <?php $image = get_field('headshot');
-                        if( !empty( $image ) ): ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="team-short_grid-headshot"/>
-                        <?php endif; ?>
-                        <div class="team-short_grid-none">
-                    <?php endif; ?>
-                        
-
-                        
-                        
-                        <p class="team-short_grid-name"><?php the_title(); ?></p>
-                        <span class="team-short_grid-title"><?php the_field('title'); ?></span>
-                        <p class="team-short_grid-phone"><?php the_field('phone_number'); ?></p>
-
-                        <span class="team-short_grid-link">Read Bio</span>
+        <!-- Form -->
+        <form id="cs-form-242" name="Contact Form" method="post">
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-242" name="name" placeholder="John/Jane Doe">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-242" name="email" placeholder="name@company.com">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-242" name="phone" placeholder="+1 (206) 987-6543">
+            </label>
+            <label class="cs-label">
+                How Did You Find Us
+                <input class="cs-input" type="text" id="find-242" name="find-us" placeholder="Social Media, Family, Friend...">
+            </label>
+            <label class="cs-label cs-label-message">
+                Message
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-242" placeholder="Hello, I’m interested in..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Submit Message Now</button>
+        </form>
+        <!-- Contact Info -->
+        <div class="cs-right-section">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="mailto:support@yourdomain.com" class="cs-link">support@yourdomain.com</a>
                     </div>
-                    </a>
-                <?php endwhile; ?>
-
-                <?php wp_reset_postdata(); ?>
-
-            <?php endif; ?>
-
-
-        </div>                
-        <a href="/our-team" class="btn-orange">See All</a>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:206-987-6543" class="cs-link">(206) 987-6543</a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Address</span>
+                        <a href="" class="cs-link"><span class="cs-block">2553 Woodbridge Lane,</span> Boston Ware 120</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Picture -->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map.jpg">
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map.jpg" alt="google map" width="462" height="438">
+            </picture>
+        </div>
     </div>
-</div>
+</section>
+           
 
 <?php get_footer(); ?>

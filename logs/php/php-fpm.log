@@ -105,3 +105,24 @@
 [26-Dec-2023 09:11:57] NOTICE: exiting, bye-bye!
 [26-Dec-2023 09:11:59] NOTICE: fpm is running, pid 87993
 [26-Dec-2023 09:11:59] NOTICE: ready to handle connections
+[26-Dec-2023 11:20:59] NOTICE: Terminating ...
+[26-Dec-2023 11:20:59] NOTICE: Terminating ...
+[26-Dec-2023 11:20:59] NOTICE: exiting, bye-bye!
+[26-Dec-2023 11:21:05] NOTICE: fpm is running, pid 95614
+[26-Dec-2023 11:21:05] NOTICE: ready to handle connections
+[26-Dec-2023 11:21:43] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:21:43] ERROR: FPM initialization failed
+[26-Dec-2023 11:21:44] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:21:44] ERROR: FPM initialization failed
+[26-Dec-2023 11:21:45] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:21:45] ERROR: FPM initialization failed
+[26-Dec-2023 11:21:45] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:21:45] ERROR: FPM initialization failed
+[26-Dec-2023 11:25:01] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:25:01] ERROR: FPM initialization failed
+[26-Dec-2023 11:25:02] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:25:02] ERROR: FPM initialization failed
+[26-Dec-2023 11:25:03] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:25:03] ERROR: FPM initialization failed
+[26-Dec-2023 11:25:03] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[26-Dec-2023 11:25:03] ERROR: FPM initialization failed
