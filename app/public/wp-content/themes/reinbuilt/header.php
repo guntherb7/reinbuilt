@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <?php wp_head(); ?>
 </head>

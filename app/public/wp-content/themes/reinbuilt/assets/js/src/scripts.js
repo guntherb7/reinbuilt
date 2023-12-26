@@ -110,6 +110,7 @@ jQuery(function ($) {
 
   lenis.on("scroll", (e) => {
     console.log(e);
+    console.log("scroll");
   });
 
   function raf(time) {

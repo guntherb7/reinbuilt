@@ -26,7 +26,7 @@ get_header(); ?>
 					<article>
 						<a class="blog-article-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 							<?php $background_img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full'  ); ?>
-							<div class="article-left" style="background: url('<?php echo esc_attr( $background_img[0] ); ?>' ) no-repeat center center;"></div>	
+							<!-- <div class="article-left" style="background: url('<?php echo esc_attr( $background_img[0] ); ?>' ) no-repeat center center;"></div>	 -->
 							<div class="article-right">
 								<h2><?php the_title(); ?></h2>
 								<div class="blog-excerpt"><?php the_excerpt(); ?></div>
