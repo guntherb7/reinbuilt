@@ -5,11 +5,9 @@
  * @author Gunther Beam LLC
 **/
 header {
-  background-color: $black;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: block;
-  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.3);
+  // background-color: $black;
+  z-index: -2;
+
   @media screen and (max-width: $screen-lg) {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -34,6 +32,7 @@ header {
     padding: 0 20px;
   }
 }
+
 #header_left {
   width: 100%;
   max-width: 210px;
@@ -56,6 +55,7 @@ header {
 }
 #header_right {
   text-align: right;
+  padding: 30px;
   .menu {
     list-style-type: none;
     display: inline-block;
@@ -100,19 +100,10 @@ header {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
 header {
-  /* box-shadow: 0px 3px 3px rgba(0,0,0,0.2); */
   height: 100px;
-  position: relative;
+  position: sticky;
+  z-index: 999;
 }
 
 .content {
@@ -251,4 +242,29 @@ ul.sub-menu {
 
 ul.sub-menu.open {
   display: block !important;
+}
+#hamburger-menu {
+}
+
+#bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%); /* Initially hidden */
+}
+
+#bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+#bottom-nav.open {
+  transform: translateY(0); /* Show when open */
 }

@@ -161,7 +161,7 @@ button {
   @include heading-font;
   color: $primary-color;
   border-radius: 2px;
-  border: 0.8px solid $primary-color;
+  // border: 0.8px solid $primary-color;
   background: #505050;
   padding: 1vw 2vw;
   margin: $normal-spacing;
