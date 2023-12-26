@@ -442,7 +442,7 @@ a {
 .social {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
+  gap: 15px;
   width: 140px;
   align-items: center;
   justify-items: center;

@@ -8,7 +8,26 @@
 	require_once dirname( __FILE__ ) . '/includes/admin.php';
 	require_once dirname( __FILE__ ) . '/includes/utility.php';
 	require_once dirname( __FILE__ ) . '/includes/team.php'; // Custom Post Type Case Studies
-	// require_once dirname( __FILE__ ) . '/includes/testimonials-cpt.php'; // Custom Post Type Testimonials
+	// require_once dirname( __FILE__ ) . '/includes/contacts-cpt.php'; // Custom Post Type contacts
+
+/**
+ * We use WordPress's init hook to make sure
+ * our blocks are registered early in the loading
+ * process.
+ *
+ * @link https://developer.wordpress.org/reference/hooks/init/
+ */
+function reinbuilt_register_acf_blocks() {
+    /**
+     * We register our block's with WordPress's handy
+     * register_block_type();
+     *
+     * @link https://developer.wordpress.org/reference/functions/register_block_type/
+     */
+    register_block_type( __DIR__ . '/blocks/contact' );
+}
+// Here we call our reinbuilt_register_acf_block() function on init.
+add_action( 'init', 'reinbuilt_register_acf_blocks' );
 
 
 	add_action('wp_enqueue_scripts', 'reinbuilt_child');

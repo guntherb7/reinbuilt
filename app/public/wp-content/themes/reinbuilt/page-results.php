@@ -128,7 +128,7 @@ get_header(); ?>
 		display:grid;
 		max-width:800px;
 		margin:0 auto;
-		grid-gap:30px;
+gap:30px;
 		grid-template-columns:1fr 1fr;
 		cursor:pointer;
 	}
@@ -174,7 +174,7 @@ get_header(); ?>
     	margin-bottom:100px;
         grid-template-columns:1fr;
 		grid-template-columns:1fr;
-        grid-gap:5px;
+gap:5px;
 		max-width:800px;
 		margin:0 auto;
 	}
