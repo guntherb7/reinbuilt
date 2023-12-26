@@ -97,26 +97,12 @@ jQuery(function ($) {
     // will (slide) toggle the related panel.
     $(this).toggleClass("active").next().slideToggle();
   });
-
-  // grays out the current page in the nav
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  for (const link of navLinks) {
-    if (link.href === window.location.href) {
-      link.classList.add("active");
-    }
-  }
-  const lenis = new Lenis();
-
-  lenis.on("scroll", (e) => {
-    console.log(e);
-    console.log("scroll");
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
 });
+// grays out the current page in the nav
+const navLinks = document.querySelectorAll(".nav-link");
+
+for (const link of navLinks) {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+}

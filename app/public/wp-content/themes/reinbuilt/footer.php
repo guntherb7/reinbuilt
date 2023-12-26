@@ -23,10 +23,24 @@ $addressLink = get_field('address_link', 'options');
         </ul>
     </div>
 
-    <img src="http://reinbuilt.local/wp-content/uploads/2023/12/LOGO.png" alt="" class="footer--logo">
+    <img src="https://reinbuilt.local/wp-content/uploads/2023/12/LOGO.png" alt="" class="footer--logo">
 </footer>
 <!-- Schema JSON-LD -->
 <?php wp_footer(); ?>
+<script>
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+</script>
 </body>
 </html>
 
