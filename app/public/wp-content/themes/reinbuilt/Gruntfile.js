@@ -15,11 +15,7 @@ module.exports = function (grunt) {
       min: {
         files: {
           "assets/js/scripts.min.js": ["assets/js/src/scripts.js"],
-          "assets/js/slick-custom.min.js": ["assets/js/src/slick-custom.js"],
           "assets/js/home.min.js": ["assets/js/src/home.js"],
-          "assets/js/smooth-scroll-custom.min.js": [
-            "assets/js/src/smooth-scroll-custom.js",
-          ],
         },
       },
     },
@@ -33,7 +29,6 @@ module.exports = function (grunt) {
         files: {
           // Dictionary of files // 'destination': 'source'
           "assets/css/styles.css": "assets/sass/styles.scss",
-          "assets/css/slick.css": "assets/sass/slick.scss",
         },
       },
     },
