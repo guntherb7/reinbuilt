@@ -56,10 +56,5 @@
   </nav>
 
   <script>
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const bottomNav = document.getElementById('bottom-nav');
 
-    hamburgerMenu.addEventListener('click', () => {
-      bottomNav.classList.toggle('open');
-    });
   </script>

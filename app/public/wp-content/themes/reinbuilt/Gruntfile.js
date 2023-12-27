@@ -32,7 +32,14 @@ module.exports = function (grunt) {
         },
       },
     },
-
+    concat: {
+      generated: {
+        files: {
+          "assets/js/scripts.min.js": ["assets/js/src/scripts.js"],
+          "assets/js/home.min.js": ["assets/js/src/home.js"],
+        },
+      },
+    },
     // This can be run as a watch task which looks for changes to files and compiles in real time
     watch: {
       css: {
