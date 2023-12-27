@@ -40,17 +40,17 @@ get_header(); ?>
                     <span class="wpcf7-form-control-wrap Name">
                         <input type="text" name="First Name" value="" size="40"
                             class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true" aria-invalid="false" placeholder="First Name">
+                            aria-required="true" aria-invalid="false" aria-label="First name" placeholder="First Name">
                         <input type="text" name="Last Name" value="" size="40"
                             class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true" aria-invalid="false" placeholder="Last Name">
+                            aria-required="true" aria-invalid="false" aria-label="Last name" placeholder="Last Name">
                     </span>
                     <span class="wpcf7-form-control-wrap Email">
                         <input type="email" name="Email" size="40"
                             class="emailinput wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                            aria-required="true" aria-invalid="false" placeholder="Email">
+                            aria-required="true" aria-invalid="false" aria-label="Email" placeholder="Email">
                     </span>
-                    <input type="submit" value="Send" class="wpcf7-form-control btn-orange">
+                    <input type="submit" value="Send" aria-label="Submit Button" class="wpcf7-form-control btn-orange">
                 </p>
             </form>
         </div>
