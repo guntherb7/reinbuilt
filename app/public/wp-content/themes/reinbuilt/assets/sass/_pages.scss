@@ -804,19 +804,17 @@
 
 .wpcf7-form input[type="submit"] {
   color: $reinbuilt;
-  background-color: none;
   border: 3px solid $reinbuilt;
   text-align: center;
-  font-family: $work-sans;
-  font-weight: 700;
+  font-family: $jost;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 1;
   text-decoration: none;
-  display: inline-block;
   cursor: pointer;
   padding: 10px 20px;
   transition: $transition-speed linear;
-  border-radius: 35px;
+  border-radius: 3px;
   text-transform: uppercase;
 
   @media screen and (max-width: $screen-sm) {

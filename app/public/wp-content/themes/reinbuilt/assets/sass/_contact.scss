@@ -1,0 +1,103 @@
+@use "mixins";
+
+.contact {
+  margin: 0 auto;
+  display: block;
+  max-width: 1600px;
+  #formwrap {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  .contact-form {
+    max-width: 550px;
+
+    .contact-img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+    }
+
+    h3 {
+      @include heading-font;
+      font-size: 30px;
+      text-align: center;
+    }
+    form {
+      padding: 10px;
+    }
+
+    .nameinput,
+    .emailinput {
+      max-width: 550px;
+      height: 48px;
+      border: none;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      display: block;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 18px;
+      color: $primary-color;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      cursor: pointer;
+    }
+  }
+
+  .btn {
+    border: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 48px;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    outline: none;
+    border-radius: 2px;
+    margin-right: 6px;
+  }
+
+  .btn:hover {
+    background: #fff;
+    outline: none;
+    top: 2px;
+  }
+
+  .btn:active {
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 #cecece;
+    top: 6px;
+  }
+
+  .flat {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .flat:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+}

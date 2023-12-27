@@ -263,7 +263,7 @@ a {
   cursor: pointer;
   padding: 10px 20px;
   transition: $transition-speed linear;
-  border-radius: 35px;
+  border-radius: $button-radius;
   text-transform: uppercase;
 
   @media screen and (max-width: $screen-sm) {
@@ -292,7 +292,7 @@ a {
   cursor: pointer;
   padding: 10px 20px;
   transition: $transition-speed linear;
-  border-radius: 35px;
+  border-radius: $button-radius;
   text-transform: uppercase;
 
   @media screen and (max-width: $screen-sm) {
@@ -322,8 +322,9 @@ a {
   cursor: pointer;
   padding: 10px 20px;
   transition: $transition-speed linear;
-  border-radius: 35px;
+  border-radius: $button-radius;
   text-transform: uppercase;
+  margin-bottom: 0 !important;
 
   @media screen and (max-width: $screen-sm) {
   }
@@ -422,7 +423,7 @@ a {
     cursor: pointer;
     padding: 10px 20px;
     transition: $transition-speed linear;
-    border-radius: 35px;
+    border-radius: 3px;
     text-transform: uppercase;
 
     @media screen and (max-width: $screen-sm) {

@@ -17,15 +17,15 @@ p,
 a,
 ul {
   color: $primary-color;
+  font-family: $jost;
+  font-weight: 400;
 }
 
 h1 {
-  font-family: $jost;
   font-style: normal;
   font-size: 52px;
   font-weight: 700;
   line-height: 56px;
-  color: $white;
   margin-bottom: 20px;
 
   @media screen and (max-width: $screen-xl) {
@@ -43,8 +43,6 @@ h1 {
 }
 
 h3 {
-  font-family: $work-sans;
-  font-weight: 700;
   font-size: 42px;
   line-height: 45px;
   @media screen and (max-width: $screen-lg) {
@@ -63,10 +61,7 @@ h3 {
 
 p {
   font-style: normal;
-  font-weight: 400;
-  color: $white;
   font-size: 16px;
-  font-family: $sans;
   line-height: 26px;
   margin-bottom: 0;
   @media screen and (max-width: $screen-lg) {
