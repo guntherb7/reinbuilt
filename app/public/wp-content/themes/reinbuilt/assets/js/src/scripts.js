@@ -29,9 +29,46 @@ for (const link of navLinks) {
 }
 
 // hamburger menu
-const hamburgerMenu = document.getElementById("hamburger-menu");
-const bottomNav = document.getElementById("bottom-nav");
+const hamburger = document.getElementById("menu-icon");
 
-hamburgerMenu.addEventListener("click", () => {
-  bottomNav.classList.toggle("open");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  document.body.classList.toggle("menu-open"); // Prevent body scroll
+
+  const mobileNav = document.getElementById("mobile-nav");
+  if (mobileNav.classList.contains("active")) {
+    mobileNav.classList.remove("active"); // Close menu if already open
+  } else {
+    mobileNav.classList.add("active"); // Open menu
+  }
+});
+
+// Toggle mobile menu
+const toggleNav = document.querySelector(".toggle-nav");
+toggleNav.addEventListener("click", () => {
+  const mobileNav = document.getElementById("mobile-nav");
+  mobileNav.classList.toggle("active");
+});
+
+// Append accordion toggle for nested menus
+const menuItems = document.querySelectorAll(
+  "#menu-primary-navigation > li.menu-item-has-children"
+);
+menuItems.forEach((item) => {
+  item.append(
+    '<div class="accordion-toggle"><div class="fa fa-angle-down"></div></div>'
+  );
+});
+
+// Handle accordion toggle clicks
+const accordionToggles = document.querySelectorAll(
+  "#mobile-nav .accordion-toggle"
+);
+accordionToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const nestedUl = toggle.closest("li").querySelector("> ul");
+    nestedUl.classList.toggle("active");
+    toggle.classList.toggle("toggle-background");
+    toggle.querySelector(".fa").classList.toggle("toggle-rotate");
+  });
 });

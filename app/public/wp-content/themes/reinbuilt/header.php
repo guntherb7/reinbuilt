@@ -31,14 +31,60 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+
   <header>
-    <div id="header_right">
-      <a href="javascript:void(0);" class="icon" id="hamburger-menu"><i class="fa fa-bars"></i></button></a>
+
+    <div id="menu-icon" class="toggle-nav">
+      <span class="line line-1"></span>
+      <span class="line line-2"></span>
+      <span class="line line-3"></span>
+    </div>
+
+    <div id="mobile-nav">
+      <ul id="menu-primary-navigation" class="menu">
+        <li class="menu-item-has-children">
+          <a href="#">Field</a>
+          <ul>
+            <li class="current-menu-item"><a href="#">Current Menu Item - Child</a></li>
+            <li><a href="#">Sub Item</a></li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Office</a>
+          <ul>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Sales</a>
+        </li>
+        <li class="menu-item-has-children">
+          <a href="#">Marketing</a>
+          <ul>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Reporting</a>
+        </li>
+        <li class="menu-item-has-children current-menu-item">
+          <a href="#">Why PestPac</a>
+          <ul>
+            <li><a href="#">Sub Item</a></li>
+            <li><a href="#">Sub Item</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </header>
-  <main>
-  </main>
-  <nav id="bottom-nav">
+
+
+  <!--<nav id="bottom-nav">
     <footer class="footer">
       <div class="footer--nav">
         <ul>
@@ -52,4 +98,4 @@
       </div>
       <img src="https://reinbuilt.local/wp-content/uploads/2023/12/LOGO.png" alt="" class="footer--logo">
     </footer>
-  </nav>
+  </nav> -->
