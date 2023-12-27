@@ -14,20 +14,6 @@ $addressLink = get_field('address_link', 'options');
 
 <!-- Schema JSON-LD -->
 <?php wp_footer(); ?>
-<script>
-  const lenis = new Lenis();
-
-  lenis.on("scroll", (e) => {
-    console.log(e);
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-</script>
 </body>
 
 </html>

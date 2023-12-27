@@ -7,7 +7,7 @@ If a feature is to be added to the functions.php, check the parent theme to see 
 To compile your SASS use the command compass watch from the command line in the child theme directory
 http://compass-style.org/help/
 
-To complie your JS use the command link and Grunt
+To compile your JS use the command link and Grunt
 
 The link below is our mobile menu snippet, it should be customized and used as needed based on the themes design. The code should be which should be inserted into /js/scr/scripts.js and minimized with Grunt
 https://codepen.io/tylermeansbusiness/pen/KEpooq

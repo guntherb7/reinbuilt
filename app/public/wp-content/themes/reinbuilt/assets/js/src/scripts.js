@@ -6,6 +6,19 @@
  */
 /*jshint esversion: 6 */
 
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 // grays out the current page in the nav
 const navLinks = document.querySelectorAll(".nav-link");
 
