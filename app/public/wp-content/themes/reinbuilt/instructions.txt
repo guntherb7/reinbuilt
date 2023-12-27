@@ -24,7 +24,7 @@ Run these commands in this order
 - npm install grunt-contrib-compass --save-dev
 - npm install grunt-contrib-watch --save-dev
 
-Grunt can be used as a CSS and JS watching compiler, more information at the link belowf
+Grunt can be used as a CSS and JS watching compiler, more information at the link below
 https://github.com/gruntjs/grunt-contrib-watch
 
 Slick
