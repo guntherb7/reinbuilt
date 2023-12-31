@@ -134,3 +134,11 @@
 [26-Dec-2023 20:06:58] ERROR: FPM initialization failed
 [26-Dec-2023 20:06:58] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
 [26-Dec-2023 20:06:58] ERROR: FPM initialization failed
+[27-Dec-2023 15:31:05] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[27-Dec-2023 15:31:05] ERROR: FPM initialization failed
+[27-Dec-2023 15:31:05] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[27-Dec-2023 15:31:05] ERROR: FPM initialization failed
+[27-Dec-2023 15:31:06] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[27-Dec-2023 15:31:06] ERROR: FPM initialization failed
+[27-Dec-2023 15:31:07] ERROR: Another FPM instance seems to already listen on /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/php/php-fpm.socket
+[27-Dec-2023 15:31:07] ERROR: FPM initialization failed
