@@ -1001,3 +1001,4 @@ Stack trace:
 [26-Dec-2023 19:42:24 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
 [31-Dec-2023 11:20:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
 [09-Jan-2024 12:19:19 UTC] Cron reschedule event error for hook: wp_delete_temp_updater_backups, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"weekly","args":[],"interval":604800}
+[09-Jan-2024 12:27:20 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
