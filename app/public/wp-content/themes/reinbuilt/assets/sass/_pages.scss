@@ -159,7 +159,7 @@
       text-align: center;
       font-family: $sans;
       text-transform: uppercase;
-      color: $reinbuilt;
+      color: $dark-font;
       font-size: 18px;
       line-height: 30px;
       margin-top: 15px;
@@ -229,7 +229,7 @@
       margin-top: 15px;
       padding-right: 10px;
       font-family: $sans;
-      color: $reinbuilt;
+      color: $dark-font;
       font-size: 16px;
       line-height: 22px;
       text-transform: uppercase;
@@ -310,7 +310,7 @@
     display: block;
     height: 6px;
     width: 100px;
-    background: $reinbuilt;
+    background: $dark-font;
     margin-bottom: 40px;
     @media screen and (max-width: $screen-sm) {
       margin: 30px auto;
@@ -322,7 +322,7 @@
     text-align: left;
     font-family: $sans;
     text-transform: uppercase;
-    color: $reinbuilt;
+    color: $dark-font;
     font-size: 18px;
     line-height: 30px;
     margin-top: 15px;
@@ -371,7 +371,7 @@
     height: 24px;
     margin-left: 15px;
     margin-right: 15px;
-    background-color: $reinbuilt;
+    background-color: $dark-font;
     position: relative;
     top: 5px;
     @media screen and (max-width: $screen-sm) {
@@ -467,7 +467,7 @@
       text-align: center;
       font-family: $sans;
       text-transform: uppercase;
-      color: $reinbuilt;
+      color: $dark-font;
       font-size: 18px;
       line-height: 30px;
       margin-top: 15px;
@@ -534,7 +534,7 @@
       margin-top: 15px;
       padding-right: 10px;
       font-family: $sans;
-      color: $reinbuilt;
+      color: $dark-font;
       font-size: 16px;
       line-height: 22px;
       text-transform: uppercase;
@@ -629,7 +629,7 @@
     min-height: 300px;
     gap: 40px;
     border-radius: 30px;
-    border: 3px solid $dk-grey;
+    border: 3px solid $dark-background;
     background: $black;
     margin: 0 auto 40px auto;
     max-width: 1100px;
@@ -645,7 +645,7 @@
     }
 
     &:hover {
-      border: 3px solid $reinbuilt;
+      border: 3px solid $dark-font;
 
       .products_tiles-link {
         text-decoration: underline;
@@ -658,7 +658,7 @@
     }
     .products_tiles-link {
       display: block;
-      color: $reinbuilt;
+      color: $dark-font;
       text-transform: uppercase;
       font-family: $work-sans;
       font-size: 16px;
@@ -729,7 +729,7 @@
     display: block;
     height: 6px;
     width: 100px;
-    background: $reinbuilt;
+    background: $dark-font;
     margin-bottom: 40px;
     margin-top: 40px;
     @media screen and (max-width: $screen-md) {
@@ -796,15 +796,15 @@
   border-radius: 25px;
   padding: 10px 20px;
   margin-bottom: 20px;
-  color: $md-grey;
-  background: $dk-grey;
+  color: $dark-font;
+  background: $light-background;
   font-family: $sans !important;
   width: 100%;
 }
 
 .wpcf7-form input[type="submit"] {
-  color: $reinbuilt;
-  border: 3px solid $reinbuilt;
+  color: $dark-font;
+  border: 3px solid $dark-font;
   text-align: center;
   font-family: $jost;
   font-weight: 400;
@@ -821,18 +821,18 @@
   }
   &:hover {
     text-decoration: none;
-    background-color: $reinbuilt;
-    color: $dk-grey;
+    background-color: $dark-font;
+    color: $dark-background;
   }
   &:active {
-    background-color: $reinbuilt;
+    background-color: $dark-font;
   }
 }
 
 .wpcf7-form .wpcf7-response-output,
 .wpcf7-form .wpcf7-not-valid-tip {
   border: none;
-  color: $reinbuilt;
+  color: $dark-font;
   margin-left: 20px;
 }
 
@@ -907,7 +907,7 @@
       text-align: center;
       font-family: $sans;
       text-transform: uppercase;
-      color: $reinbuilt;
+      color: $dark-font;
       font-size: 18px;
       line-height: 30px;
       margin-top: 15px;

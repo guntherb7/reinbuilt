@@ -17,7 +17,8 @@ get_header(); ?>
 <div id="blog">
 	<div class="container blog-posts">
 		<div id="blog-banner">
-			<img src="http://localhost:10020/wp-content/uploads/2023/12/LOGO.png" alt="" class="hero--logo nav--logo">
+			<img src="http://localhost:10020/wp-content/uploads/2024/01/REINBUILT_LOGO_DARK-GRAY.svg"
+				alt="Reinbuilt Logo" class="hero--logo nav--logo logo">
 		</div>
 
 

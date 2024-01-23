@@ -6,6 +6,12 @@
  */
 /*jshint esversion: 6 */
 
+// Dark Mode Toggle
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
@@ -18,15 +24,6 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
-
-// grays out the current page in the nav
-const navLinks = document.querySelectorAll(".nav-link");
-
-for (const link of navLinks) {
-  if (link.href === window.location.href) {
-    link.classList.add("active");
-  }
-}
 
 // hamburger menu
 const hamburger = document.getElementById("menu-icon");

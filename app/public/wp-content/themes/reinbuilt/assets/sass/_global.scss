@@ -20,9 +20,14 @@ html,
 body {
   font-size: 18px;
   line-height: 1;
-  background-color: $black;
-  font-family: $sans;
-  color: $white;
+  background-color: $light-background;
+  font-family: $jost;
+  color: $dark-font;
+}
+
+.dark-mode {
+  background-color: $dark-background;
+  color: $light-font;
 }
 
 header,
@@ -309,9 +314,9 @@ a {
 }
 
 .btn-orange {
-  color: $reinbuilt;
+  color: orange;
   background-color: none;
-  border: 3px solid $reinbuilt;
+  border: 3px solid orange;
   text-align: center;
   font-family: $work-sans;
   font-weight: 700;
@@ -330,11 +335,11 @@ a {
   }
   &:hover {
     text-decoration: none;
-    background-color: $reinbuilt;
+    background-color: $dark-background;
     color: $black;
   }
   &:active {
-    background-color: $reinbuilt;
+    background-color: $dark-background;
     border: 3px solid $black;
     color: $black;
   }
@@ -370,7 +375,7 @@ a {
 
   .orange-box {
     display: block;
-    border: 6px solid $reinbuilt;
+    border: 6px solid $dark-background;
     border-radius: 200px 0 200px 0;
     position: absolute;
     z-index: 4;
@@ -382,7 +387,7 @@ a {
 #contact-block {
   padding: 120px 30px;
   margin: 0;
-  background: $reinbuilt;
+  background: $dark-background;
   color: $black;
   @media screen and (max-width: $screen-sm) {
     padding: 60px 15px 80px 15px;
@@ -431,7 +436,7 @@ a {
     &:hover {
       text-decoration: none;
       background-color: $black;
-      color: $reinbuilt;
+      color: $dark-background;
     }
     &:active {
       background-color: $black;
