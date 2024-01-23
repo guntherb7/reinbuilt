@@ -92,8 +92,7 @@
           <li><a href="#" class="nav-link">Interior</a></li>
           <li><a href="#" class="nav-link">Restoration</a></li>
           <li><a href="#" class="nav-link">Calculators</a></li>
-          <li><a href="#" class="nav-link">Services</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#" class="nav-link">Visualization</a></li>
         </ul>
       </div>
       <img src="https://reinbuilt.local/wp-content/uploads/2023/12/LOGO.png" alt="" class="footer--logo">
