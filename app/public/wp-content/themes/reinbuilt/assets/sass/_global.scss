@@ -26,7 +26,7 @@ body {
 }
 
 .dark-mode {
-  background-color: $dark-background;
+  background-color: $dark-background !important;
   color: $light-font;
 }
 
@@ -408,12 +408,12 @@ a {
   h6,
   p,
   a {
-    color: $black;
+    color: currentColor;
   }
 
   a {
     margin-top: 30px;
-    color: $black;
+    color: currentColor;
     background-color: none;
     border: 3px solid $black;
     text-align: center;

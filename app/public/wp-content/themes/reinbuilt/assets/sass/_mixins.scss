@@ -12,7 +12,7 @@
 }
 
 @mixin nav-font {
-  color: $dark-font;
+  color: currentColor;
   font-family: "Syncopate", sans-serif;
   font-size: 48px;
   font-style: normal;
