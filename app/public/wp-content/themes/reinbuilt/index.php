@@ -20,14 +20,9 @@ get_header(); ?>
 			<img src="http://localhost:10020/wp-content/uploads/2024/01/REINBUILT_LOGO_DARK-GRAY.svg"
 				alt="Reinbuilt Logo" class="hero--logo nav--logo logo">
 		</div>
-
-
-		<?php the_posts_pagination(); ?>
+		<h1>Hello World</h1>
 
 	</div>
-	<?php if (function_exists('yoast_breadcrumb')) {
-		yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
-	} ?>
 
 	<!-- #content -->
 

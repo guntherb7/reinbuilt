@@ -7,11 +7,19 @@
 /*jshint esversion: 6 */
 
 // Dark Mode Toggle
+// Get the button element by its class
+var darkModeButton = document.querySelector(".darkMode");
+
+// Add a click event listener to the button
+darkModeButton.addEventListener("click", darkMode);
+
+// The darkMode function remains the same
 function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
 
+// Smooth Scroll library
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
@@ -24,48 +32,3 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
-
-// hamburger menu
-const hamburger = document.getElementById("menu-icon");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  document.body.classList.toggle("menu-open"); // Prevent body scroll
-
-  const mobileNav = document.getElementById("mobile-nav");
-  if (mobileNav.classList.contains("active")) {
-    mobileNav.classList.remove("active"); // Close menu if already open
-  } else {
-    mobileNav.classList.add("active"); // Open menu
-  }
-});
-
-// Toggle mobile menu
-const toggleNav = document.querySelector(".toggle-nav");
-toggleNav.addEventListener("click", () => {
-  const mobileNav = document.getElementById("mobile-nav");
-  mobileNav.classList.toggle("active");
-});
-
-// Append accordion toggle for nested menus
-const menuItems = document.querySelectorAll(
-  "#menu-primary-navigation > li.menu-item-has-children"
-);
-menuItems.forEach((item) => {
-  item.append(
-    '<div class="accordion-toggle"><div class="fa fa-angle-down"></div></div>'
-  );
-});
-
-// Handle accordion toggle clicks
-const accordionToggles = document.querySelectorAll(
-  "#mobile-nav .accordion-toggle"
-);
-accordionToggles.forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    const nestedUl = toggle.closest("li").querySelector("> ul");
-    nestedUl.classList.toggle("active");
-    toggle.classList.toggle("toggle-background");
-    toggle.querySelector(".fa").classList.toggle("toggle-rotate");
-  });
-});

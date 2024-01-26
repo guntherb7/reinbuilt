@@ -12,11 +12,11 @@
 }
 
 @mixin nav-font {
-  color: $nav-text;
+  color: $dark-font;
   font-family: "Syncopate", sans-serif;
   font-size: 48px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.3;
   letter-spacing: 3.6px;
   text-decoration: none;
