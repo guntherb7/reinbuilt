@@ -1006,3 +1006,21 @@ Stack trace:
 [20-Jan-2024 21:17:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
 [20-Jan-2024 21:17:47 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
 [27-Jan-2024 16:13:17 UTC] Cron unschedule event error for hook: wordfence_start_scheduled_scan, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":false,"args":[1706371200]}
+[27-Jan-2024 17:03:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function acf_add_options_page() in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php:100
+Stack trace:
+#0 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-settings.php(611): include()
+#1 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-config.php(103): require_once('/Users/guntherb...')
+#2 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-load.php(50): require_once('/Users/guntherb...')
+#3 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/admin.php(34): require_once('/Users/guntherb...')
+#4 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/index.php(10): require_once('/Users/guntherb...')
+#5 {main}
+  thrown in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php on line 100
+[27-Jan-2024 17:03:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function acf_add_options_page() in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php:100
+Stack trace:
+#0 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-settings.php(611): include()
+#1 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-config.php(103): require_once('/Users/guntherb...')
+#2 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-load.php(50): require_once('/Users/guntherb...')
+#3 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-blog-header.php(13): require_once('/Users/guntherb...')
+#4 /Users/guntherbeam/Local Sites/reinbuilt/app/public/index.php(17): require('/Users/guntherb...')
+#5 {main}
+  thrown in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php on line 100
