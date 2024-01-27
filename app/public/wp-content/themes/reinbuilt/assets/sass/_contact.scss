@@ -5,11 +5,13 @@
   display: block;
   max-width: 1600px;
   width: 100%;
+
   #formwrap {
     width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(0, max-content));
     margin: 0 auto;
   }
+
   .contact-form {
     max-width: 550px;
     margin: 0 auto;
@@ -25,6 +27,7 @@
       font-size: 30px;
       text-align: center;
     }
+
     form {
       padding: 10px;
     }
@@ -34,11 +37,7 @@
       max-width: 550px;
       height: 48px;
       border: none;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
       border-radius: 10px;
-      -moz-background-clip: padding;
-      -webkit-background-clip: padding-box;
       background-clip: padding-box;
       display: block;
       font-family: "Source Sans Pro", sans-serif;
@@ -68,19 +67,19 @@
     outline: none;
     border-radius: 2px;
     margin-right: 6px;
-  }
 
-  .btn:hover {
-    background: #fff;
-    outline: none;
-    top: 2px;
-  }
+    &:hover {
+      background: #fff;
+      outline: none;
+      top: 2px;
+    }
 
-  .btn:active {
-    background: #fff;
-    outline: none;
-    box-shadow: 0 0 #cecece;
-    top: 6px;
+    &:active {
+      background: #fff;
+      outline: none;
+      box-shadow: 0 0 #cecece;
+      top: 6px;
+    }
   }
 
   .flat {
@@ -89,18 +88,16 @@
     display: inline-block;
     outline: none;
     position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
     transition: all 0.3s;
-  }
 
-  .flat:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
+    &:before {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      line-height: 3;
+      font-size: 140%;
+      width: 60px;
+    }
   }
 }

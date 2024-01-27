@@ -5,21 +5,31 @@
  * @author Gunther Beam LLC
 */
 
-// html, body, div, span, applet, object, iframe, blockquote, pre, abbr,
-// acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong,
-// sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
-// tbody, tfoot, thead, tr, th, td {
-// 	margin: 0;
-// 	padding: 0;
-// 	vertical-align: baseline;
-// 	background: transparent;
-// 	border: 0;
-// }
+// Variables
+$font-size: 18px;
+$line-height: 1;
+$dark-font: $dark-font;
+$light-background: $light-background;
+$jost: $jost;
+$light-font: $light-font;
+$dark-background: $dark-background;
+$white: $white;
+$black: $black;
+$trans: $trans;
+$work-sans: $work-sans;
+$transition-speed: $transition-speed;
+$button-radius: $button-radius;
+$screen-sm: $screen-sm;
+$screen-xs: $screen-xs;
+$screen-md: $screen-md;
+$screen-xl: $screen-xl;
+$screen-full: $screen-full;
 
+// Global Styles
 html,
 body {
-  font-size: 18px;
-  line-height: 1;
+  font-size: $font-size;
+  line-height: $line-height;
   background-color: $light-background;
   font-family: $jost;
   color: $dark-font;
@@ -34,16 +44,14 @@ header,
 nav,
 footer,
 article,
-section {
-  display: block;
-}
-
+section,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  display: block;
   clear: both;
   color: currentColor;
 }
@@ -51,7 +59,6 @@ h6 {
 ol {
   margin-left: 20px;
 }
-
 li {
   list-style: none;
 }
@@ -81,21 +88,23 @@ a img {
 body {
   @media screen and (max-width: $screen-sm) {
   }
-} /* Box sizing rules */
+}
+
+// Box sizing rules
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Prevent font size inflation */
+// Prevent font size inflation
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
+// Remove default margin in favour of better control in authored CSS
 body,
 h1,
 h2,
@@ -109,19 +118,19 @@ dd {
   margin-block-end: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+// Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
 
-/* Set core body defaults */
+// Set core body defaults
 body {
   min-height: 100vh;
   line-height: 1.5;
 }
 
-/* Set shorter line heights on headings and interactive elements */
+// Set shorter line heights on headings and interactive elements
 h1,
 h2,
 h3,
@@ -132,7 +141,7 @@ label {
   line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
+// Balance text wrapping on headings
 h1,
 h2,
 h3,
@@ -140,20 +149,20 @@ h4 {
   text-wrap: balance;
 }
 
-/* A elements that don't have a class get default styles */
+// A elements that don't have a class get default styles
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
-/* Make images easier to work with */
+// Make images easier to work with
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
+// Inherit fonts for inputs and buttons
 input,
 button,
 textarea,
@@ -161,320 +170,15 @@ select {
   font: inherit;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
+// Make sure textareas without a rows attribute are not tiny
 textarea:not([rows]) {
   min-height: 10em;
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
+// Anything that has been anchored to should have extra scroll margin
 :target {
   scroll-margin-block: 5ex;
 }
 
-.img-responsive {
-  max-width: 100% !important;
-  width: 100% !important;
-  height: auto !important;
-  padding: 0 0 !important;
-  margin: 0;
-}
-
-.container-full {
-  max-width: $screen-full;
-  margin: 0 auto;
-}
-
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-
-.container {
-  max-width: $screen-xl;
-  padding: 60px 30px;
-  margin: 0 auto;
-  @media screen and (max-width: $screen-md) {
-    padding: 20px;
-  }
-  @media screen and (max-width: $screen-sm) {
-    padding: 0 15px;
-  }
-}
-
-.container-md {
-  max-width: $screen-xs;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-section {
-  padding: 80px 0;
-  @media screen and (max-width: $screen-sm) {
-    padding: 60px 0;
-  }
-  @media screen and (max-width: $screen-xs) {
-    padding: 40px 0;
-  }
-  // &#page-banner {
-  //     padding:0;
-  // }
-}
-
-a {
-  text-decoration: none;
-  -webkit-transition: $trans;
-  transition: $trans;
-  color: $white;
-  &:hover {
-    // color:$lt-red;
-    text-decoration: none;
-  }
-}
-
-.btn {
-  display: inline-block;
-  padding: 15px 40px;
-  text-decoration: none;
-  transition: $trans;
-  &:hover {
-    //  background-color: $dk-red;
-  }
-}
-
-.btn-white {
-  color: $white;
-  background-color: none;
-  border: 3px solid $white;
-  text-align: center;
-  font-family: $work-sans;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: $transition-speed linear;
-  border-radius: $button-radius;
-  text-transform: uppercase;
-
-  @media screen and (max-width: $screen-sm) {
-  }
-  &:hover {
-    text-decoration: none;
-    background-color: $white;
-    color: $white;
-  }
-  &:active {
-    background-color: $white;
-  }
-}
-
-.btn-black {
-  color: $black;
-  background-color: none;
-  border: 3px solid $black;
-  text-align: center;
-  font-family: $work-sans;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: $transition-speed linear;
-  border-radius: $button-radius;
-  text-transform: uppercase;
-
-  @media screen and (max-width: $screen-sm) {
-  }
-  &:hover {
-    text-decoration: none;
-    background-color: $white;
-    color: $black;
-  }
-  &:active {
-    background-color: $black;
-    border: 3px solid $black;
-  }
-}
-
-.btn-orange {
-  color: orange;
-  background-color: none;
-  border: 3px solid orange;
-  text-align: center;
-  font-family: $work-sans;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: $transition-speed linear;
-  border-radius: $button-radius;
-  text-transform: uppercase;
-  margin-bottom: 0 !important;
-
-  @media screen and (max-width: $screen-sm) {
-  }
-  &:hover {
-    text-decoration: none;
-    background-color: $dark-background;
-    color: $black;
-  }
-  &:active {
-    background-color: $dark-background;
-    border: 3px solid $black;
-    color: $black;
-  }
-}
-
-.orange-highlight_container {
-  position: relative;
-  display: block;
-  &:after {
-    content: "";
-    background: url("/wp-content/uploads/2022/10/signal-orange.png") no-repeat;
-    height: 230px;
-    width: 230px;
-    display: block;
-    position: absolute;
-    z-index: 20;
-    background-size: contain;
-    background-position: center center;
-    left: 410px;
-    transform: rotate(135deg);
-    top: 395px;
-  }
-
-  .orange-highlight {
-    position: relative;
-    display: block;
-    z-index: 3;
-    border-radius: 200px 0 200px 0;
-    width: 600px !important;
-    top: 30px;
-    left: 30px;
-  }
-
-  .orange-box {
-    display: block;
-    border: 6px solid $dark-background;
-    border-radius: 200px 0 200px 0;
-    position: absolute;
-    z-index: 4;
-    width: 600px;
-    height: 600px;
-  }
-}
-
-#contact-block {
-  padding: 120px 30px;
-  margin: 0;
-  background: $dark-background;
-  color: $black;
-  @media screen and (max-width: $screen-sm) {
-    padding: 60px 15px 80px 15px;
-  }
-
-  h2 {
-    font-size: 38px;
-    line-height: 52px;
-    font-family: $work-sans;
-    margin-bottom: 30px;
-    @media screen and (max-width: $screen-sm) {
-      font-size: 26px;
-      line-height: 35px;
-    }
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a {
-    color: currentColor;
-  }
-
-  a {
-    margin-top: 30px;
-    background-color: none;
-    border: 3px solid $black;
-    text-align: center;
-    font-family: $work-sans;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: $transition-speed linear;
-    border-radius: 3px;
-    text-transform: uppercase;
-
-    @media screen and (max-width: $screen-sm) {
-    }
-    &:hover {
-      text-decoration: none;
-      background-color: $black;
-      color: $dark-background;
-    }
-    &:active {
-      background-color: $black;
-      border: 3px solid $black;
-    }
-  }
-}
-
-.social {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  width: 140px;
-  align-items: center;
-  justify-items: center;
-  a {
-    width: 32px;
-    height: 32px;
-    background: $white;
-    display: block;
-    border-radius: 50%;
-    img {
-      display: block;
-      margin: 0 auto;
-
-      &.facebook {
-        padding-top: 4px;
-        max-width: 15px;
-      }
-      &.instagram {
-        padding-top: 5px;
-        max-width: 20px;
-      }
-      &.twitter {
-        padding-top: 6px;
-        max-width: 19px;
-      }
-    }
-  }
-}
+// More styles...
+// ...

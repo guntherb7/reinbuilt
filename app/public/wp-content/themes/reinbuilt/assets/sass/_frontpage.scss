@@ -1,10 +1,26 @@
+// Variables
+$primary-color: $primary-color;
+$quote-color: $quote-color;
+$normal-spacing: $normal-spacing;
+
+// Mixins
+@mixin heading-font {
+  // Include your heading font styles here
+}
+
+// Global Styles
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 #blog-banner {
   position: relative;
 }
+
 .nav--logo {
   margin: 0 auto;
   max-width: 200px;
-  width: 100%;
   height: auto;
   position: absolute;
   top: 50px;
@@ -12,12 +28,9 @@
   transform: translateX(-50%);
 }
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-.homepage {
+.homepage,
+.text-block,
+.main-content {
   margin: 0 4vw;
 }
 
@@ -37,22 +50,20 @@ figure {
   grid-template-columns: 2fr 1fr;
 }
 
-.text-block,
 .main-content {
-  margin: 0 2vw;
-}
-
-.main-content {
-  .main-content--heading {
+  .main-content--heading,
+  .main-content--copy {
     @include heading-font;
     color: $primary-color;
-    text-align: center;
-    font-size: 60px;
     letter-spacing: 5px;
   }
 
+  .main-content--heading {
+    text-align: center;
+    font-size: 60px;
+  }
+
   .main-content--copy {
-    color: $primary-color;
     text-align: left;
     font-size: 36px;
     font-family: "Jost", sans-serif;
@@ -65,31 +76,28 @@ figure {
   }
 }
 
-.process {
+.process,
+.contact,
+.get-info,
+.visualize {
   margin: $normal-spacing;
-  .main-content--heading {
-    @include heading-font;
-    color: $primary-color;
-    text-align: center;
-    font-size: 60px;
-    letter-spacing: 5px;
-  }
-  .process--img {
-    width: 100%;
-    height: auto;
-  }
-}
+  text-align: center;
 
-.contact {
-  margin: $normal-spacing;
-
-  .contact-form--heading {
+  .main-content--heading,
+  .contact-form--heading,
+  .get-info--heading,
+  .visualize--heading {
     @include heading-font;
     color: $primary-color;
     text-align: center;
     font-size: 36px;
     letter-spacing: 5px;
-    margin: 0 2vw;
+    margin: 4vw auto;
+  }
+
+  .process--img {
+    width: 100%;
+    height: auto;
   }
 
   .contact-form--copy {
@@ -121,62 +129,42 @@ figure {
       margin: 0.5vw auto;
     }
   }
-}
 
-.get-info,
-.visualize {
-  margin: $normal-spacing;
-  text-align: center;
-}
+  .get-info--subheading,
+  .visualize--subheading {
+    margin: $normal-spacing;
+  }
 
-.get-info--heading,
-.visualize--heading {
-  @include heading-font;
-  color: $primary-color;
-  text-align: center;
-  font-size: 36px;
-  letter-spacing: 5.04px;
-  margin: 4vw auto;
-}
+  .get-info--quote,
+  .visualize--quote {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.35px;
+    color: $primary-color;
+  }
 
-.get-info--subheading,
-.visualize--subheading {
-  margin: $normal-spacing;
-}
+  .get-info--quote > span,
+  .visualize--quote > span {
+    color: $quote-color;
+  }
 
-.get-info--quote,
-.visualize--quote {
-  text-align: center;
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1.35px;
-  color: $primary-color;
-}
-
-.get-info--quote > span,
-.visualize--quote > span {
-  color: $quote-color;
-}
-
-button {
-  @include heading-font;
-  color: $primary-color;
-  border-radius: 2px;
-  // border: 0.8px solid $primary-color;
-  background: #505050;
-  padding: 1vw 2vw;
-  margin: $normal-spacing;
-  font-size: 20px;
-  position: relative !important;
-}
-
-.get-info,
-.visualize {
   img {
     max-width: 1920px;
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
+}
+
+button {
+  @include heading-font;
+  color: $primary-color;
+  border-radius: 2px;
+  background: #505050;
+  padding: 1vw 2vw;
+  margin: $normal-spacing;
+  font-size: 20px;
+  position: relative !important;
 }

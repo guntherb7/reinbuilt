@@ -6,14 +6,14 @@
 **/
 
 @mixin heading-font {
-  font-family: "Jost", sans-serif;
+  font-family: $jost;
   text-transform: uppercase;
   font-weight: 300;
 }
 
 @mixin nav-font {
   color: currentColor;
-  font-family: "Syncopate", sans-serif;
+  font-family: $syncopate;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
