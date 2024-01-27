@@ -34,29 +34,22 @@ add_action('init', 'reinbuilt_register_acf_blocks');
 add_action('wp_enqueue_scripts', 'reinbuilt_child');
 function reinbuilt_child()
 {
-
 	wp_enqueue_style('child-styles', get_stylesheet_directory_uri() . '/style.css'); // Enqueue Child theme style sheet (theme info)
 	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/css/styles.css'); // Enqueue child theme styles.css
 
+	wp_register_style('jost', 'https://indestructibletype.com/fonts/Jost.css', array());
+	wp_enqueue_style('jost');
 
-	wp_register_style('open-sans', 'https://use.typekit.net/jok7wmb.css', array());
-	wp_enqueue_style('open-sans');
-
-	wp_register_style('work-sans', 'https://use.typekit.net/jok7wmb.css', array());
-	wp_enqueue_style('work-sans');
-
+	wp_register_style('syncopate', 'https://fonts.googleapis.com/css2?family=Syncopate&display=swap', array());
+	wp_enqueue_style('syncopate');
 
 	// Masonry JS
 	wp_register_script('masonry-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', null, null, true);
 	wp_enqueue_script('masonry-js');
 
-
-
-
 	// Compiled .js using Grunt.js
 	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), null, true);
 	wp_enqueue_script('custom-scripts');
-
 
 	if (is_page_template('front-page.php')) {
 
@@ -101,28 +94,6 @@ function reinbuilt_custom_logo_setup()
 }
 add_action('after_setup_theme', 'reinbuilt_custom_logo_setup');
 
-
-acf_add_options_page(
-	array(
-		'page_title' => 'Instructions',
-		'menu_title' => 'Instructions',
-		'menu_slug' => 'theme-instructions',
-		'capability' => 'edit_posts',
-		'icon_url' => 'dashicons-smiley', // Add this line and replace the second inverted commas with class of the icon you like
-		'redirect' => false
-	)
-);
-
-acf_add_options_page(
-	array(
-		'page_title' => 'Customizations',
-		'menu_title' => 'Customizations',
-		'menu_slug' => 'customizations',
-		'capability' => 'edit_posts',
-		'icon_url' => 'dashicons-admin-customizer', // Add this line and replace the second inverted commas with class of the icon you like
-		'redirect' => false
-	)
-);
 
 // Save newly created fields to child theme
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
