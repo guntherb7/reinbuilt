@@ -1005,3 +1005,4 @@ Stack trace:
 [20-Jan-2024 21:16:29 UTC] Cron unschedule event error for hook: wordfence_completeCoreUpdateNotification, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":false,"args":[]}
 [20-Jan-2024 21:17:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
 [20-Jan-2024 21:17:47 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/index.php on line 28
+[27-Jan-2024 16:13:17 UTC] Cron unschedule event error for hook: wordfence_start_scheduled_scan, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":false,"args":[1706371200]}
