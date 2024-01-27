@@ -1,7 +1,7 @@
 @use "mixins";
 
 .contact {
-  margin: 0 auto;
+  margin-inline: auto;
   display: block;
   max-width: 1600px;
   width: 100%;
@@ -9,12 +9,12 @@
   #formwrap {
     width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(0, max-content));
-    margin: 0 auto;
+    margin-inline: auto;
   }
 
   .contact-form {
     max-width: 550px;
-    margin: 0 auto;
+    margin-inline: auto;
 
     .contact-img {
       max-width: 500px;
