@@ -52,6 +52,10 @@ ol {
   margin-left: 20px;
 }
 
+li {
+  list-style: none;
+}
+
 blockquote {
   quotes: none;
   &:before,
@@ -413,7 +417,6 @@ a {
 
   a {
     margin-top: 30px;
-    color: currentColor;
     background-color: none;
     border: 3px solid $black;
     text-align: center;

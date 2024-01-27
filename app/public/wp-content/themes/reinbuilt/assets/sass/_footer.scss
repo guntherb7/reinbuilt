@@ -6,25 +6,4 @@
 **/
 
 .footer {
-  text-align: center;
-  margin: 12vw auto 0;
-
-  li {
-    list-style: none;
-
-    a {
-      @include nav-font;
-    }
-
-    .active {
-      color: #505050;
-    }
-  }
-
-  .footer--logo {
-    margin: 10vw auto 4vw;
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-  }
 }
