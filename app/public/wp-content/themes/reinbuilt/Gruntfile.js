@@ -24,6 +24,10 @@ module.exports = function (grunt) {
     },
     // Add new js files from the /assets/js/src/ directory to be compiled as well as what they should be output as
     uglify: {
+      options: {
+        mangle: false,
+        report: "min",
+      },
       min: {
         files: {
           "assets/js/scripts.min.js": ["assets/js/src/scripts.js"],
