@@ -40,7 +40,13 @@ window.addEventListener("DOMContentLoaded", function initializeDarkMode() {
     document.querySelector(".dark-icon").style.display = "block";
   }
 });
+const navLinks = document.querySelectorAll(".menu-items li a");
 
+for (const link of navLinks) {
+  if (link.href === window.location.href) {
+    link.classList.add("active");
+  }
+}
 // Smooth Scroll library
 const lenis = new Lenis();
 

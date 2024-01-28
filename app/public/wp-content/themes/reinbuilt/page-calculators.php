@@ -9,8 +9,9 @@
 
 $contact = get_field('contact_block_copy');
 get_header(); ?>
-<p>Calculators</p>
-
+<div class="content">
+    <p>Calculators</p>
+</div>
 
 
 
