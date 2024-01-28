@@ -5,15 +5,14 @@
  * @package reinbuilt
  * @author Gunther Beam LLC
  **/
-$phone = get_field('phone', 'options');
-$email = get_field('email', 'options');
-$address = get_field('address', 'options');
-$addressLink = get_field('address_link', 'options');
 
+
+// Footer content goes here
+
+// Call the wp_footer function before the closing body tag
+wp_footer();
 ?>
 
-<!-- Schema JSON-LD -->
-<?php wp_footer(); ?>
 </body>
 
 </html>
