@@ -12,6 +12,7 @@ get_header();
 ?>
 
 <main>
+	<h1>Hello world</h1>
 	<!-- Use esc_url() for secure output of URLs -->
 	<img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/01/REINBUILT_LOGO_DARK-GRAY.svg')); ?>"
 		alt="Reinbuilt Logo" class="hero--logo logo dark-icon">

@@ -4,18 +4,6 @@
  * @package reinbuilt
  * @author Gunther Beam LLC
 **/
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1920,48,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=3xs,l,l,8 */
-
-:root {
-  --step--2: clamp(0.781rem, 0.554rem + 1.139vi, 1.92rem);
-  --step--1: clamp(0.938rem, 0.645rem + 1.463vi, 2.4rem);
-  --step-0: clamp(1.125rem, 0.75rem + 1.875vi, 3rem);
-  --step-1: clamp(1.35rem, 0.87rem + 2.4vi, 3.75rem);
-  --step-2: clamp(1.62rem, 1.007rem + 3.068vi, 4.688rem);
-  --step-3: clamp(1.944rem, 1.161rem + 3.915vi, 5.859rem);
-  --step-4: clamp(2.333rem, 1.335rem + 4.991vi, 7.324rem);
-  --step-5: clamp(2.799rem, 1.528rem + 6.356vi, 9.155rem);
-}
 
 /* Fonts */
 body,
