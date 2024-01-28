@@ -18,11 +18,6 @@ $black: $black;
 $trans: $trans;
 $transition-speed: $transition-speed;
 $button-radius: $button-radius;
-$screen-sm: $screen-sm;
-$screen-xs: $screen-xs;
-$screen-md: $screen-md;
-$screen-xl: $screen-xl;
-$screen-full: $screen-full;
 
 // Global Styles
 html,
@@ -82,11 +77,6 @@ table {
 
 a img {
   border: none;
-}
-
-body {
-  @media screen and (max-width: $screen-sm) {
-  }
 }
 
 /* Box sizing rules */

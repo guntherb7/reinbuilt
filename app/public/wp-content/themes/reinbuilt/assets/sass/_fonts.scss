@@ -4,6 +4,18 @@
  * @package reinbuilt
  * @author Gunther Beam LLC
 **/
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1920,48,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=3xs,l,l,8 */
+
+:root {
+  --step--2: clamp(0.781rem, 0.554rem + 1.139vi, 1.92rem);
+  --step--1: clamp(0.938rem, 0.645rem + 1.463vi, 2.4rem);
+  --step-0: clamp(1.125rem, 0.75rem + 1.875vi, 3rem);
+  --step-1: clamp(1.35rem, 0.87rem + 2.4vi, 3.75rem);
+  --step-2: clamp(1.62rem, 1.007rem + 3.068vi, 4.688rem);
+  --step-3: clamp(1.944rem, 1.161rem + 3.915vi, 5.859rem);
+  --step-4: clamp(2.333rem, 1.335rem + 4.991vi, 7.324rem);
+  --step-5: clamp(2.799rem, 1.528rem + 6.356vi, 9.155rem);
+}
 
 /* Fonts */
 body,
@@ -19,57 +31,4 @@ ul {
   color: currentColor;
   font-family: $jost;
   font-weight: 400;
-}
-
-h1,
-h3 {
-  font-style: normal;
-  font-weight: 700;
-
-  @media screen and (max-width: $screen-xl) {
-    font-size: 48px;
-    line-height: 55px;
-  }
-
-  @media screen and (max-width: $screen-lg) {
-    font-size: 42px;
-    line-height: 50px;
-  }
-
-  @media screen and (max-width: $screen-md) {
-    font-size: 35px;
-    line-height: 36px;
-  }
-}
-
-h1 {
-  font-size: 52px;
-  line-height: 56px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 42px;
-  line-height: 45px;
-
-  @media screen and (max-width: $screen-md) {
-    font-size: 28px;
-    line-height: 30px;
-  }
-}
-
-p {
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 0;
-
-  @media screen and (max-width: $screen-lg) {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-hr {
-  margin: 25px 0;
-  border-top: 1px solid $white;
 }
