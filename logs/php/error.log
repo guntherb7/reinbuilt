@@ -1104,3 +1104,30 @@ Stack trace:
 [28-Jan-2024 17:02:50 UTC] PHP Parse error:  syntax error, unexpected token ";" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php on line 62
 [28-Jan-2024 17:03:22 UTC] PHP Parse error:  syntax error, unexpected token ";" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php on line 62
 [28-Jan-2024 17:03:22 UTC] PHP Parse error:  syntax error, unexpected token ";" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/functions.php on line 62
+[28-Jan-2024 17:59:00 UTC] [Cloudflare] ERROR: [CLIENT API] Array
+(
+    [type] => request
+    [path] => https://api.cloudflare.com/client/v4/zones/?name=localhost
+    [timeout] => 30
+    [method] => GET
+    [headers] => Array
+        (
+            [Content-Type] => application/json
+            [User-Agent] => wordpress/6.4.2; cloudflare-wordpress-plugin/4.12.4
+            [Authorization] => REDACTED
+        )
+
+)
+ 
+[28-Jan-2024 17:59:00 UTC] [Cloudflare] ERROR: [CLIENT API] Array
+(
+    [type] => response
+    [reason] => Bad Request
+    [code] => 400
+)
+ 
+[28-Jan-2024 17:59:00 UTC] [Cloudflare] ERROR: Bad Request 
+[28-Jan-2024 17:59:00 UTC] [Cloudflare] ERROR: Email address or API key invalid. 
+[28-Jan-2024 18:00:06 UTC] PHP Warning:  Undefined array key 0 in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/plugins/cloudflare/src/WordPress/ClientActions.php on line 66
+[28-Jan-2024 18:00:27 UTC] PHP Warning:  Undefined array key 0 in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/plugins/cloudflare/src/WordPress/ClientActions.php on line 66
+[28-Jan-2024 18:00:34 UTC] PHP Warning:  Undefined array key 0 in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/plugins/cloudflare/src/WordPress/ClientActions.php on line 66
