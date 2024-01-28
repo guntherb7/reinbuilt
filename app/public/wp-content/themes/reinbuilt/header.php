@@ -54,6 +54,7 @@
           <li><a href="/calculators">Calculators</a></li>
           <li><a href="/visualization">Visualization</a></li>
         </ul>
+
       </div>
     </nav>
   </header>

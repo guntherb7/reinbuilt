@@ -15,7 +15,7 @@ if (darkModeButton) {
 
 function darkMode() {
   const element = document.body;
-
+  const nav = document.querySelector(".menu-items");
   const lightIcon = document.querySelector(".light-icon");
   const darkIcon = document.querySelector(".dark-icon");
 

@@ -26,6 +26,9 @@ get_header();
 	<img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/01/REINBUILT_LOGO_LIGHT-GRAY.svg')); ?>"
 		alt="Reinbuilt Logo" class="hero--logo logo light-icon">
 	<!-- #content -->
+
+
+	[forminator_form id="123"]
 </main>
 
 <?php
