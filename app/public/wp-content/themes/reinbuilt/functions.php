@@ -17,6 +17,9 @@ require_once dirname(__FILE__) . '/includes/team.php'; // Custom Post Type Case 
  *
  * @link https://developer.wordpress.org/reference/hooks/init/
  */
+
+
+
 function reinbuilt_register_acf_blocks()
 {
 	/**
@@ -34,7 +37,7 @@ add_action('init', 'reinbuilt_register_acf_blocks');
 add_action('wp_enqueue_scripts', 'reinbuilt_child');
 function reinbuilt_child()
 {
-	wp_enqueue_style('child-styles', get_stylesheet_directory_uri() . '/style.css'); // Enqueue Child theme style sheet (theme info)
+	wp_enqueue_style('child-styles', get_stylesheet_directory_uri() . '/assets/sass/styles.min.css'); // Enqueue Child theme style sheet (theme info)
 	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/sass/styles.min.css'); // Enqueue child theme styles.css
 
 	wp_register_style('jost', 'https://indestructibletype.com/fonts/Jost.css', array());
@@ -42,10 +45,6 @@ function reinbuilt_child()
 
 	wp_register_style('syncopate', 'https://fonts.googleapis.com/css2?family=Syncopate&display=swap', array());
 	wp_enqueue_style('syncopate');
-
-	// Masonry JS
-	wp_register_script('masonry-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', null, null, true);
-	wp_enqueue_script('masonry-js');
 
 	// Compiled .js using Grunt.js
 	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), null, true);
@@ -159,7 +158,7 @@ function my_login_logo()
 	<style type="text/css">
 		#login h1 a,
 		.login h1 a {
-			background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png);
+			background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/REINBUILT_LOGO_BLACK.svg);
 			height: 45px;
 			width: 204px;
 			background-size: 204px 45px;

@@ -5,15 +5,7 @@
  */
 
 // Define query arguments
-$args = array(
-	'post_type' => 'post',
-	'posts_per_page' => 10,
-	'post_status' => 'publish',
-	'order' => 'DESC',
-);
 
-// Create a new instance of WP_Query
-$the_query = new WP_Query($args);
 
 // Include the header
 get_header();
