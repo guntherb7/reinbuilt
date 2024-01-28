@@ -9,7 +9,19 @@ module.exports = function (grunt) {
       },
       all: ["assets/js/src/*.js"],
     },
-
+    modernizr: {
+      dist: {
+        parseFiles: true,
+        customTests: [],
+        devFile: "assets/js/src/scripts.js",
+        dest: "assets/js/src/scripts.js",
+        tests: [
+          // Tests
+        ],
+        options: ["setClasses"],
+        uglify: true,
+      },
+    },
     // Add new js files from the /assets/js/src/ directory to be compiled as well as what they should be output as
     uglify: {
       min: {
@@ -39,17 +51,6 @@ module.exports = function (grunt) {
         },
       },
     },
-    // This can be run as a watch task which looks for changes to files and compiles in real time
-    watch: {
-      css: {
-        files: ["assets/sass/*.scss"],
-        tasks: ["sass"],
-      },
-      scripts: {
-        files: ["assets/js/src/*.js"],
-        tasks: ["jshint", "concat", "uglify"],
-      },
-    },
     cssmin: {
       target: {
         files: [
@@ -60,6 +61,20 @@ module.exports = function (grunt) {
             ext: ".min.css",
           },
         ],
+      },
+    }, // This can be run as a watch task which looks for changes to files and compiles in real time
+    watch: {
+      scss: {
+        files: ["assets/sass/*.scss"],
+        tasks: ["sass"],
+      },
+      css: {
+        files: ["assets/sass/styles.css"],
+        tasks: ["cssmin"],
+      },
+      scripts: {
+        files: ["assets/js/src/*.js"],
+        tasks: ["jshint", "concat", "uglify"],
       },
     },
   });
@@ -80,6 +95,7 @@ module.exports = function (grunt) {
     "sass",
     "cssmin",
     "concat",
+    "modernizr",
     "watch",
   ]);
 };
