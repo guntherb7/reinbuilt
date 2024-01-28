@@ -19,7 +19,6 @@ module.exports = function (grunt) {
         },
       },
     },
-
     sass: {
       dist: {
         options: {
@@ -28,7 +27,7 @@ module.exports = function (grunt) {
         },
         files: {
           // Dictionary of files // 'destination': 'source'
-          "assets/css/styles.css": "assets/sass/styles.scss",
+          "assets/sass/styles.css": "assets/sass/styles.scss",
         },
       },
     },
@@ -51,15 +50,36 @@ module.exports = function (grunt) {
         tasks: ["jshint", "concat", "uglify"],
       },
     },
+    cssmin: {
+      target: {
+        files: [
+          {
+            expand: true,
+            src: "assets/sass/styles.css",
+            dest: "./",
+            ext: ".min.css",
+          },
+        ],
+      },
+    },
   });
 
   // Load tasks
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-sass");
-  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-concat");
+  grunt.loadNpmTasks("grunt-modernizr");
+  grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Default task(s).
-  grunt.registerTask("default", ["jshint", "uglify", "sass"]);
+  grunt.registerTask("default", [
+    "jshint",
+    "uglify",
+    "sass",
+    "cssmin",
+    "concat",
+    "watch",
+  ]);
 };

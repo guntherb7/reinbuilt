@@ -35,7 +35,7 @@ add_action('wp_enqueue_scripts', 'reinbuilt_child');
 function reinbuilt_child()
 {
 	wp_enqueue_style('child-styles', get_stylesheet_directory_uri() . '/style.css'); // Enqueue Child theme style sheet (theme info)
-	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/css/styles.css'); // Enqueue child theme styles.css
+	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/sass/styles.min.css'); // Enqueue child theme styles.css
 
 	wp_register_style('jost', 'https://indestructibletype.com/fonts/Jost.css', array());
 	wp_enqueue_style('jost');
