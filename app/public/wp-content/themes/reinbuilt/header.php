@@ -47,7 +47,7 @@
         <span class="line line3"></span>
       </div>
       <div class="menu-items">
-        <ul role="list">
+        <ul role="list" lass="menu-items">
           <li><a href="/">Architecture</a></li>
           <li><a href="/interior">Interior</a></li>
           <li><a href="/restoration">Restoration</a></li>

@@ -19,17 +19,14 @@ $the_query = new WP_Query($args);
 get_header();
 ?>
 
-<div id="blog">
-	<div class="container blog-posts">
-		<div id="blog-banner">
-			<!-- Use esc_url() for secure output of URLs -->
-			<img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/01/REINBUILT_LOGO_DARK-GRAY.svg')); ?>"
-				alt="Reinbuilt Logo" class="hero--logo nav--logo logo">
-		</div>
-		<h1>Hello World</h1>
-	</div>
+<main>
+	<!-- Use esc_url() for secure output of URLs -->
+	<img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/01/REINBUILT_LOGO_DARK-GRAY.svg')); ?>"
+		alt="Reinbuilt Logo" class="hero--logo logo dark-icon">
+	<img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/01/REINBUILT_LOGO_LIGHT-GRAY.svg')); ?>"
+		alt="Reinbuilt Logo" class="hero--logo logo light-icon">
 	<!-- #content -->
-</div>
+</main>
 
 <?php
 // Include the footer
