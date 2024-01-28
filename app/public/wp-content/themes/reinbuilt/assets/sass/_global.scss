@@ -6,8 +6,6 @@
 */
 
 // Variables
-$font-size: 18px;
-$line-height: 1;
 $dark-font: $dark-font;
 $light-background: $light-background;
 $jost: $jost;
@@ -22,11 +20,10 @@ $button-radius: $button-radius;
 // Global Styles
 html,
 body {
-  font-size: $font-size;
-  line-height: $line-height;
   background-color: $light-background;
   font-family: $jost;
   color: $dark-font;
+  margin: 0;
 }
 
 .dark-mode {
@@ -48,13 +45,6 @@ h6 {
   display: block;
   clear: both;
   color: currentColor;
-}
-
-ol {
-  margin-left: 20px;
-}
-li {
-  list-style: none;
 }
 
 blockquote {
