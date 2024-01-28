@@ -1092,3 +1092,9 @@ Stack trace:
 #6 /Users/guntherbeam/Local Sites/reinbuilt/app/public/index.php(17): require('/Users/guntherb...')
 #7 {main}
   thrown in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/footer.php on line 8
+[28-Jan-2024 15:13:46 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[28-Jan-2024 15:13:46 UTC] Cron reschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[28-Jan-2024 15:13:46 UTC] Cron unschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[28-Jan-2024 15:13:46 UTC] Cron reschedule event error for hook: wp_update_plugins, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[28-Jan-2024 15:13:46 UTC] Cron unschedule event error for hook: wp_update_plugins, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[28-Jan-2024 15:13:46 UTC] Cron reschedule event error for hook: wp_scheduled_auto_draft_delete, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
