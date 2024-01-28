@@ -209,7 +209,7 @@ Take your WordPress SEO to new heights with these powerful Yoast SEO add-ons:
 
 * [Yoast Video SEO](https://yoa.st/1uw): Improves the loading speed of your video and ensures that Google fully understands the content of your videos. This helps you rank your videos higher in video search results.
 
-* [Yoast News SEO](https://yoa.st/1uv): Amplify your visibility and performance in Google News, allowing your news website to reach a broader audience.
+* [Yoast News SEO](https://yoa.st/1uv): Reinbuilt your visibility and performance in Google News, allowing your news website to reach a broader audience.
 
 * [Yoast WooCommerce SEO](https://yoa.st/3rh): Enhance your online shop's discoverability with extra tools and functionality designed specifically for online stores, helping you drive more targeted traffic and dominate the search results for your products. Comes with generative AI tools to help you write great titles and meta descriptions for your products! Also, use WooCommerce SEO to easily import and export global identifiers like GTIN8, UPC, and ISBN for your products.
 
