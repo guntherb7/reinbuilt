@@ -47,16 +47,67 @@ for (const link of navLinks) {
     link.classList.add("active");
   }
 }
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
+ScrollSmoother.create({
+  smooth: 1,
+  effects: true,
+  smoothTouch: 0.1,
+});
+
+// Logo to header animation
+let logoTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: document.body,
+    start: 0,
+    end: () => window.innerHeight * 1.2,
+    scrub: 0.6,
+  },
+});
+logoTl.fromTo(
+  ".logo",
+  {
+    top: "20vw",
+    yPercent: -50,
+    scale: 1.7,
+  },
+  {
+    top: "2vw",
+    yPercent: 0,
+    scale: 1,
+    duration: 0.8,
+  }
+);
+
+// Attempt to snap sections on scroll
+gsap.utils.toArray("section").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top",
+    pin: true,
+    pinSpacing: false,
+  });
+});
+
+ScrollTrigger.create({
+  snap: 1 / 5, // snap whole page to the closest section!
+});
 // Smooth Scroll library
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
   console.log(e);
 });
+lenis.on("scroll", ScrollTrigger.update);
 
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
 }
-
-requestAnimationFrame(raf);

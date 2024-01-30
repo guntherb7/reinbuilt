@@ -8,7 +8,3 @@
 /*jslint white: true */
 /*jshint browser: true, jquery: true */
 /*jshint esversion: 6 */
-
-jQuery(function ($) {
-  "use strict";
-});
