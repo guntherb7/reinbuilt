@@ -1224,3 +1224,8 @@ Stack trace:
 [28-Jan-2024 20:46:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-visualization.php on line 27
 [28-Jan-2024 20:46:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-visualization.php on line 28
 [28-Jan-2024 20:46:53 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-visualization.php on line 28
+[30-Jan-2024 15:22:47 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[30-Jan-2024 15:23:23 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[30-Jan-2024 15:24:02 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[30-Jan-2024 15:24:28 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[30-Jan-2024 15:24:54 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905
