@@ -10,6 +10,7 @@
 // Include the header
 get_header();
 ?>
+
 <!-- <div class="content">
 	<h1>Hello world</h1>
 Use esc_url() for secure output of URLs
@@ -43,16 +44,9 @@ Use esc_url() for secure output of URLs
 	<div class="wp-block-media-text is-stacked-on-mobile is-vertically-aligned-center">
 		<figure class="wp-block-media-text__media"><img src="https://s.w.org/images/core/5.8/architecture-04.jpg"
 				alt="Close-up, abstract view of architecture." /></figure>
-		<div class="wp-block-media-text__content">
-			<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#000000"}}} -->
-			<h3 class="wp-block-heading has-text-align-center has-text-color" style="color:#000000"><strong>Open
-					Spaces</strong></h3>
-			<!-- /wp:heading -->
-
-			<!-- wp:paragraph {"align":"center","fontSize":"extra-small"} -->
-			<p class="has-text-align-center has-extra-small-font-size"><a href="#">See case study ↗</a></p>
-			<!-- /wp:paragraph -->
-		</div>
+		<!-- wp:forminator/forms {"module_id":"123"} -->
+		<div class="forminator-guttenberg">[forminator_form id="123"]</div>
+		<!-- /wp:forminator/forms -->
 	</div>
 	<!-- /wp:media-text -->
 </section>
