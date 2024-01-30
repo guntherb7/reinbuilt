@@ -8,7 +8,8 @@ header {
     z-index: 999;
 
     .menu-items {
-      display: flex;
+      //should be the final css: display: flex;
+      display: none;
       flex-direction: column;
       background-color: $light-background;
       padding-top: 120px;
