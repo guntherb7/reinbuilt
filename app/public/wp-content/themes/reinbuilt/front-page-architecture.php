@@ -10,7 +10,6 @@
 // Include the header
 get_header();
 ?>
-
 <!-- <div class="content">
     <h1>Hello world</h1>
 Use esc_url() for secure output of URLs
