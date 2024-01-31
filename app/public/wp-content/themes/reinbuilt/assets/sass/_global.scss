@@ -12,7 +12,9 @@ body {
   position: relative;
   height: 100%;
 }
-body {
+:root {
+  margin: 0;
+  position: relative;
   background-color: $light-background;
   font-family: $jost;
   color: $dark-font;
@@ -159,6 +161,3 @@ textarea:not([rows]) {
 }
 
 // More styles...
-section {
-  padding-block: 60px;
-}

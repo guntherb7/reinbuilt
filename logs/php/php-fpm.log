@@ -279,3 +279,8 @@
 [31-Jan-2024 12:36:19] NOTICE: exiting, bye-bye!
 [31-Jan-2024 12:36:24] NOTICE: fpm is running, pid 17071
 [31-Jan-2024 12:36:24] NOTICE: ready to handle connections
+[31-Jan-2024 15:48:35] NOTICE: Terminating ...
+[31-Jan-2024 15:48:35] NOTICE: Terminating ...
+[31-Jan-2024 15:48:35] NOTICE: exiting, bye-bye!
+[31-Jan-2024 15:48:39] NOTICE: fpm is running, pid 29675
+[31-Jan-2024 15:48:39] NOTICE: ready to handle connections
