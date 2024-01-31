@@ -15,10 +15,12 @@ get_header();
 <div class="swiper hero-swiper">
 	<div class="swiper-wrapper hero">
 		<div class="swiper-slide">
-			<img class="hero--image" alt="" src="https://s.w.org/images/core/5.8/forest.jpg" data-object-fit="cover" />
+			<img class="hero--image" alt="" src="https://s.w.org/images/core/5.8/forest.jpg" data-object-fit="cover"
+				loading="eager" fetchpriority="high" width="1920" height="1121" />
 		</div>
 		<div class="swiper-slide">
-			<img class="hero--image" alt="" src="https://s.w.org/images/core/5.8/forest.jpg" data-object-fit="cover" />
+			<img class="hero--image" alt="" src="https://s.w.org/images/core/5.8/forest.jpg" data-object-fit="cover"
+				width="1920" height="1121" />
 		</div>
 	</div>
 	<!--<img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/01/REINBUILT_LOGO_LIGHT-GRAY.svg')); ?>"
@@ -31,35 +33,35 @@ get_header();
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>
@@ -70,35 +72,35 @@ get_header();
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>
@@ -109,35 +111,35 @@ get_header();
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="https://placehold.co/300x300/png" loading="lazy" />
+			<img src="https://placehold.co/300x300/png" loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>

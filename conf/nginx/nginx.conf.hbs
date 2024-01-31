@@ -4,4 +4,9 @@ client_max_body_size 1000M; default_type application/octet-stream; access_log
 off; sendfile off; keepalive_timeout 3; fastcgi_buffers 32 32k;
 fastcgi_buffer_size 32k; fastcgi_read_timeout 1800s; map $http_x_forwarded_proto
 $resolved_scheme { default "http"; "https" "https"; } map $resolved_scheme
-$fastcgi_https { default ''; https on; } include site.conf; }
+$fastcgi_https { default ''; https on; } include site.conf; gzip on; gzip_vary
+on; gzip_proxied any; gzip_comp_level 6; gzip_buffers 16 8k; gzip_http_version
+1.1; gzip_types image/svg+xml text/plain text/html text/xml text/css
+text/javascript application/xml application/xhtml+xml application/rss+xml
+application/javascript application/x-javascript application/x-font-ttf
+application/vnd.ms-fontobject font/opentype font/ttf font/eot font/otf; }

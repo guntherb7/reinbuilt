@@ -1,0 +1,3 @@
+[Wed Jan 31 17:14:02.690666 2024] [mpm_event:notice] [pid 35939:tid 8668471872] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Wed Jan 31 17:14:02.691618 2024] [core:notice] [pid 35939:tid 8668471872] AH00094: Command line: '/Users/guntherbeam/Library/Application Support/Local/lightning-services/apache-2.4.43+8/bin/darwin/bin/httpd -D FOREGROUND -f /Users/guntherbeam/Library/Application Support/Local/run/E4W0JBb-6/conf/apache/apache2.conf'
+[Wed Jan 31 17:14:19.165766 2024] [mpm_event:notice] [pid 35939:tid 8668471872] AH00491: caught SIGTERM, shutting down
