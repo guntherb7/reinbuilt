@@ -1,0 +1,29 @@
+.swiper {
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  margin: 60px auto;
+
+  .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $dark-font;
+  }
+}

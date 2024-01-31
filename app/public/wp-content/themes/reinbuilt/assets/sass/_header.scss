@@ -1,110 +1,120 @@
-header {
-  margin: 0;
-  nav {
-    position: relative;
-    max-width: 100vw;
+nav {
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    background-color: $light-background;
+    margin: 0 auto;
+    padding-top: 120px;
+    height: 100vh;
     width: 100%;
-    height: 60px;
-    z-index: 999;
+    transform: translateY(150%);
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+}
 
-    .menu-items {
-      //should be the final css: display: flex;
-      display: none;
-      flex-direction: column;
-      background-color: $light-background;
-      padding-top: 120px;
-      transform: translateY(100%);
-      transition: transform 0.5s ease-in-out;
-      text-align: center;
-    }
-    a {
-      @include nav-font;
-      padding: 0.7rem;
-    }
-    .active {
-      text-decoration: underline;
-    }
-    .checkbox {
-      position: absolute;
+nav {
+  position: relative;
+  display: block;
+  max-width: 100vw;
+  width: 100%;
+  margin: auto;
+  height: 60px;
+  z-index: 999;
+
+  a {
+    @include nav-font;
+    text-decoration: none;
+    color: currentColor;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    text-transform: uppercase;
+  }
+
+  .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 12px;
+    right: 17px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .hamburger-lines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 26px;
+    width: 32px;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .nav-icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    fill: currentColor;
+    right: 75px;
+    top: 13px;
+    display: none;
+    width: 2em;
+    height: 2em;
+    z-index: 2;
+  }
+
+  .hamburger-lines {
+    .line {
       display: block;
-      height: 40px;
-      width: 40px;
-      top: 12px;
-      right: 17px;
-      z-index: 5;
-      opacity: 0;
-      cursor: pointer;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: currentColor;
     }
 
-    .hamburger-lines,
-    .nav-icon {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      fill: currentColor;
-      right: 75px;
-      top: 13px;
-      z-index: 2;
+    .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
     }
 
-    .hamburger-lines {
-      height: 26px;
-      width: 32px;
-      top: 17px;
-      right: 20px;
+    .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
 
-      .line {
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: currentColor;
-      }
+    .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  }
 
+  input[type="checkbox"]:checked {
+    ~ .menu-items {
+      transform: translateX(0);
+    }
+
+    ~ .hamburger-lines {
       .line1 {
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
+        transform: rotate(45deg);
       }
 
       .line2 {
-        transition: transform 0.2s ease-in-out;
+        transform: scaleY(0);
       }
 
       .line3 {
-        transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
+        transform: rotate(-45deg);
       }
     }
 
-    .nav-icon {
+    ~ .logo {
       display: none;
-      width: 2em;
-      height: 2.2em;
-    }
-
-    input[type="checkbox"]:checked {
-      ~ .menu-items {
-        transform: translateX(0);
-      }
-
-      ~ .hamburger-lines {
-        .line1 {
-          transform: rotate(45deg);
-        }
-
-        .line2 {
-          transform: scaleY(0);
-        }
-
-        .line3 {
-          transform: rotate(-45deg);
-        }
-      }
-
-      ~ .logo {
-        display: none;
-      }
     }
   }
 }
