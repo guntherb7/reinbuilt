@@ -30,6 +30,8 @@ get_header();
 <!-- Hero END -->
 
 <!-- Swiper -->
+<h1 class="hero--logo logo dark-icon text-center">Reinbuilt</h1>
+<h2 class="text-center">We build better because we communicate better</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
@@ -69,6 +71,7 @@ get_header();
 	<div class="swiper-button-prev"></div>
 </div>
 <!-- Swiper 2 -->
+<h3 class="text-center">Architecture</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
@@ -108,6 +111,7 @@ get_header();
 	<div class="swiper-button-prev"></div>
 </div>
 <!-- Swiper 3 -->
+<h3 class="text-center">Interior</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">

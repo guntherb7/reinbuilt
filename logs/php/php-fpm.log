@@ -304,3 +304,11 @@
 [31-Jan-2024 17:38:18] NOTICE: exiting, bye-bye!
 [01-Feb-2024 09:38:15] NOTICE: fpm is running, pid 40342
 [01-Feb-2024 09:38:15] NOTICE: ready to handle connections
+[01-Feb-2024 12:31:41] NOTICE: Terminating ...
+[01-Feb-2024 12:31:41] NOTICE: exiting, bye-bye!
+[01-Feb-2024 12:31:42] NOTICE: fpm is running, pid 50501
+[01-Feb-2024 12:31:42] NOTICE: ready to handle connections
+[01-Feb-2024 12:31:42] NOTICE: Terminating ...
+[01-Feb-2024 12:31:42] NOTICE: exiting, bye-bye!
+[01-Feb-2024 12:31:43] NOTICE: fpm is running, pid 50522
+[01-Feb-2024 12:31:43] NOTICE: ready to handle connections
