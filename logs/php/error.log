@@ -1231,3 +1231,12 @@ Stack trace:
 [30-Jan-2024 15:24:54 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905
 [31-Jan-2024 20:48:41 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [01-Feb-2024 17:31:50 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[05-Feb-2024 19:33:13 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query 
+INSERT INTO wp_actionscheduler_actions ( `hook`, `status`, `scheduled_date_gmt`, `scheduled_date_local`, `schedule`, `group_id`, `priority`, `args` )
+SELECT 'forminator_daily_cron', 'pending', '2024-02-06 20:33:13', '2024-02-06 20:33:13', 'O:30:\"ActionScheduler_SimpleSchedule\":2:{s:22:\"\0*\0scheduled_timestamp\";i:1707251593;s:41:\"\0ActionScheduler_SimpleSchedule\0timestamp\";i:1707251593;}', 1, 10, '[]' FROM DUAL
+WHERE ( 
+SELECT action_id FROM wp_actionscheduler_actions
+WHERE status IN ( 'pending', 'in-progress' )
+AND hook = 'forminator_daily_cron'
+AND `group_id` = 1
+ LIMIT 1 ) IS NULL made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Forminator_Fields->schedule_forminator_daily_cron, as_schedule_single_action, ActionScheduler_ActionFactory->create, ActionScheduler_ActionFactory->store_unique_action, ActionScheduler_DBStore->save_unique_action, ActionScheduler_DBStore->save_action_to_db

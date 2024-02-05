@@ -23,11 +23,19 @@ body {
 .content {
   margin-inline: auto;
 }
+
 .dark-mode {
   background-color: $dark-background !important;
   color: $light-font;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
 header,
 nav,
 footer,

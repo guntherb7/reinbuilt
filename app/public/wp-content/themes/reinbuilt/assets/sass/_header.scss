@@ -22,12 +22,8 @@ nav {
 
   a {
     @include nav-font;
-    text-decoration: none;
-    color: currentColor;
-    font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
-    text-transform: uppercase;
   }
 
   .checkbox {
