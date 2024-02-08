@@ -1240,3 +1240,7 @@ WHERE status IN ( 'pending', 'in-progress' )
 AND hook = 'forminator_daily_cron'
 AND `group_id` = 1
  LIMIT 1 ) IS NULL made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Forminator_Fields->schedule_forminator_daily_cron, as_schedule_single_action, ActionScheduler_ActionFactory->create, ActionScheduler_ActionFactory->store_unique_action, ActionScheduler_DBStore->save_unique_action, ActionScheduler_DBStore->save_action_to_db
+[07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3294
+[07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296
+[07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3294
+[07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296

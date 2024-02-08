@@ -5,12 +5,6 @@
  * @author Gunther Beam LLC
 **/
 
-@mixin heading-font {
-  font-family: $jost;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
 @mixin nav-font {
   color: currentColor;
   font-family: $syncopate;
@@ -20,4 +14,15 @@
   letter-spacing: 3.6px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@mixin heading-font {
+  font-family: $jost;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@mixin paragraph-font {
+  font-family: $jost;
+  font-weight: 200;
 }

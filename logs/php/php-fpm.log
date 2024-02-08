@@ -314,3 +314,13 @@
 [01-Feb-2024 12:31:43] NOTICE: ready to handle connections
 [05-Feb-2024 14:32:09] NOTICE: fpm is running, pid 6104
 [05-Feb-2024 14:32:09] NOTICE: ready to handle connections
+[07-Feb-2024 20:13:18] NOTICE: Terminating ...
+[07-Feb-2024 20:13:18] NOTICE: Terminating ...
+[07-Feb-2024 20:13:18] NOTICE: Terminating ...
+[07-Feb-2024 20:13:18] NOTICE: exiting, bye-bye!
+[07-Feb-2024 20:13:24] NOTICE: fpm is running, pid 22780
+[07-Feb-2024 20:13:24] NOTICE: ready to handle connections
+[07-Feb-2024 20:24:51] NOTICE: Terminating ...
+[07-Feb-2024 20:24:51] NOTICE: exiting, bye-bye!
+[07-Feb-2024 20:25:30] NOTICE: fpm is running, pid 23608
+[07-Feb-2024 20:25:30] NOTICE: ready to handle connections

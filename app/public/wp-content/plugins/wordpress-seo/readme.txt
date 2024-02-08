@@ -5,7 +5,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: SEO, XML sitemap, Content analysis, Readability, Schema
 Tested up to: 6.4
-Stable tag: 21.9.1
+Stable tag: 22.0
 Requires PHP: 7.2.5
 
 Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.
@@ -209,7 +209,7 @@ Take your WordPress SEO to new heights with these powerful Yoast SEO add-ons:
 
 * [Yoast Video SEO](https://yoa.st/1uw): Improves the loading speed of your video and ensures that Google fully understands the content of your videos. This helps you rank your videos higher in video search results.
 
-* [Yoast News SEO](https://yoa.st/1uv): Reinbuilt your visibility and performance in Google News, allowing your news website to reach a broader audience.
+* [Yoast News SEO](https://yoa.st/1uv): Amplify your visibility and performance in Google News, allowing your news website to reach a broader audience.
 
 * [Yoast WooCommerce SEO](https://yoa.st/3rh): Enhance your online shop's discoverability with extra tools and functionality designed specifically for online stores, helping you drive more targeted traffic and dominate the search results for your products. Comes with generative AI tools to help you write great titles and meta descriptions for your products! Also, use WooCommerce SEO to easily import and export global identifiers like GTIN8, UPC, and ISBN for your products.
 
@@ -342,6 +342,17 @@ Your question has most likely been answered on our help center: [yoast.com/help/
 
 == Changelog ==
 
+= 22.0 =
+
+Release date: 2024-02-06
+
+Yoast SEO 22.0 is out today. This release comes with many behind-the-scenes improvements and general enhancements. Find out more about what's new in Yoast SEO 22.0 in [our release post](https://yoa.st/release-6-2-24)!
+
+#### Bugfixes
+
+* Fixes a bug where the `get_head` REST route would return a `rest_invalid_param` if the URL contains a multiple words search string. Props to @lucymtc.
+* Fixes a bug where using a `blog` prefix in the permalink structure with _Strip category base_ enabled would prevent the blog page from being accessible.
+
 = 21.9.1 =
 
 Release date: 2024-01-25
@@ -377,37 +388,6 @@ We've just released Yoast SEO 21.9. This release comes with many behind-the-scen
 * Improves PHP 8.2 compatibility.
 * Sets the minimum supported WordPress version to 6.3.
 * Removes the `WEBPAGE_HASH` constant that had been deprecated in Yoast SEO 19.3 (July 2022).
-
-= 21.8.1 =
-
-Release date: 2024-01-19
-
-#### Bugfixes
-
-* Fixes a bug where our block editor integration would no longer work together with Gutenberg 17.4.1.
-* Fixes a bug where our block editor integration would no longer work together with Gutenberg 17.5.
-
-= 21.8 =
-
-Release date: 2024-01-09
-
-We've just released Yoast SEO 21.8. In this release, we've focused on general enhancements and fixes to improve how your WordPress SEO plugin functions. Find out more about what's new in Yoast SEO 21.8 in [our release post](https://yoa.st/release-9-1-24)!
-
-#### Enhancements
-
-* Aligns the styling of the replacement variables in the post editor with the styling in the settings.
-* Improves the centering of the eye icon in the highlighting button across editors.
-
-#### Bugfixes
-
-* Fixes a bug where highlighting for the _keyphrase density_ assessment would not work when using the latest version of Gutenberg (17.3.0).
-
-#### Other
-
-* Adds a JavaScript action (`yoast.analysis.applyMarks`) that allow users to implement the highlighting functionality in other editors.
-* Adds a notification in the sidebar to leave a quick review.
-* Removes a set of Elementor widgets from the content analysis to make the analysis results more accurate.
-* Re-orders menu items in block editor metabox and sidebar, classic editor metabox and Elementor editor sidebar to be consistent with Yoast SEO Premium.
 
 = Earlier versions =
 For the changelog of earlier versions, please refer to [the changelog on yoast.com](https://yoa.st/yoast-seo-changelog).

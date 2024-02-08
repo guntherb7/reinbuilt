@@ -6,6 +6,8 @@
   margin: 30px auto;
 
   .swiper-slide {
+    max-width: 400px;
+    max-height: 400px;
     width: 100%;
     height: auto;
   }
@@ -15,6 +17,7 @@
     height: auto;
     max-width: 400px;
     max-height: 400px;
+    object-fit: fill;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

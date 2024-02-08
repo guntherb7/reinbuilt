@@ -60,6 +60,6 @@ p,
 a,
 ul,
 li {
-  font-family: $jost, sans-serif;
+  @include paragraph-font;
   font-size: unquote("clamp(1.5rem, 0.709rem + 0.957vw, 1.3rem)");
 }
