@@ -55,11 +55,11 @@
 <h3 class="text-center project-title">Baxter</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-75.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-75.jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77.jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
@@ -106,8 +106,9 @@
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-37.png"
-				loading="lazy" alt="placeholder" />
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-37-jpg.webp" loading="lazy"
+				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 
@@ -115,8 +116,9 @@
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36.png"
-				loading="lazy" alt="placeholder" />
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36-jpg.webp" loading="lazy"
+				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12.png"
@@ -143,7 +145,7 @@
 <h3 class="text-center">Inspired design impeccably built</h3>
 <h3 class="text-center">Design build process</h3>
 <img src="http://localhost:10020/wp-content/uploads/2024/02/15-STEPS_SCHEMATIC.png" loading="lazy"
-	alt="Design Build Process Schematic" class="build-process" />
+	alt="Design Build Process Schematic" class="build-process" width="1300" height="170" />
 <section class="grid grid-2  project-outline">
 	<div>
 		<h2 class="project-title">Project outline</h2>
