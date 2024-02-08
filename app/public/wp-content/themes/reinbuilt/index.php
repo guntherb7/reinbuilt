@@ -12,39 +12,42 @@
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img
-				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_FrontDoor.png" loading="lazy"
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp" loading="lazy"
 				alt="Mountain View Home Front Door" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
-				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Stairwell.png" loading="lazy"
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Stairwell-jpg.webp" loading="lazy"
 				alt="Mountain View Home Stairwell" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Stairs.png"
-				loading="lazy" alt="Mountain View Home Stairs" />
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Stairs-jpg.webp" loading="lazy"
+				alt="Mountain View Home Stairs" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
-				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_HallwayExtended.png" loading="lazy"
-				alt="Mountain View Home Hallway" />
-			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Kitchen.png"
-				loading="lazy" alt="Mountain View Home Kitchen" />
-			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_BackDoor.png"
-				loading="lazy" alt="Mountain View Home Patio" />
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_HallwayExtended-jpg.webp"
+				loading="lazy" alt="Mountain View Home Hallway" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
-				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_MasterBedrmToBath.png"
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Kitchen-jpg.webp" loading="lazy"
+				alt="Mountain View Home Kitchen" />
+			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		</div>
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_BackDoor-jpg.webp" loading="lazy"
+				alt="Mountain View Home Patio" />
+			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		</div>
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_MasterBedrmToBath-jpg.webp"
 				loading="lazy" alt="Mountain View Home Master Bedroom" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
-				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_MasterBedrmSittingArea.png"
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_MasterBedrmSittingArea-jpg.webp"
 				loading="lazy" alt="Mountain View Home Master Sitting Area" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
@@ -55,43 +58,43 @@
 <h3 class="text-center project-title">Baxter</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-75.jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-75-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77.jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-66.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-66-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-23.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-23-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-32.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-32-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-36.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-36-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-49.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-49-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-4.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-4-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-6.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-6-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-54.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-54-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
@@ -102,7 +105,7 @@
 <h3 class="text-center project-title">Orange</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-3.png"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-3-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
@@ -112,8 +115,9 @@
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-15.png"
-				loading="lazy" alt="placeholder" />
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-15-jpg.webp" loading="lazy"
+				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
@@ -121,20 +125,23 @@
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12.png"
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12-jpg.webp" loading="lazy"
+				alt="placeholder" />
+			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		</div>
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-11-jpg.webp" loading="lazy"
+				alt="placeholder" />
+			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		</div>
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-8-jpg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-11.png"
-				loading="lazy" alt="placeholder" />
-			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-8.png"
-				loading="lazy" alt="placeholder" />
-			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-27.png"
-				loading="lazy" alt="placeholder" />
+		<div class="swiper-slide"><img
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-27-jpg.webp" loading="lazy"
+				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>
@@ -144,7 +151,7 @@
 <h2 class="hero--logo logo dark-icon text-center">Reinbuilt</h2>
 <h3 class="text-center">Inspired design impeccably built</h3>
 <h3 class="text-center">Design build process</h3>
-<img src="http://localhost:10020/wp-content/uploads/2024/02/15-STEPS_SCHEMATIC.png" loading="lazy"
+<img src="http://localhost:10020/wp-content/uploads/2024/02/15-STEPS_SCHEMATIC-scaled.webp" loading="lazy"
 	alt="Design Build Process Schematic" class="build-process" width="1300" height="170" />
 <section class="grid grid-2  project-outline">
 	<div>
@@ -175,10 +182,12 @@
 			and architectural finishes. This is also the stage where we finalize furniture for the interior design
 			package.</p>
 	</div>
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77.png" loading="lazy" alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77-jpg.webp" loading="lazy"
+		alt="placeholder" />
 </section>
 <section class="grid grid-2 project-outline">
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-10.png" loading="lazy" alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-10-jpg.webp" loading="lazy"
+		alt="placeholder" />
 	<div>
 		<h2 class="project-title">Project outline</h2>
 		<p>Step 1: Programming and Discovery <br>
@@ -208,5 +217,5 @@
 			package.</p>
 	</div>
 </section>
-<img src="http://localhost:10020/wp-content/uploads/2024/02/Photo749110o-1.png" loading="lazy" alt="placeholder" />
+<img src="http://localhost:10020/wp-content/uploads/2024/02/Photo749110o-1-jpg.webp" loading="lazy" alt="placeholder" />
 <?php get_footer(); ?>
