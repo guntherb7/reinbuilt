@@ -29,6 +29,15 @@ function db_dequeue_block_styles_on_home()
 }
 add_action('wp_enqueue_scripts', 'db_dequeue_block_styles_on_home', 100);
 
+// Remove dashicons in frontend for unauthenticated users
+add_action('wp_enqueue_scripts', 'bs_dequeue_dashicons');
+function bs_dequeue_dashicons()
+{
+	if (!is_user_logged_in()) {
+		wp_deregister_style('dashicons');
+	}
+}
+
 // function reinbuilt_register_acf_blocks()
 // {
 // 	/**

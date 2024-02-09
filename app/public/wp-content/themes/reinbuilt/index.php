@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 <div class="swiper hero-swiper">
 	<div class="swiper-wrapper hero">
-		<div class="swiper-slide"><img class="hero--image" alt="" src="https://s.w.org/images/core/5.8/forest.jpg"
-				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1121" /></div>
-		<div class="swiper-slide"><img class="hero--image" alt="" src="https://s.w.org/images/core/5.8/forest.jpg"
-				data-object-fit="cover" width="1920" height="1121" /></div>
+		<div class="swiper-slide"><img class="hero--image" alt=""
+				src="http://localhost:10020/wp-content/uploads/2024/02/3550MountainViewAve_Master_daytime-jpg.webp"
+				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" /></div>
+		<div class="swiper-slide"><img class="hero--image" alt=""
+				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
+				data-object-fit="cover" width="1920" height="1280" /></div>
 	</div>
 	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
 </div>
@@ -217,5 +219,5 @@
 			package.</p>
 	</div>
 </section>
-<img src="http://localhost:10020/wp-content/uploads/2024/02/Photo749110o-1-jpg.webp" loading="lazy" alt="placeholder" />
+
 <?php get_footer(); ?>
