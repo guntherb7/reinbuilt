@@ -182,7 +182,7 @@ textarea:not([rows]) {
 
 .project-title {
   @include heading-font;
-  margin: 120px auto 40px;
+  margin-inline: auto;
   font-size: 44px;
 }
 
@@ -191,7 +191,8 @@ textarea:not([rows]) {
 }
 
 .project-outline {
-  margin: 20px 40px;
+  margin-inline: 40px;
+  align-items: center;
   p {
     padding-block: 15px;
   }
