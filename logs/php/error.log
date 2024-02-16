@@ -1244,3 +1244,8 @@ AND `group_id` = 1
 [07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296
 [07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3294
 [07-Feb-2024 19:53:11 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296
+[16-Feb-2024 20:31:48 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/update.php on line 449
+[16-Feb-2024 20:31:49 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3294
+[16-Feb-2024 20:31:49 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296
+[16-Feb-2024 20:31:49 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3294
+[16-Feb-2024 20:31:49 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296
