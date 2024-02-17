@@ -62,10 +62,6 @@ blockquote {
   }
 }
 
-del {
-  text-decoration: line-through;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -183,6 +179,7 @@ textarea:not([rows]) {
 .project-title {
   @include heading-font;
   margin-inline: auto;
+  margin-block: 40px;
   font-size: 44px;
 }
 
@@ -203,4 +200,50 @@ textarea:not([rows]) {
   width: 100%;
   height: auto;
   margin: 40px auto;
+}
+
+.visualize-button {
+  background-color: $dark-background;
+  color: $light-font;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 80px auto;
+  padding: 10px 40px;
+  border-radius: 6px;
+  width: fit-content;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section--header {
+    margin-block: 80px;
+    font-size: 24px;
+  }
+
+  .text-logo {
+    font-size: 30px;
+    margin-block: 40px;
+  }
+
+  .project-outline {
+    margin-inline: 30px;
+  }
+
+  .project-title {
+    font-size: 32px;
+    margin-block: 20px;
+  }
+  .visualize-button {
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 10px 20px;
+    margin: 40px auto;
+  }
 }

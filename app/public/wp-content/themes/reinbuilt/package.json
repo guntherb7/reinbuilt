@@ -9,12 +9,12 @@
     "grunt-contrib-cssmin": "^5.0.0",
     "grunt-contrib-jshint": "~3.2.0",
     "grunt-contrib-sass": "2.0.0",
-    "grunt-contrib-uglify": "~5.2.0",
+    "grunt-contrib-uglify": "^5.2.2",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-modernizr": "^4.0.1"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.29",
+    "@studio-freight/lenis": "^1.0.35",
     "utopia-core-scss": "^1.0.0"
   }
 }

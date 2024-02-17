@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: unquote("clamp(2rem, 1.293rem + 4.783vw, 4rem)");
+  font-size: unquote("clamp(2rem, 1.2rem + 4.783vw, 4rem)");
 }
 
 h3 {
@@ -61,5 +61,5 @@ a,
 ul,
 li {
   @include paragraph-font;
-  font-size: unquote("clamp(1.5rem, 0.709rem + 0.957vw, 1.3rem)");
+  font-size: unquote("clamp(1.4rem, 0.709rem + 0.957vw, 1.3rem)");
 }

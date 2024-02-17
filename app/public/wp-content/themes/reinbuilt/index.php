@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 <div class="swiper hero-swiper">
+	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
 	<div class="swiper-wrapper hero">
 		<div class="swiper-slide"><img class="hero--image" alt=""
 				src="http://localhost:10020/wp-content/uploads/2024/02/3550MountainViewAve_Master_daytime-jpg.webp"
 				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" /></div>
 		<div class="swiper-slide"><img class="hero--image" alt=""
 				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
-				data-object-fit="cover" width="1920" height="1280" /></div>
+				data-object-fit="cover" width="1920" height="1280" />
+		</div>
 	</div>
-	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
 </div>
 <h3 class="text-center project-title">Mountain View</h3>
 <div class="swiper mySwiper">
@@ -150,9 +151,9 @@
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
-<h2 class="hero--logo logo dark-icon text-center">Reinbuilt</h2>
-<h3 class="text-center">Inspired design impeccably built</h3>
-<h3 class="text-center">Design build process</h3>
+<h2 class="text-logo logo text-center">Reinbuilt</h2>
+<h3 class="text-center section--header">Inspired design impeccably built</h3>
+<h3 class="text-center section--header">Design build process</h3>
 <img src="http://localhost:10020/wp-content/uploads/2024/02/15-STEPS_SCHEMATIC-scaled.webp" loading="lazy"
 	alt="Design Build Process Schematic" class="build-process" width="1300" height="170" />
 <section class="grid grid-2  project-outline">
@@ -218,6 +219,11 @@
 			and architectural finishes. This is also the stage where we finalize furniture for the interior design
 			package.</p>
 	</div>
+</section>
+<section>
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-10-jpg.webp" loading="lazy"
+		alt="placeholder" />
+	<a href="/visualize" role="button" class="visualize-button">Click here to start your project</a>
 </section>
 
 <?php get_footer(); ?>
