@@ -14,7 +14,6 @@
     "grunt-modernizr": "^4.0.1"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.35",
-    "utopia-core-scss": "^1.0.0"
+    "@studio-freight/lenis": "^1.0.35"
   }
 }
