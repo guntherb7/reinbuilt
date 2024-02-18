@@ -1251,3 +1251,18 @@ AND `group_id` = 1
 [16-Feb-2024 20:31:49 UTC] PHP Warning:  Undefined array key "status" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-admin/includes/class-wp-site-health.php on line 3296
 [18-Feb-2024 15:00:04 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [18-Feb-2024 16:08:14 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Feb-2024 17:39:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-interior.php:9
+Stack trace:
+#0 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-blog-header.php(19): require_once('/Users/guntherb...')
+#2 /Users/guntherbeam/Local Sites/reinbuilt/app/public/index.php(17): require('/Users/guntherb...')
+#3 {main}
+  thrown in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-interior.php on line 9
+[18-Feb-2024 17:41:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-interior.php:27
+Stack trace:
+#0 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-blog-header.php(19): require_once('/Users/guntherb...')
+#2 /Users/guntherbeam/Local Sites/reinbuilt/app/public/index.php(17): require('/Users/guntherb...')
+#3 {main}
+  thrown in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-interior.php on line 27
+[18-Feb-2024 17:42:22 UTC] PHP Warning:  Undefined variable $contact in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-content/themes/reinbuilt/page-interior.php on line 16
