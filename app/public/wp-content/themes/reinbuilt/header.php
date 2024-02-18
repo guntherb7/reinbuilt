@@ -34,7 +34,7 @@
   <header>
     <nav>
       <!-- Menu Toggle Checkbox -->
-      <input class="checkbox" type="checkbox" aria-label="Menu" id="menu-icon" />
+      <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->
       <img src="http://localhost:10020/wp-content/uploads/2024/02/moon-solid.svg" alt="Light Icon"
         class="nav-icon light-icon" onclick="darkMode()">
