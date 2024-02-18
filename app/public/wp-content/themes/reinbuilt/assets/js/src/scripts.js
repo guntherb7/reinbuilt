@@ -6,6 +6,20 @@
  */
 /*jshint esversion: 6 */
 
+// Smooth Scroll library
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 function darkMode() {
   const element = document.body;
   const nav = document.querySelector(".menu-items");
@@ -43,19 +57,40 @@ if (darkModeButton) {
   darkModeButton.addEventListener("click", darkMode);
 }
 
-// Smooth Scroll library
-const lenis = new Lenis();
+document
+  .getElementById("menu-icon")
+  .addEventListener("click", function (event) {
+    var body = document.documentElement;
+    event.preventDefault();
+    if (body.classList.contains("nav-open")) {
+      body.classList.remove("nav-open");
+    } else {
+      event.stopPropagation();
+      body.addEventListener(
+        "click",
+        function () {
+          body.classList.remove("nav-open");
+          document.getElementById("slide-nav").classList.remove("active");
+        },
+        { once: true }
+      );
+      body.classList.add("nav-open");
+    }
+  });
 
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
+document
+  .getElementById("slide-nav")
+  .addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
 
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
+document
+  .getElementById("menu-icon")
+  .addEventListener("click", function (event) {
+    document.getElementById("slide-nav").classList.toggle("active");
+    document.getElementById("menu-icon").classList.toggle("active");
+    event.preventDefault();
+  });
 
 // Swiper JS
 const swiper = new Swiper(".mySwiper", {
