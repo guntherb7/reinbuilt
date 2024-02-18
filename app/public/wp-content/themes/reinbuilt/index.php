@@ -15,47 +15,47 @@
 	</div>
 </div>
 <!-- START SLIDER 1 -->
-<h3 class="text-center project-title">Mountain View</h3>
+<h2 class="text-center project-title">Mountain View</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp" loading="lazy"
-				alt="Mountain View Home Front Door" />
+				alt="Mountain View Home Front Door" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Stairwell-jpg.webp" loading="lazy"
-				alt="Mountain View Home Stairwell" />
+				alt="Mountain View Home Stairwell" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Stairs-jpg.webp" loading="lazy"
-				alt="Mountain View Home Stairs" />
+				alt="Mountain View Home Stairs" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_HallwayExtended-jpg.webp"
-				loading="lazy" alt="Mountain View Home Hallway" />
+				loading="lazy" alt="Mountain View Home Hallway" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Kitchen-jpg.webp" loading="lazy"
-				alt="Mountain View Home Kitchen" />
+				alt="Mountain View Home Kitchen" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_BackDoor-jpg.webp" loading="lazy"
-				alt="Mountain View Home Patio" />
+				alt="Mountain View Home Patio" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_MasterBedrmToBath-jpg.webp"
-				loading="lazy" alt="Mountain View Home Master Bedroom" />
+				loading="lazy" alt="Mountain View Home Master Bedroom" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_MasterBedrmSittingArea-jpg.webp"
-				loading="lazy" alt="Mountain View Home Master Sitting Area" />
+				loading="lazy" alt="Mountain View Home Master Sitting Area" width="326" height="415" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>
@@ -64,7 +64,7 @@
 </div>
 <!-- END SLIDER 1 -->
 <!-- START SLIDER 2 -->
-<h3 class="text-center project-title">Baxter</h3>
+<h2 class="text-center project-title">Baxter</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-75-jpeg.webp"
@@ -113,7 +113,7 @@
 </div>
 <!-- END SLIDER 2 -->
 <!-- START SLIDER 3 -->
-<h3 class="text-center project-title">Orange</h3>
+<h2 class="text-center project-title">Orange</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
