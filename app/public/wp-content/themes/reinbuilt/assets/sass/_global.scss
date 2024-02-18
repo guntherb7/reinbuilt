@@ -6,12 +6,26 @@
 */
 
 // Global Styles
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 html,
 body {
   margin: 0;
   position: relative;
-  height: 100%;
 }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
 :root {
   margin: 0;
   position: relative;
@@ -36,6 +50,7 @@ body {
 .text-left {
   text-align: left;
 }
+
 header,
 nav,
 footer,
@@ -56,6 +71,7 @@ a {
 
 blockquote {
   quotes: none;
+
   &:before,
   &:after {
     content: none;
@@ -76,13 +92,6 @@ a img {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -106,12 +115,6 @@ li {
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -190,6 +193,7 @@ textarea:not([rows]) {
 .project-outline {
   margin-inline: 40px;
   align-items: center;
+
   p {
     padding-block: 15px;
   }
@@ -240,6 +244,7 @@ textarea:not([rows]) {
     font-size: 32px;
     margin-block: 20px;
   }
+
   .visualize-button {
     font-size: 18px;
     white-space: nowrap;

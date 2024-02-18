@@ -17,7 +17,7 @@
 }
 
 @mixin text-logo {
-  color: $dark-font;
+  color: currentColor;
   font-family: $syncopate;
   text-transform: uppercase;
   font-weight: 100;

@@ -1,6 +1,6 @@
 nav {
   position: relative;
-  display: block;
+
   max-width: 1920px;
   width: 100%;
   margin: auto;
@@ -58,7 +58,6 @@ nav {
     fill: currentColor;
     right: 75px;
     top: 13px;
-    display: none;
     width: 2em;
     height: 2em;
     z-index: 2;
@@ -89,11 +88,11 @@ nav {
   }
 
   input[type="checkbox"]:checked {
-    ~ .menu-items {
+    ~.menu-items {
       transform: translateX(0);
     }
 
-    ~ .hamburger-lines {
+    ~.hamburger-lines {
       .line1 {
         transform: rotate(45deg);
       }
@@ -107,7 +106,7 @@ nav {
       }
     }
 
-    ~ .logo {
+    ~.logo {
       display: none;
     }
   }
