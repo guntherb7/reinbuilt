@@ -29,7 +29,9 @@ window.addEventListener("DOMContentLoaded", function initializeDarkMode() {
 
   if (bodyBackgroundColor === "rgb(244, 238, 233)") {
     document.querySelector(".light-icon").style.display = "block";
+    document.querySelector(".dark-icon").style.display = "none";
   } else if (bodyBackgroundColor === "rgb(34, 34, 34)") {
+    document.querySelector(".light-icon").style.display = "none";
     document.querySelector(".dark-icon").style.display = "block";
   }
 });
