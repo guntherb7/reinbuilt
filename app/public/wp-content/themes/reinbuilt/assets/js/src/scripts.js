@@ -104,71 +104,33 @@ const heroSwiper = new Swiper(".hero-swiper", {
   },
 });
 
-// When #menu is clicked, expand the menu and cover the screen with the overlay
 document.addEventListener("DOMContentLoaded", function () {
   var menu = document.getElementById("menu");
-  // var overlay = document.querySelector(".overlay");
   var menuItems = document.querySelector(".menu-items");
-
-  if (menu) {
-    menu.addEventListener("click", function () {
-      menuItems.classList.toggle("open");
-      // overlay.classList.toggle("open");
-    });
-  }
-});
-
-// When the window is resized, close the menu and overlay
-window.addEventListener("resize", function () {
-  var menuItems = document.querySelector(".menu-items");
-  // var overlay = document.querySelector(".overlay");
-
-  if (menuItems) {
-    menuItems.classList.remove("open");
-  }
-});
-// When the window is scrolled, close the menu and overlay
-window.addEventListener("scroll", function () {
-  var menuItems = document.querySelector(".menu-items");
-  // var overlay = document.querySelector(".overlay");
-
-  if (menuItems) {
-    menuItems.classList.remove("open");
-  }
-});
-document.addEventListener("DOMContentLoaded", function () {
-  var menu = document.getElementById("menu");
-  var overlay = document.querySelector(".overlay");
-  var menuItems = document.querySelector(".menu-items");
-  var heroLogo = document.querySelector(".hero-swiper .hero--logo");
+  var heroLogo = document.querySelector(".hero--logo");
 
   function toggleMenu() {
+    console.log("Toggling menu");
     menuItems.classList.toggle("open");
-    overlay.classList.toggle("open");
+  }
+
+  function closeMenu() {
+    console.log("Closing menu");
+    menuItems.classList.remove("open");
   }
 
   if (menu) {
     menu.addEventListener("click", toggleMenu);
-  }
-
-  if (overlay) {
-    overlay.addEventListener("click", toggleMenu);
+  } else {
+    console.log("Menu element not found");
   }
 
   if (heroLogo) {
     heroLogo.addEventListener("mouseover", toggleMenu);
-  }
-});
-
-window.addEventListener("resize", function () {
-  var menuItems = document.querySelector(".menu-items");
-  var overlay = document.querySelector(".overlay");
-
-  if (menuItems) {
-    menuItems.classList.remove("open");
+  } else {
+    console.log("Hero logo element not found");
   }
 
-  if (overlay) {
-    overlay.classList.remove("open");
-  }
+  window.addEventListener("resize", closeMenu);
+  window.addEventListener("scroll", closeMenu);
 });
