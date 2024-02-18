@@ -144,15 +144,3 @@ for (let i = 0; i < menuLength; i++) {
     menuItem[i].className = "active";
   }
 }
-
-//hide nav until scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("menu").style.top = "0";
-  } else {
-    document.getElementById("menu").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-};
