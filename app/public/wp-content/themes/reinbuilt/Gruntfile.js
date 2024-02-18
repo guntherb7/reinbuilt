@@ -31,8 +31,7 @@ module.exports = function (grunt) {
       min: {
         files: {
           "assets/js/scripts.min.js": ["assets/js/src/scripts.js"],
-          "assets/js/nav.min.js": ["assets/js/src/nav.js"],
-          "assets/js/swiper-files.min.js": ["assets/js/src/swiper-files.js"],
+          "assets/js/home.min.js": ["assets/js/src/home.js"],
         },
       },
     },
@@ -52,8 +51,7 @@ module.exports = function (grunt) {
       generated: {
         files: {
           "assets/js/scripts.min.js": ["assets/js/src/scripts.js"],
-          "assets/js/nav.min.js": ["assets/js/src/nav.js"],
-          "assets/js/swiper-files.min.js": ["assets/js/src/swiper-files.js"],
+          "assets/js/home.min.js": ["assets/js/src/home.js"],
         },
       },
     },
