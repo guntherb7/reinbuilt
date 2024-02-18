@@ -68,43 +68,43 @@
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-75-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-77-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-66-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-23-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-32-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-36-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-49-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-4-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-6-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-54-jpeg.webp"
-				loading="lazy" alt="placeholder" />
+				loading="lazy" alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>
@@ -118,37 +118,37 @@
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-3-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-37-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-15-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-11-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-8-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-27-jpeg.webp" loading="lazy"
-				alt="placeholder" />
+				alt="placeholder" width=“415” height=“300” />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 	</div>
@@ -193,13 +193,13 @@
 				package.</p>
 		</div>
 		<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy"
-			alt="placeholder" />
+			alt="placeholder" width=“415” height=“300” />
 	</div>
 </section>
 <section>
 	<div class="grid grid-2 project-outline">
-		<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy"
-			alt="placeholder" />
+		<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy" alt="placeholder"
+			width=“415” height=“300” />
 		<div>
 			<h2 class="project-title">Project outline</h2>
 			<p>Step 1: Programming and Discovery <br>
@@ -233,7 +233,7 @@
 </section>
 <section>
 	<img src="http://localhost:10020/wp-content/uploads/2024/02/Full-n_orange_drive-37-jpg.webp" loading="lazy"
-		alt="placeholder" />
+		alt="placeholder" width=“415” height=“300” />
 	<a href="/visualize" role="button" class="visualize-button">Click here to start your project</a>
 </section>
 
