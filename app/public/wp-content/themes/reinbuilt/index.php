@@ -3,7 +3,7 @@
 	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
 	<div class="swiper-wrapper hero">
 		<div class="swiper-slide"><img class="hero--image" alt=""
-				src="http://localhost:10020/wp-content/uploads/2024/02/3550MountainViewAve_Master_daytime-jpg.webp"
+				src="http://localhost:10020/wp-content/uploads/2024/02/MountainView_Master_daytime-jpg.webp"
 				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" /></div>
 		<div class="swiper-slide"><img class="hero--image" alt=""
 				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
