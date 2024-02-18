@@ -50,7 +50,8 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-family: $syncopate, sans-serif;
+  font-family: $syncopate;
+  font-weight: $normal;
   line-height: 120%;
   letter-spacing: 3.5px;
   margin: 40px auto;

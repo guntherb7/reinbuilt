@@ -134,3 +134,13 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", closeMenu);
   window.addEventListener("scroll", closeMenu);
 });
+
+// add a class of active to the current page link
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll(".menu-items a");
+const menuLength = menuItem.length;
+for (let i = 0; i < menuLength; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].className = "active";
+  }
+}

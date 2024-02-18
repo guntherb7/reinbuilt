@@ -28,6 +28,10 @@ nav {
     padding: 0.7rem;
   }
 
+  a.active {
+    font-weight: 700 !important;
+  }
+
   .checkbox {
     position: absolute;
     display: block;
