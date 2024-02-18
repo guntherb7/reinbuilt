@@ -160,8 +160,8 @@
 <h2 class="text-logo logo text-center">Reinbuilt</h2>
 <h3 class="text-center section--header">Inspired design impeccably built</h3>
 <h3 class="text-center section--header">Design build process</h3>
-<img src="http://localhost:10020/wp-content/uploads/2024/02/15-STEPS_SCHEMATIC-scaled.webp" loading="lazy"
-	alt="Design Build Process Schematic" class="build-process" width="1300" height="170" />
+<img src="http://localhost:10020/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png"
+	loading="lazy" alt="Design Build Process Schematic" class="build-process" width="1200" height="525" />
 <section class="grid grid-2  project-outline">
 	<div>
 		<h2 class="project-title">Project outline</h2>
