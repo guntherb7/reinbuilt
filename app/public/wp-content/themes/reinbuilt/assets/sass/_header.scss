@@ -5,7 +5,8 @@ nav {
   width: 100%;
   margin: auto;
   height: 60px;
-  z-index: 999;
+  z-index: 998;
+  top: 0;
 
   .menu-items {
     flex-direction: column;
