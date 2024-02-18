@@ -60,11 +60,15 @@ function reinbuilt_child()
 	wp_register_style('jost', 'https://indestructibletype.com/fonts/Jost.css', array());
 	wp_enqueue_style('jost');
 
-	wp_register_style('syncopate', 'https://fonts.googleapis.com/css2?family=Syncopate&display=swap', array());
+	wp_register_style('syncopate', 'https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap', array());
 	wp_enqueue_style('syncopate');
 
 	// Compiled .js using Grunt.js
 	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), null, true);
+	wp_enqueue_script('custom-scripts');
+	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/nav.min.js', array('jquery'), null, true);
+	wp_enqueue_script('custom-scripts');
+	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/swiper-files.min.js', array('jquery'), null, true);
 	wp_enqueue_script('custom-scripts');
 
 	if (is_page_template('front-page.php')) {
