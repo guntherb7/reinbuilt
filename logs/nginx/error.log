@@ -42,3 +42,4 @@
 2023/12/26 11:21:53 [emerg] 95870#0: bind() to 127.0.0.1:10013 failed (48: Address already in use)
 2023/12/26 11:21:53 [emerg] 95870#0: bind() to [::1]:10013 failed (48: Address already in use)
 2023/12/26 11:21:53 [emerg] 95870#0: still could not bind()
+2024/02/18 10:59:34 [alert] 72141#0: *2243 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: ::1, server: [::1]:10020

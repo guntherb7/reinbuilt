@@ -129,11 +129,6 @@
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36-jpeg.webp" loading="lazy"
-				alt="placeholder" />
-			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-		</div>
-		<div class="swiper-slide">
 			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
@@ -192,10 +187,11 @@
 			and architectural finishes. This is also the stage where we finalize furniture for the interior design
 			package.</p>
 	</div>
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-77-jpeg.webp" loading="lazy" alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy"
+		alt="placeholder" />
 </section>
 <section class="grid grid-2 project-outline">
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpeg.webp" loading="lazy" alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy" alt="placeholder" />
 	<div>
 		<h2 class="project-title">Project outline</h2>
 		<p>Step 1: Programming and Discovery <br>
