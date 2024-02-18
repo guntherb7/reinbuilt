@@ -11,6 +11,7 @@
 		</div>
 	</div>
 </div>
+<!-- START SLIDER 1 -->
 <h3 class="text-center project-title">Mountain View</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
@@ -58,46 +59,48 @@
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
+<!-- END SLIDER 1 -->
+<!-- START SLIDER 2 -->
 <h3 class="text-center project-title">Baxter</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-75-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-75-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-77-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-66-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-66-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-23-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-23-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-32-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-32-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-36-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-36-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-49-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-49-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-4-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-4-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-6-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-6-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
-		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-54-jpg.webp"
+		<div class="swiper-slide"><img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-54-jpeg.webp"
 				loading="lazy" alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
@@ -105,6 +108,8 @@
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
+<!-- END SLIDER 2 -->
+<!-- START SLIDER 3 -->
 <h3 class="text-center project-title">Orange</h3>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
@@ -151,6 +156,7 @@
 	<div class="swiper-button-next"></div>
 	<div class="swiper-button-prev"></div>
 </div>
+<!-- END SLIDER 3 -->
 <h2 class="text-logo logo text-center">Reinbuilt</h2>
 <h3 class="text-center section--header">Inspired design impeccably built</h3>
 <h3 class="text-center section--header">Design build process</h3>
@@ -185,12 +191,10 @@
 			and architectural finishes. This is also the stage where we finalize furniture for the interior design
 			package.</p>
 	</div>
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-77-jpg.webp" loading="lazy"
-		alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-77-jpg.webp" loading="lazy" alt="placeholder" />
 </section>
 <section class="grid grid-2 project-outline">
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-10-jpg.webp" loading="lazy"
-		alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy" alt="placeholder" />
 	<div>
 		<h2 class="project-title">Project outline</h2>
 		<p>Step 1: Programming and Discovery <br>
@@ -221,8 +225,7 @@
 	</div>
 </section>
 <section>
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/1625-Baxter-10-jpg.webp" loading="lazy"
-		alt="placeholder" />
+	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy" alt="placeholder" />
 	<a href="/visualize" role="button" class="visualize-button">Click here to start your project</a>
 </section>
 
