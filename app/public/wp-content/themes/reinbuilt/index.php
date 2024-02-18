@@ -158,67 +158,74 @@
 <h3 class="text-center section--header">Design build process</h3>
 <img src="http://localhost:10020/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png"
 	loading="lazy" alt="Design Build Process Schematic" class="build-process" width="1200" height="525" />
-<section class="grid grid-2  project-outline">
-	<div>
-		<h2 class="project-title">Project outline</h2>
-		<p>Step 1: Programming and Discovery <br>
-			In this stage, we work through submitting and reviewing construction documents and assessing and
-			negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline with our
-			clients.
-		</p>
-		<p>Step 2: Schematic Design: <br>
-			After the first step, we then move into analyzing the structure needed for the build and start site
-			work.This includes deciding where the shell and core of the building should be placed. In this stage, we
-			also negotiate with vendors about pricing and consult MEP.
-		</p>
-		<p>Step 3: Design Development <br>
-			The next step in the process is designing the shell and core of the house and creating foundation and
-			framing
-			plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into the
-			building.</p>
-		<p>Step 4: Construction Documentation <br>
-			If our client chooses to integrate interior design into their space, this stage is dedicated to
-			finalizing
-			the interior design package and choosing finish samples. We also work to complete all construction
-			details
-			and coordinate with engineers for mechanical, plumbing, and electrical plans.</p>
-		<p>Step 5: Construction Administration <br>
-			This final step is dedicated to guaranteeing everything is complete and finalizing both interior
-			and architectural finishes. This is also the stage where we finalize furniture for the interior design
-			package.</p>
+<section>
+	<div class="grid grid-2 project-outline">
+		<div>
+			<h2 class="project-title">Project outline</h2>
+			<p>Step 1: Programming and Discovery <br>
+				In this stage, we work through submitting and reviewing construction documents and assessing and
+				negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline with
+				our
+				clients.
+			</p>
+			<p>Step 2: Schematic Design: <br>
+				After the first step, we then move into analyzing the structure needed for the build and start site
+				work.This includes deciding where the shell and core of the building should be placed. In this stage, we
+				also negotiate with vendors about pricing and consult MEP.
+			</p>
+			<p>Step 3: Design Development <br>
+				The next step in the process is designing the shell and core of the house and creating foundation and
+				framing
+				plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into the
+				building.</p>
+			<p>Step 4: Construction Documentation <br>
+				If our client chooses to integrate interior design into their space, this stage is dedicated to
+				finalizing
+				the interior design package and choosing finish samples. We also work to complete all construction
+				details
+				and coordinate with engineers for mechanical, plumbing, and electrical plans.</p>
+			<p>Step 5: Construction Administration <br>
+				This final step is dedicated to guaranteeing everything is complete and finalizing both interior
+				and architectural finishes. This is also the stage where we finalize furniture for the interior design
+				package.</p>
+		</div>
+		<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy"
+			alt="placeholder" />
 	</div>
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy"
-		alt="placeholder" />
 </section>
-<section class="grid grid-2 project-outline">
-	<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy" alt="placeholder" />
-	<div>
-		<h2 class="project-title">Project outline</h2>
-		<p>Step 1: Programming and Discovery <br>
-			In this stage, we work through submitting and reviewing construction documents and assessing and
-			negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline with our
-			clients.
-		</p>
-		<p>Step 2: Schematic Design: <br>
-			After the first step, we then move into analyzing the structure needed for the build and start site
-			work.This includes deciding where the shell and core of the building should be placed. In this stage, we
-			also negotiate with vendors about pricing and consult MEP.
-		</p>
-		<p>Step 3: Design Development <br>
-			The next step in the process is designing the shell and core of the house and creating foundation and
-			framing
-			plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into the
-			building.</p>
-		<p>Step 4: Construction Documentation <br>
-			If our client chooses to integrate interior design into their space, this stage is dedicated to
-			finalizing
-			the interior design package and choosing finish samples. We also work to complete all construction
-			details
-			and coordinate with engineers for mechanical, plumbing, and electrical plans.</p>
-		<p>Step 5: Construction Administration <br>
-			This final step is dedicated to guaranteeing everything is complete and finalizing both interior
-			and architectural finishes. This is also the stage where we finalize furniture for the interior design
-			package.</p>
+<section>
+	<div class="grid grid-2 project-outline">
+		<img src="http://localhost:10020/wp-content/uploads/2024/02/Baxter-10-jpg.webp" loading="lazy"
+			alt="placeholder" />
+		<div>
+			<h2 class="project-title">Project outline</h2>
+			<p>Step 1: Programming and Discovery <br>
+				In this stage, we work through submitting and reviewing construction documents and assessing and
+				negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline with
+				our
+				clients.
+			</p>
+			<p>Step 2: Schematic Design: <br>
+				After the first step, we then move into analyzing the structure needed for the build and start site
+				work.This includes deciding where the shell and core of the building should be placed. In this stage, we
+				also negotiate with vendors about pricing and consult MEP.
+			</p>
+			<p>Step 3: Design Development <br>
+				The next step in the process is designing the shell and core of the house and creating foundation and
+				framing
+				plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into the
+				building.</p>
+			<p>Step 4: Construction Documentation <br>
+				If our client chooses to integrate interior design into their space, this stage is dedicated to
+				finalizing
+				the interior design package and choosing finish samples. We also work to complete all construction
+				details
+				and coordinate with engineers for mechanical, plumbing, and electrical plans.</p>
+			<p>Step 5: Construction Administration <br>
+				This final step is dedicated to guaranteeing everything is complete and finalizing both interior
+				and architectural finishes. This is also the stage where we finalize furniture for the interior design
+				package.</p>
+		</div>
 	</div>
 </section>
 <section>
