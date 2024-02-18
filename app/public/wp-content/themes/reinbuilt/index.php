@@ -2,10 +2,13 @@
 <div class="swiper hero-swiper">
 	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
 	<div class="swiper-wrapper hero">
-		<div class="swiper-slide"><img class="hero--image" alt=""
+		<div class="swiper-slide">
+			<img class="hero--image" alt=""
 				src="http://localhost:10020/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
-				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" /></div>
-		<div class="swiper-slide"><img class="hero--image" alt=""
+				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" />
+		</div>
+		<div class="swiper-slide">
+			<img class="hero--image" alt=""
 				src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
 				data-object-fit="cover" width="1920" height="1280" />
 		</div>
@@ -114,37 +117,37 @@
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-3-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-3-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-37-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-37-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-15-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-15-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-12-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-11-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-11-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-8-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-8-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
 		<div class="swiper-slide">
-			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-27-jpg.webp" loading="lazy"
+			<img src="http://localhost:10020/wp-content/uploads/2024/02/n_orange_drive-27-jpeg.webp" loading="lazy"
 				alt="placeholder" />
 			<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 		</div>
