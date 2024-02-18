@@ -107,34 +107,34 @@ const heroSwiper = new Swiper(".hero-swiper", {
 // When #menu is clicked, expand the menu and cover the screen with the overlay
 document.addEventListener("DOMContentLoaded", function () {
   var menu = document.getElementById("menu");
-  var overlay = document.querySelector(".overlay");
+  // var overlay = document.querySelector(".overlay");
   var menuItems = document.querySelector(".menu-items");
 
   if (menu) {
     menu.addEventListener("click", function () {
       menuItems.classList.toggle("open");
-      overlay.classList.toggle("open");
+      // overlay.classList.toggle("open");
     });
   }
 
-  if (overlay) {
-    overlay.addEventListener("click", function () {
-      menuItems.classList.toggle("open");
-      overlay.classList.toggle("open");
-    });
-  }
+  // if (overlay) {
+  //   overlay.addEventListener("click", function () {
+  //     menuItems.classList.toggle("open");
+  //     overlay.classList.toggle("open");
+  //   });
+  // }
 });
 
 // When the window is resized, close the menu and overlay
 window.addEventListener("resize", function () {
   var menuItems = document.querySelector(".menu-items");
-  var overlay = document.querySelector(".overlay");
+  // var overlay = document.querySelector(".overlay");
 
   if (menuItems) {
     menuItems.classList.remove("open");
   }
 
-  if (overlay) {
-    overlay.classList.remove("open");
-  }
+  // if (overlay) {
+  //   overlay.classList.remove("open");
+  // }
 });

@@ -1,6 +1,5 @@
 nav {
   position: relative;
-
   max-width: 1920px;
   width: 100%;
   margin: auto;
@@ -8,7 +7,6 @@ nav {
   z-index: 999;
 
   .menu-items {
-    display: none;
     flex-direction: column;
     background-color: $light-background;
     margin: 0 auto;
@@ -18,6 +16,10 @@ nav {
     transform: translateY(150%);
     transition: transform 0.5s ease-in-out;
     text-align: center;
+  }
+
+  .open {
+    display: block !important;
   }
 
   a {
