@@ -67,6 +67,10 @@ nav {
     display: none;
   }
 
+  .overlay {
+    color: $dark-background;
+  }
+
   .hamburger-lines {
     .line {
       display: block;
