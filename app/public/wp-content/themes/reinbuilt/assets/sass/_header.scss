@@ -1,12 +1,11 @@
 nav {
   position: fixed;
-  background-color: $light-background;
   max-width: 1920px;
+  background-color: $light-background;
   width: 100%;
-  margin: auto;
+  margin: -60px auto 0;
   height: 60px;
-  z-index: 998;
-  top: 0;
+  z-index: 999;
   left: 50%;
   transform: translateX(-50%);
 
@@ -28,7 +27,7 @@ nav {
 
   a {
     @include nav-font;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 0.7rem;
   }
 

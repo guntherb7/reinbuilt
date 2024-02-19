@@ -1,5 +1,4 @@
 .mySwiper {
-  max-width: 1920px;
   width: 100%;
   height: auto;
   margin: 0 auto 30px;
@@ -22,12 +21,9 @@
 }
 
 .hero-swiper {
-  z-index: 999;
+  margin-top: 60px;
 
   img.hero--image {
-    max-width: 1920px;
-    width: 100%;
-    height: auto;
     filter: brightness(0.8);
   }
 }

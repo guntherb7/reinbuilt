@@ -9,9 +9,7 @@
 // Smooth Scroll library
 const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
+lenis.on("scroll", (e) => {});
 
 function raf(time) {
   lenis.raf(time);
@@ -22,12 +20,14 @@ requestAnimationFrame(raf);
 
 function darkMode() {
   const element = document.body;
-  const nav = document.querySelector(".menu-items");
+  const nav = document.querySelector(".nav");
+  const navMenu = document.querySelector(".menu-items");
   const lightIcon = document.querySelector(".light-icon");
   const darkIcon = document.querySelector(".dark-icon");
 
   element.classList.toggle("dark-mode");
   nav.classList.toggle("dark-mode");
+  navMenu.classList.toggle("dark-mode");
 
   if (element.classList.contains("dark-mode")) {
     lightIcon.style.display = "none";
@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", function initializeDarkMode() {
 
   if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
+    document.querySelector(". ").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
     document.querySelector(".light-icon").style.display = "none";
     document.querySelector(".dark-icon").style.display = "block";
@@ -114,25 +115,25 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.classList.toggle("open");
   }
 
-  function closeMenu() {
-    console.log("Closing menu");
-    menuItems.classList.remove("open");
-  }
+  // function closeMenu() {
+  //   console.log("Closing menu");
+  //   menuItems.classList.remove("open");
+  // }
 
-  if (menu) {
-    menu.addEventListener("click", toggleMenu);
-  } else {
-    console.log("Menu element not found");
-  }
+  // if (menu) {
+  //   menu.addEventListener("click", toggleMenu);
+  // } else {
+  //   console.log("Menu element not found");
+  // }
 
-  if (heroLogo) {
-    heroLogo.addEventListener("mouseover", toggleMenu);
-  } else {
-    console.log("Hero logo element not found");
-  }
+  // if (heroLogo) {
+  //   heroLogo.addEventListener("mouseover", toggleMenu);
+  // } else {
+  //   console.log("Hero logo element not found");
+  // // }
 
-  window.addEventListener("resize", closeMenu);
-  window.addEventListener("scroll", closeMenu);
+  // window.addEventListener("resize", closeMenu);
+  // window.addEventListener("scroll", closeMenu);
 });
 
 // add a class of active to the current page link
@@ -144,3 +145,21 @@ for (let i = 0; i < menuLength; i++) {
     menuItem[i].className = "active";
   }
 }
+window.addEventListener("DOMContentLoaded", function () {
+  var splashScreen = document.querySelector(".hero-swiper");
+
+  // Initial style setting
+  splashScreen.style.width = "100%";
+  splashScreen.style.height = "100vh";
+
+  // Function to reset styles
+  var resetStyles = function () {
+    splashScreen.style.maxwidth = "1920px";
+    splashScreen.style.height = "auto";
+    console.log("Resetting styles");
+  };
+
+  // Event listeners for scroll and click
+  window.addEventListener("scroll", resetStyles);
+  document.addEventListener("click", resetStyles);
+});

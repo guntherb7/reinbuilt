@@ -33,7 +33,7 @@
 
 <body <?php body_class(); ?>>
   <header>
-    <nav>
+    <nav class="nav">
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->
