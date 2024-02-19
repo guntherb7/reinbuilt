@@ -5,7 +5,6 @@
   margin: 30px auto;
   top: 0;
 
-
   .swiper-wrapper {
     height: auto !important;
   }
@@ -21,17 +20,6 @@
   }
 }
 
-.hero-swiper {
-  max-width: 1920px;
-  margin-top: 60px;
-
-  img.hero--image {
-    max-width: 1920px;
-    width: 100%;
-    height: auto;
-    filter: brightness(0.8);
-  }
-}
 
 @media screen and (max-width: 768px) {
   .mySwiper {

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="swiper hero-swiper">
+<div class="swiper hero hero-swiper">
 	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
 	<div class="swiper-wrapper hero">
 		<div class="swiper-slide">
