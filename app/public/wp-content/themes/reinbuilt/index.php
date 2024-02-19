@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="swiper hero hero-swiper">
 	<h1 class="hero--logo light-icon">Reinbuilt</h1>
-	<div class="swiper-wrapper hero">
+	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
 				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" />

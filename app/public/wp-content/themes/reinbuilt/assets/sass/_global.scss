@@ -180,18 +180,6 @@ textarea:not([rows]) {
   gap: 40px;
 }
 
-.hero {
-  max-width: 1920px;
-  margin-top: 60px;
-
-  img.hero--image {
-    max-width: 1920px;
-    width: 100%;
-    height: auto;
-    filter: brightness(0.8);
-  }
-}
-
 .project-title {
   @include heading-font;
   margin-inline: auto;

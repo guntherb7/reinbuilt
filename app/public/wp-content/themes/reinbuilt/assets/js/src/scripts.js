@@ -145,21 +145,21 @@ for (let i = 0; i < menuLength; i++) {
     menuItem[i].className = "active";
   }
 }
-window.addEventListener("DOMContentLoaded", function () {
-  var splashScreen = document.querySelector(".hero-swiper");
+// window.addEventListener("DOMContentLoaded", function () {
+//   var splashScreen = document.querySelector(".hero-swiper");
 
-  // Initial style setting
-  splashScreen.style.width = "100%";
-  splashScreen.style.height = "100vh";
+//   // Initial style setting
+//   splashScreen.style.width = "100%";
+//   splashScreen.style.height = "100vh";
 
-  // Function to reset styles
-  var resetStyles = function () {
-    splashScreen.style.maxwidth = "1920px";
-    splashScreen.style.height = "auto";
-    console.log("Resetting styles");
-  };
+//   // Function to reset styles
+//   var resetStyles = function () {
+//     splashScreen.style.maxwidth = "1920px";
+//     splashScreen.style.height = "auto";
+//     console.log("Resetting styles");
+//   };
 
-  // Event listeners for scroll and click
-  window.addEventListener("scroll", resetStyles);
-  document.addEventListener("click", resetStyles);
-});
+//   // Event listeners for scroll and click
+//   window.addEventListener("scroll", resetStyles);
+//   document.addEventListener("click", resetStyles);
+// });

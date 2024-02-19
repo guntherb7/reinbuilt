@@ -1,22 +1,18 @@
-.hero-swiper {
+.hero {
   position: relative;
   margin-inline: auto;
+  max-width: 1920px;
+  margin-top: 60px;
+
+  img.hero--image {
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.8);
+  }
 
   .hero--logo {
-    color: $light-font;
-    font-family: $syncopate;
-    text-transform: uppercase;
-    font-weight: 100;
-    text-decoration: overline;
-    text-align: center;
-    font-size: 45px;
-    line-height: normal;
-    letter-spacing: 3.3px;
-    position: absolute;
-    top: 45px;
-    left: 50%;
-    z-index: 999;
-    transform: translate(-50%, 0);
+    @include hero-logo;
   }
 
   .hero--logo:hover {
