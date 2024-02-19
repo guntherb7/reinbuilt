@@ -1,16 +1,8 @@
 <?php get_header(); ?>
 <div class="swiper hero-swiper">
 	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
-	<div class="swiper-wrapper hero">
-		<div class="swiper-slide">
-			<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
-				data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" />
-		</div>
-		<div class="swiper-slide">
-			<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
-				data-object-fit="cover" width="1920" height="1280" />
-		</div>
-	</div>
+	<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/EL-PALACIO_WEST-WING-1-jpeg.webp"
+		data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1172" />
 </div>
 <!-- START SLIDER 1 -->
 <h2 class="text-center project-title">El Palacio</h2>
