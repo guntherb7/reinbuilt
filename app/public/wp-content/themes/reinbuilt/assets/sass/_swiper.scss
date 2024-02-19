@@ -1,7 +1,8 @@
 .mySwiper {
+  max-width: 1920px;
   width: 100%;
   height: auto;
-  margin: 0 auto 30px;
+  margin: 30px auto;
   top: 0;
 
 
@@ -21,6 +22,7 @@
 }
 
 .hero-swiper {
+  max-width: 1920px;
   margin-top: 60px;
 
   img.hero--image {

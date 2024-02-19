@@ -1,12 +1,4 @@
-<?php
-/**
- * Products
- * Template Name: Products
- *
- * @package reinbuilt
- * @author Gunther Beam LLC
- */
-get_header(); ?>
+<?php get_header(); ?>
 <div class="content">
 	<section class="">
 		<p>Visualization</p>

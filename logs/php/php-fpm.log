@@ -426,3 +426,8 @@
 [19-Feb-2024 17:39:22] NOTICE: exiting, bye-bye!
 [19-Feb-2024 17:39:24] NOTICE: fpm is running, pid 20530
 [19-Feb-2024 17:39:24] NOTICE: ready to handle connections
+[19-Feb-2024 17:46:51] NOTICE: Terminating ...
+[19-Feb-2024 17:46:51] NOTICE: Terminating ...
+[19-Feb-2024 17:46:51] NOTICE: exiting, bye-bye!
+[19-Feb-2024 17:46:55] NOTICE: fpm is running, pid 21191
+[19-Feb-2024 17:46:55] NOTICE: ready to handle connections
