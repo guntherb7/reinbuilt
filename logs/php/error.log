@@ -1736,3 +1736,26 @@ Stack trace:
 [19-Feb-2024 20:13:31 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/functions.php on line 6239
 [19-Feb-2024 20:13:32 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/functions.php on line 6239
 [19-Feb-2024 20:13:32 UTC] PHP Warning:  Undefined array key "HTTP_HOST" in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/functions.php on line 6239
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:56 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection
+[19-Feb-2024 22:22:57 UTC] Flywheel::DatabaseConnection

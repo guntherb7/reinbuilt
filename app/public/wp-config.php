@@ -68,7 +68,7 @@ define('WP_CACHE_KEY_SALT', '_8&w%M(ktjSIrd-qr_-bXT(:hEr=_*=7%smU5jR+j,Y-f8v|oT>
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'wp_ky7oc37vaj_';
 
 
 /* Add any custom values between this line and the "stop editing" line. */
