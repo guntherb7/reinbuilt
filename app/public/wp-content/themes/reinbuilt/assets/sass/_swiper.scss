@@ -26,6 +26,9 @@
   margin-top: 60px;
 
   img.hero--image {
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
     filter: brightness(0.8);
   }
 }

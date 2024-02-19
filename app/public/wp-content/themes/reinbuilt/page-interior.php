@@ -13,7 +13,7 @@
 	</div>
 </div>
 <!-- START SLIDER 1 -->
-<h2 class="text-center project-title">Mountain View</h2>
+<h2 class="text-center project-title">Greenwich</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp" loading="lazy"
@@ -54,7 +54,7 @@
 </div>
 <!-- END SLIDER 1 -->
 <!-- START SLIDER 2 -->
-<h2 class="text-center project-title">Baxter</h2>
+<h2 class="text-center project-title">London Terrace</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/Baxter-75-jpeg.webp" loading="lazy"
@@ -103,7 +103,7 @@
 </div>
 <!-- END SLIDER 2 -->
 <!-- START SLIDER 3 -->
-<h2 class="text-center project-title">Orange</h2>
+<h2 class="text-center project-title">Atlantic</h2>
 <div class="swiper mySwiper">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
@@ -147,8 +147,8 @@
 </div>
 <!-- END SLIDER 3 -->
 <h2 class="text-logo logo text-center">Reinbuilt</h2>
-<h3 class="text-center section--header">Inspired design impeccably built</h3>
-<h3 class="text-center section--header">Design build process</h3>
+<h3 class="text-center section--header">No detail is too small</h3>
+<h3 class="text-center section--header">Interior design</h3>
 <img src="/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png" loading="lazy"
 	alt="Design Build Process Schematic" class="build-process" width="1200" height="525" />
 <section>
