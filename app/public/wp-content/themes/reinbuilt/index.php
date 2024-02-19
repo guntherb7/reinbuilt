@@ -222,8 +222,8 @@
 	</div>
 </section>
 <section>
-	<img src="https://euphoric-dust.flywheelsites.com/wp-content/uploads/2024/02/Full-n_orange_drive-37-1-jpg.webp"
-		loading="lazy" alt="placeholder" width=“415” height=“300” />
+	<img src="/wp-content/uploads/2024/02/Full-n_orange_drive-37-1-jpg.webp" loading="lazy" alt="placeholder"
+		width=“415” height=“300” />
 	<a href="/visualize" role="button" class="visualize-button">Click here to start your project</a>
 </section>
 
