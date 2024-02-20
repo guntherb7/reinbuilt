@@ -19,8 +19,6 @@ html,
 body {
   margin: 0;
   position: relative;
-  height: 100%;
-
   display: block;
   min-height: 100vh;
 }
@@ -226,7 +224,9 @@ textarea:not([rows]) {
 }
 
 @media screen and (max-width: 768px) {
-
+  .nav {
+    max-width: 100%;
+  }
 
   .grid-2 {
     grid-template-columns: 1fr;
