@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <div class="hero">
-	<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
+	<a href="/">
+		<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
+	</a>
 	<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/EL-PALACIO_WEST-WING-1-jpeg.webp"
 		data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1172" />
 </div>
