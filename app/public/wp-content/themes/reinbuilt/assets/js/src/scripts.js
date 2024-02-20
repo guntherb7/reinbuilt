@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", function initializeDarkMode() {
   if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
     document.querySelector(". ").classList.add("dark-mode");
+    document.querySelector(".nav").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
     document.querySelector(".light-icon").style.display = "none";
     document.querySelector(".dark-icon").style.display = "block";
@@ -115,25 +116,25 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.classList.toggle("open");
   }
 
-  // function closeMenu() {
-  //   console.log("Closing menu");
-  //   menuItems.classList.remove("open");
-  // }
+  function closeMenu() {
+    console.log("Closing menu");
+    menuItems.classList.remove("open");
+  }
 
-  // if (menu) {
-  //   menu.addEventListener("click", toggleMenu);
-  // } else {
-  //   console.log("Menu element not found");
-  // }
+  if (menu) {
+    menu.addEventListener("click", toggleMenu);
+  } else {
+    console.log("Menu element not found");
+  }
 
-  // if (heroLogo) {
-  //   heroLogo.addEventListener("mouseover", toggleMenu);
-  // } else {
-  //   console.log("Hero logo element not found");
-  // // }
+  if (heroLogo) {
+    heroLogo.addEventListener("mouseover", toggleMenu);
+  } else {
+    console.log("Hero logo element not found");
+  }
 
-  // window.addEventListener("resize", closeMenu);
-  // window.addEventListener("scroll", closeMenu);
+  window.addEventListener("resize", closeMenu);
+  window.addEventListener("scroll", closeMenu);
 });
 
 // add a class of active to the current page link
