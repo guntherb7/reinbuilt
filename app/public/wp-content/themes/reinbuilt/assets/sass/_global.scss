@@ -20,7 +20,7 @@ body {
   margin: 0;
   position: relative;
   height: 100%;
-  overflow-x: hidden;
+
   display: block;
   min-height: 100vh;
 }
@@ -226,10 +226,7 @@ textarea:not([rows]) {
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    max-width: 100%;
-    margin: 0;
-  }
+
 
   .grid-2 {
     grid-template-columns: 1fr;
