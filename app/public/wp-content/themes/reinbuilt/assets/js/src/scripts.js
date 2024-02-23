@@ -5,12 +5,13 @@
  * @author Gunther Beam LLC
  */
 /*jshint esversion: 6 */
-
 // Smooth Scroll library
 const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {});
-console;
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
@@ -18,6 +19,7 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
+// Dark Mode
 function darkMode() {
   const element = document.body;
   const nav = document.querySelector(".nav");

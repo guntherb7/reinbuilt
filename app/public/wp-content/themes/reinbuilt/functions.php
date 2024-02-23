@@ -66,10 +66,15 @@ function reinbuilt_child()
 	// Compiled .js using Grunt.js
 	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), null, true);
 	wp_enqueue_script('custom-scripts');
-	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/nav.min.js', array('jquery'), null, true);
-	wp_enqueue_script('custom-scripts');
-	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/swiper-files.min.js', array('jquery'), null, true);
-	wp_enqueue_script('custom-scripts');
+
+	wp_register_script('home-scripts', get_stylesheet_directory_uri() . '/assets/js/home.min.js', array('jquery'), null, true);
+	wp_enqueue_script('home-scripts');
+
+	wp_register_script('nav-scripts', get_stylesheet_directory_uri() . '/assets/js/nav.min.js', array('jquery'), null, true);
+	wp_enqueue_script('nav-scripts');
+
+	wp_register_script('swiper-scripts', get_stylesheet_directory_uri() . '/assets/js/swiper-files.min.js', array('jquery'), null, true);
+	wp_enqueue_script('swiper-scripts');
 
 	if (is_page_template('front-page.php')) {
 
