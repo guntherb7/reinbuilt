@@ -1,0 +1,20 @@
+.hero {
+    position: relative;
+    margin-inline: auto;
+    max-width: 1920px;
+
+    img.hero--image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+section {
+    padding-block: 60px;
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+.section--header {
+    margin-block: 150px;
+}

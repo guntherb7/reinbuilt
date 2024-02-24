@@ -1,34 +1,31 @@
 .hero-swiper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100svh;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: transform 750ms ease-in-out;
-    z-index: 100;
+    z-index: 999;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    &--active {
+        transform: translateY(-100%);
+    }
 }
 
-.hero-swiper--active {
-    transform: translateY(-100%);
-}
 
-.hero {
-    position: relative;
-    margin-inline: auto;
-    // max-width: 1920px;
+.hero--logo {
+    @include hero-logo;
 
-    img.hero--image {
-        width: 100%;
-        max-height: 100svh;
-        filter: brightness(0.8);
-        object-fit: fill
-    }
-
-    .hero--logo {
-        @include hero-logo;
-    }
-
-    .hero--logo:hover {
+    :hover {
         cursor: pointer;
     }
 }
@@ -36,22 +33,12 @@
 .text-logo {
     @include text-logo;
     margin-block: 60px;
+
+    :hover {
+        cursor: pointer;
+    }
 }
 
-section {
-    padding-block: 60px;
-    max-width: 1920px;
-    margin-inline: auto;
-}
-
-.section--header {
-    margin-block: 150px;
-}
-
-#forminator-module-123 {
-    max-width: 500px;
-    margin: 0 auto;
-}
 
 @media screen and (max-width: 768px) {
     .hero-swiper {
