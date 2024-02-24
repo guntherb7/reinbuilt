@@ -1,12 +1,14 @@
 <?php get_header(); ?>
-<div class="hero">
-	<a href="/">
-		<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
-	</a>
-	<img class="hero--image" alt=""
-		src="/wp-content/uploads/2024/02/tristam_1_main_entrance_ultra-private_villas_Rosewood_Residence_00d8803e-16d6-4fb1-ba09-5b2bbf5fbd67-1-jpeg.webp"
-		data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1132" />
-</div>
+<section>
+	<div class="hero">
+		<a href="/">
+			<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
+		</a>
+		<img class="hero--image" alt=""
+			src="/wp-content/uploads/2024/02/tristam_1_main_entrance_ultra-private_villas_Rosewood_Residence_00d8803e-16d6-4fb1-ba09-5b2bbf5fbd67-1-jpeg.webp"
+			data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1132" />
+	</div>
+</section>
 <!-- START SLIDER 1 -->
 <h2 class="text-center project-title">Mountain View</h2>
 <div class="swiper mySwiper">

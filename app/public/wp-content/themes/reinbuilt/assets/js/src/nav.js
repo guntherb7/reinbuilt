@@ -6,7 +6,7 @@
  */
 /*jshint esversion: 6 */
 
-// Dark Mode
+// Dark Mode Function
 function darkMode() {
   const element = document.body;
   const nav = document.querySelector(".nav");
@@ -29,7 +29,8 @@ function darkMode() {
   }
 }
 
-window.addEventListener("DOMContentLoaded", function initializeDarkMode() {
+// Dark Mode Initialization
+document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
   var bodyBackgroundColor = getComputedStyle(document.body).backgroundColor;
 
   if (localStorage.getItem("darkMode") === "true") {
@@ -47,14 +48,15 @@ window.addEventListener("DOMContentLoaded", function initializeDarkMode() {
   }
 });
 
-// Dark Mode Toggle
-var darkModeButton = document.querySelector(".darkMode");
-
-if (darkModeButton) {
-  darkModeButton.addEventListener("click", darkMode);
-}
-
+// Dark Mode Event Listener
 document.addEventListener("DOMContentLoaded", function () {
+  // Dark Mode Toggle
+  var darkModeButton = document.querySelector(".darkMode");
+
+  if (darkModeButton) {
+    darkModeButton.addEventListener("click", darkMode);
+  }
+
   var menu = document.getElementById("menu");
   var menuItems = document.querySelector(".menu-items");
   var heroLogo = document.querySelector(".hero--logo");
@@ -64,25 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.classList.toggle("open");
   }
 
-  function closeMenu() {
-    console.log("Closing menu");
-    menuItems.classList.remove("open");
-  }
-
   if (menu) {
     menu.addEventListener("click", toggleMenu);
   } else {
     console.log("Menu element not found");
   }
-
-  if (heroLogo) {
-    heroLogo.addEventListener("mouseover", toggleMenu);
-  } else {
-    console.log("Hero logo element not found");
-  }
-
-  window.addEventListener("resize", closeMenu);
-  window.addEventListener("scroll", closeMenu);
 });
 
 // add a class of active to the current page link
@@ -94,3 +82,19 @@ for (let i = 0; i < menuLength; i++) {
     menuItem[i].className = "active";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page is one of the target pages
+  if (
+    document.URL.includes("/interior") ||
+    document.URL.includes("/restoration") ||
+    document.URL.includes("/visualization") ||
+    document.URL.includes("/calculators")
+  ) {
+    // Select all elements with the .nav class
+    const navElements = document.querySelectorAll(".nav");
+
+    // Remove the .nav--inactive class from each element
+    navElements.forEach((element) => element.classList.remove("nav--inactive"));
+  }
+});

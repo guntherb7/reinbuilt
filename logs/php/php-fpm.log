@@ -505,3 +505,8 @@
 [23-Feb-2024 21:28:28] NOTICE: exiting, bye-bye!
 [24-Feb-2024 08:41:10] NOTICE: fpm is running, pid 1253
 [24-Feb-2024 08:41:10] NOTICE: ready to handle connections
+[24-Feb-2024 10:04:18] NOTICE: Terminating ...
+[24-Feb-2024 10:04:18] NOTICE: Terminating ...
+[24-Feb-2024 10:04:18] NOTICE: exiting, bye-bye!
+[24-Feb-2024 10:04:22] NOTICE: fpm is running, pid 6347
+[24-Feb-2024 10:04:22] NOTICE: ready to handle connections
