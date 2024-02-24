@@ -1,19 +1,7 @@
-/**
- * Theme scripting
- *
- * @package reinbuilt
- * @author Gunther Beam LLC
- */
-/*jshint esversion: 6 */
-
 document.addEventListener("DOMContentLoaded", (event) => {
-  const services = document.querySelectorAll(".welcome__list__item__link");
-  const heading = document.querySelector(".heading");
-  const elWelcome = document.querySelector(".welcome");
-  const elTagline = document.querySelector(".tagline");
-  const elArrow = document.querySelector(".arrowdown");
-  const h1 = document.getElementsByTagName("h1");
-  let timer;
+  const services = document.querySelectorAll(".hero-swiper__list__item__link");
+  const elHeroSwiper = document.querySelector(".hero-swiper");
+  const elNav = document.querySelector(".nav");
 
   let elBody = document.body;
   let phone =
@@ -21,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let tablet =
     "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
 
-  function welcomeActivated(e) {
+  function heroSwiperActivated(e) {
     // take in the click ^ (e)vent
 
     // prevent browser from refreshing
@@ -46,27 +34,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     history.pushState(id, null, url);
 
     // reveal content by toggling overlay & ability to scroll
-    elWelcome.classList.add("welcome--active");
+    elHeroSwiper.classList.add("hero-swiper--active");
+    elNav.classList.remove("nav--inactive");
     elBody.classList.remove("noscroll");
   }
 
   services.forEach((service) =>
-    service.addEventListener("click", welcomeActivated)
+    service.addEventListener("click", heroSwiperActivated)
   );
 
-  elTagline.addEventListener("click", welcomeActivated);
-
-  elArrow.addEventListener("click", welcomeActivated);
-
   // Scroll is disable (overflow:hidden) so we use `wheel` event
-  elWelcome.addEventListener("wheel", welcomeActivated);
+  elHeroSwiper.addEventListener("wheel", heroSwiperActivated);
 
   // Swipe Event
-  elWelcome.addEventListener("touchmove", welcomeActivated);
+  elHeroSwiper.addEventListener("touchmove", heroSwiperActivated);
 
   window.addEventListener("popstate", (e) => {
     // reveal content by toggling overlay & ability to scroll
-    elWelcome.classList.toggle("welcome--active");
+    elHeroSwiper.classList.toggle("hero-swiper--active");
+    elNav.classList.remove("nav--inactive");
     elBody.classList.toggle("noscroll");
   });
 });

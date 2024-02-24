@@ -3,7 +3,7 @@ nav {
   max-width: 1920px;
   background-color: $light-background;
   width: 100%;
-  margin: -60px auto 0;
+  // margin: -60px auto 0;
   height: 60px;
   z-index: 999;
   left: 50%;
@@ -127,6 +127,10 @@ nav {
       display: none;
     }
   }
+}
+
+.nav--inactive {
+  display: none !important;
 }
 
 @media screen and (max-width: 768px) {
