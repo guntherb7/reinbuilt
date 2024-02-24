@@ -13,7 +13,7 @@
 	</div>
 </div>
 <!-- START SLIDER 1 -->
-<section>
+<section class="first-section">
 	<h2 class="text-center project-title">Mountain View</h2>
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">

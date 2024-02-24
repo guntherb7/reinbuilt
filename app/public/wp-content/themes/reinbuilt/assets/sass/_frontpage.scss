@@ -16,28 +16,23 @@
     background-size: cover;
     background-position: center;
 
+    img.hero--image {
+        filter: brightness(0.8);
+    }
+
+    .hero--logo {
+        @include hero-logo;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
     &--active {
         transform: translateY(-100%);
     }
 }
 
-
-.hero--logo {
-    @include hero-logo;
-
-    :hover {
-        cursor: pointer;
-    }
-}
-
-.text-logo {
-    @include text-logo;
-    margin-block: 60px;
-
-    :hover {
-        cursor: pointer;
-    }
-}
 
 
 @media screen and (max-width: 768px) {
@@ -46,19 +41,25 @@
             top: 20px;
             font-size: 24px;
         }
+
+        img.hero--image {
+            object-fit: cover;
+            max-height: 100svh;
+            width: auto;
+        }
     }
 }
 
-// @keyframes updown {
-//     0% {
-//         transform: translate(-50%, -20%);
-//     }
+@keyframes updown {
+    0% {
+        transform: translate(-50%, -20%);
+    }
 
-//     50% {
-//         transform: translate(-50%, 20%);
-//     }
+    50% {
+        transform: translate(-50%, 20%);
+    }
 
-//     100% {
-//         transform: translate(-50%, -20%);
-//     }
-// }
+    100% {
+        transform: translate(-50%, -20%);
+    }
+}

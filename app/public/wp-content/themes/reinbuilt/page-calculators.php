@@ -1,4 +1,4 @@
-<section>
+<section class="first-section">
     <?php get_header(); ?>
     <div class="content">
         <a href="/">

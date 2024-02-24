@@ -6,7 +6,6 @@
  */
 /*jshint esversion: 6 */
 document.addEventListener("DOMContentLoaded", (event) => {
-  const services = document.querySelectorAll(".hero-swiper__list__item__link");
   const elHeroSwiper = document.querySelector(".hero-swiper");
   const elNav = document.querySelector(".nav");
 
@@ -46,9 +45,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     elBody.classList.remove("noscroll");
   }
 
-  services.forEach((service) =>
-    service.addEventListener("click", heroSwiperActivated)
-  );
+  // Event Listeners
+  elHeroSwiper.addEventListener("click", heroSwiperActivated);
 
   // Scroll is disable (overflow:hidden) so we use `wheel` event
   elHeroSwiper.addEventListener("wheel", heroSwiperActivated);
