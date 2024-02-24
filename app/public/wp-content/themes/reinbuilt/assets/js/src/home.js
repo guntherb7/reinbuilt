@@ -1,3 +1,10 @@
+/**
+ * Theme scripting
+ *
+ * @package reinbuilt
+ * @author Gunther Beam LLC
+ */
+/*jshint esversion: 6 */
 document.addEventListener("DOMContentLoaded", (event) => {
   const services = document.querySelectorAll(".hero-swiper__list__item__link");
   const elHeroSwiper = document.querySelector(".hero-swiper");
