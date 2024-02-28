@@ -1,6 +1,6 @@
 nav {
   position: fixed;
-  max-width: 1920px;
+  // max-width: 1920px;
   background-color: $light-background;
   width: 100%;
   // margin: -60px auto 0;
@@ -8,6 +8,7 @@ nav {
   z-index: 999;
   left: 50%;
   transform: translateX(-50%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 
   .menu-items {
     flex-direction: column;
@@ -27,7 +28,7 @@ nav {
 
   a {
     @include nav-font;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 0.7rem;
   }
 

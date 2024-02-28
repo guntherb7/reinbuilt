@@ -202,6 +202,24 @@ textarea:not([rows]) {
   }
 }
 
+.contact {
+  #mc_embed_signup {
+    margin: 80px auto;
+    padding: 15px;
+    font: 16px $jost;
+    border-radius: 6px;
+    background: #fff;
+    clear: left;
+    width: 600px;
+    color: $dark-font;
+
+    .button {
+      font: 18px $jost;
+      background-color: $dark-background;
+    }
+  }
+}
+
 .build-process {
   max-width: 1300px;
   width: 100%;
@@ -214,8 +232,9 @@ textarea:not([rows]) {
   color: $light-font;
   font-size: 24px;
   letter-spacing: 1px;
-  margin: 80px auto;
+  margin: 60px auto;
   padding: 10px 40px;
+  border: 2px $light-background solid;
   border-radius: 6px;
   width: fit-content;
   text-align: center;

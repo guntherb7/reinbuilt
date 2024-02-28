@@ -22,8 +22,9 @@
 
     .hero--logo {
         @include hero-logo;
+        cursor: pointer;
 
-        :hover {
+        ´ :hover {
             cursor: pointer;
         }
     }
