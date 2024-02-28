@@ -1,137 +1,141 @@
-nav {
+header {
   position: fixed;
-  // max-width: 1920px;
-  background-color: $light-background;
-  width: 100%;
-  // margin: -60px auto 0;
-  height: 60px;
-  z-index: 999;
-  left: 50%;
-  transform: translateX(-50%);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  max-width: 100vw;
+  width: 100%;
+  z-index: 999;
 
-  .menu-items {
-    flex-direction: column;
+  .nav {
+    max-width: 1920px;
     background-color: $light-background;
+    height: 60px;
     margin: 0 auto;
-    padding-top: 120px;
-    height: 100vh;
-    width: 100%;
-    transform: translateY(-150%);
-    transition: transform 0.6s ease-in-out;
-    text-align: center;
-  }
+    position: relative;
 
-  .open {
-    display: block !important;
-  }
-
-  a {
-    @include nav-font;
-    font-size: 2rem;
-    padding: 0.7rem;
-  }
-
-  a.active {
-    font-weight: 700 !important;
-  }
-
-  .checkbox {
-    position: absolute;
-    display: block;
-    height: 32px;
-    width: 32px;
-    top: 12px;
-    right: 17px;
-    z-index: 5;
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .hamburger-lines {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 26px;
-    width: 32px;
-    top: 17px;
-    right: 20px;
-    z-index: 2;
-  }
-
-  .nav-icon {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    fill: currentColor;
-    right: 75px;
-    top: 13px;
-    width: 2em;
-    height: 2em;
-    z-index: 2;
-  }
-
-  .dark-icon {
-    display: none;
-  }
-
-  .overlay {
-    color: $dark-background;
-  }
-
-  .hamburger-lines {
-    .line {
-      display: block;
-      height: 4px;
+    .menu-items {
+      flex-direction: column;
+      background-color: $light-background;
+      margin: 0 auto;
+      padding-top: 120px;
+      height: 100vh;
       width: 100%;
-      border-radius: 10px;
-      background: currentColor;
+      max-width: 1920px;
+      transform: translateY(-150%);
+      transition: transform 0.6s ease-in-out;
+      text-align: center;
     }
 
-    .line1 {
-      transform-origin: 0% 0%;
-      transition: transform 0.4s ease-in-out;
+    .open {
+      display: block !important;
     }
 
-    .line2 {
-      transition: transform 0.2s ease-in-out;
+    a {
+      @include nav-font;
+      font-size: 2rem;
+      padding: 0.7rem;
     }
 
-    .line3 {
-      transform-origin: 0% 100%;
-      transition: transform 0.4s ease-in-out;
-    }
-  }
-
-  input[type="checkbox"]:checked {
-    ~.menu-items {
-      transform: translateX(0);
+    a.active {
+      font-weight: 700 !important;
     }
 
-    ~.hamburger-lines {
+    .checkbox {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 12px;
+      right: 17px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .hamburger-lines {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 26px;
+      width: 32px;
+      top: 17px;
+      right: 20px;
+      z-index: 2;
+    }
+
+    .nav-icon {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      fill: currentColor;
+      right: 75px;
+      top: 13px;
+      width: 2em;
+      height: 2em;
+      z-index: 2;
+    }
+
+    .dark-icon {
+      display: none;
+    }
+
+    .overlay {
+      color: $dark-background;
+    }
+
+    .hamburger-lines {
+      .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: currentColor;
+      }
+
       .line1 {
-        transform: rotate(45deg);
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
       }
 
       .line2 {
-        transform: scaleY(0);
+        transition: transform 0.2s ease-in-out;
       }
 
       .line3 {
-        transform: rotate(-45deg);
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
       }
     }
 
-    ~.logo {
-      display: none;
+    input[type="checkbox"]:checked {
+      ~.menu-items {
+        transform: translateX(0);
+      }
+
+      ~.hamburger-lines {
+        .line1 {
+          transform: rotate(45deg);
+        }
+
+        .line2 {
+          transform: scaleY(0);
+        }
+
+        .line3 {
+          transform: rotate(-45deg);
+        }
+      }
+
+      ~.logo {
+        display: none;
+      }
     }
   }
-}
 
-.nav--inactive {
-  display: none !important;
+  .nav--inactive {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
