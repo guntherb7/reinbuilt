@@ -53,7 +53,7 @@
         <li><a href="/">Architecture</a></li>
         <li><a href="/interior/">Interior</a></li>
         <li><a href="/restoration/">Restoration</a></li>
-        <li><a href="/calculators/">Calculators</a></li>
+        <!-- <li><a href="/calculators/">Calculators</a></li> -->
         <li><a href="/visualization/">Visualization</a></li>
       </ul>
     </nav>
