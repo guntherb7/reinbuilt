@@ -37,10 +37,10 @@
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->
-      <img src="/wp-content/uploads/2024/02/moon-solid.svg" alt="Light Icon" class="nav-icon light-icon"
+      <img src="/wp-content/uploads/2024/02/moon-solid.png" alt="Light Icon" class="nav-icon light-icon"
         onclick="darkMode()">
       <!-- Light Mode Icon -->
-      <img src="/wp-content/uploads/2024/02/sun-solid.svg" alt="Dark Icon" class="nav-icon dark-icon"
+      <img src="/wp-content/uploads/2024/02/sun-solid.png" alt="Dark Icon" class="nav-icon dark-icon"
         onclick="darkMode()">
       <!-- Hamburger Icon -->
       <div class="hamburger-lines">

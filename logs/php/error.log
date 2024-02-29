@@ -2624,3 +2624,18 @@ Stack trace:
 [29-Feb-2024 17:09:49 UTC] Flywheel::DatabaseConnection
 [29-Feb-2024 17:09:52 UTC] Flywheel::DatabaseConnection
 [29-Feb-2024 17:09:52 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:19 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:19 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:20 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:21 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:22 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:22 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 19:33:22 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 20:37:36 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 20:37:37 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 21:01:50 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 21:01:50 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 21:01:50 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 21:01:50 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 21:01:50 UTC] Flywheel::DatabaseConnection
+[29-Feb-2024 21:06:53 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/guntherbeam/Local Sites/reinbuilt/app/public/wp-includes/class-wp-customize-widgets.php on line 905

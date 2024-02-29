@@ -191,7 +191,6 @@ function my_login_logo()
 			background-repeat: no-repeat;
 			padding-bottom: 30px;
 		}
-
 	</style>
 <?php }
 add_action('login_enqueue_scripts', 'my_login_logo');
