@@ -271,6 +271,16 @@ textarea:not([rows]) {
     margin-block: 20px;
   }
 
+  .contact {
+    #mc_embed_signup {
+      width: 90vw;
+    }
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+
   .visualize-button {
     font-size: 18px;
     white-space: nowrap;
