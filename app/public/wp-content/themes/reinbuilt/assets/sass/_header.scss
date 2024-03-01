@@ -71,8 +71,8 @@ header {
       fill: currentColor;
       right: 75px;
       top: 10px;
-      width: 30px;
-      height: auto;
+      width: auto;
+      height: 30px;
       z-index: 2;
     }
 
@@ -139,12 +139,13 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    .nav {
+      max-width: 100%;
 
-  .nav {
-    max-width: 100%;
-
-    a {
-      font-size: 1.5rem;
+      a {
+        font-size: 1.5rem;
+      }
     }
   }
 }
