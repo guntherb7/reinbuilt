@@ -4,7 +4,7 @@
  * @package reinbuilt
  * @author Gunther Beam LLC
  */
-/*jshint esversion: 6 */
+/*jshint esversion: 11 */
 
 // Dark Mode Function
 function darkMode() {

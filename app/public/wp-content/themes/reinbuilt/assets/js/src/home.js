@@ -4,7 +4,8 @@
  * @package reinbuilt
  * @author Gunther Beam LLC
  */
-/*jshint esversion: 6 */
+/*jshint esversion: 11 */
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const elHeroSwiper = document.querySelector(".hero-swiper");
   const elNav = document.querySelector(".nav");

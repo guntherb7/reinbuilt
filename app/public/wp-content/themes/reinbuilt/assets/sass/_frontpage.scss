@@ -21,8 +21,15 @@
     }
 
     .hero--logo {
-        @include hero-logo;
+        max-width: 275px;
+        width: 100%;
+        height: auto;
         cursor: pointer;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        z-index: 998;
+        transform: translate(-50%, 0);
 
         ´ :hover {
             cursor: pointer;
@@ -34,6 +41,12 @@
     }
 }
 
+.page--logo {
+    max-width: 275px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 
 
 @media screen and (max-width: 768px) {

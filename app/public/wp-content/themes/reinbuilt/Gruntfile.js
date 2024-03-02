@@ -34,6 +34,7 @@ module.exports = function (grunt) {
           "assets/js/home.min.js": ["assets/js/src/home.js"],
           "assets/js/nav.min.js": "assets/js/src/nav.js",
           "assets/js/swiper-files.min.js": "assets/js/src/swiper-files.js",
+          "assets/js/app.min.js": "assets/js/src/app.js",
         },
       },
     },
@@ -54,6 +55,9 @@ module.exports = function (grunt) {
         files: {
           "assets/js/scripts.min.js": ["assets/js/src/scripts.js"],
           "assets/js/home.min.js": ["assets/js/src/home.js"],
+          "assets/js/nav.min.js": "assets/js/src/nav.js",
+          "assets/js/swiper-files.min.js": "assets/js/src/swiper-files.js",
+          "assets/js/app.min.js": "assets/js/src/app.js",
         },
       },
     },
@@ -79,7 +83,7 @@ module.exports = function (grunt) {
         tasks: ["cssmin"],
       },
       scripts: {
-        files: ["assets/js/src/*.js"],
+        files: ["assets/js/src/*.js/*", "assets/js/src/*.js"],
         tasks: ["jshint", "concat", "uglify"],
       },
     },

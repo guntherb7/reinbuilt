@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <div class="swiper hero-swiper">
-	<h1 class="hero--logo light-icon">Reinbuilt</h1>
+	<div class="hero--logo light-icon">
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" data-object-fit="cover" loading="eager"
+			fetchpriority="high" />
+	</div>
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
@@ -12,9 +15,12 @@
 		</div>
 	</div>
 </div>
+<section class="first-section"></section>
 <!-- START SLIDER 1 -->
 <section class="first-section">
-	<h2 class="text-center project-title">Mountain View</h2>
+	<h2 class="text-center project-title" onclick="heroSplash()">Mountain View</h2>
+	<!-- <img class="hero--image" alt="" src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
+		data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1217" /> -->
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"
@@ -154,7 +160,10 @@
 </section>
 <!-- END SLIDER 3 -->
 <section>
-	<h2 class="text-logo logo text-center">Reinbuilt</h2>
+	<div class="dark-icon page--logo">
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" data-object-fit="cover" loading="lazy"
+			fetchpriority="high" />
+	</div>
 	<h3 class="text-center section--header">Inspired design impeccably built</h3>
 	<h3 class="text-center section--header">Design build process</h3>
 	<img src="/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png" loading="lazy"
@@ -166,19 +175,23 @@
 			<h2 class="project-title">Project outline</h2>
 			<p>Step 1: Programming and Discovery <br>
 				In this stage, we work through submitting and reviewing construction documents and assessing and
-				negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline with
+				negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline
+				with
 				our
 				clients.
 			</p>
 			<p>Step 2: Schematic Design: <br>
 				After the first step, we then move into analyzing the structure needed for the build and start site
-				work.This includes deciding where the shell and core of the building should be placed. In this stage, we
+				work.This includes deciding where the shell and core of the building should be placed. In this
+				stage, we
 				also negotiate with vendors about pricing and consult MEP.
 			</p>
 			<p>Step 3: Design Development <br>
-				The next step in the process is designing the shell and core of the house and creating foundation and
+				The next step in the process is designing the shell and core of the house and creating foundation
+				and
 				framing
-				plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into the
+				plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into
+				the
 				building.</p>
 			<p>Step 4: Construction Documentation <br>
 				If our client chooses to integrate interior design into their space, this stage is dedicated to
@@ -188,7 +201,8 @@
 				and coordinate with engineers for mechanical, plumbing, and electrical plans.</p>
 			<p>Step 5: Construction Administration <br>
 				This final step is dedicated to guaranteeing everything is complete and finalizing both interior
-				and architectural finishes. This is also the stage where we finalize furniture for the interior design
+				and architectural finishes. This is also the stage where we finalize furniture for the interior
+				design
 				package.</p>
 		</div>
 		<img src="/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy" alt="placeholder" width=“415”
@@ -203,19 +217,23 @@
 			<h2 class="project-title">Project outline</h2>
 			<p>Step 1: Programming and Discovery <br>
 				In this stage, we work through submitting and reviewing construction documents and assessing and
-				negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline with
+				negotiating contracts. We also hold a kickoff meeting with our team and discuss schedule-timeline
+				with
 				our
 				clients.
 			</p>
 			<p>Step 2: Schematic Design: <br>
 				After the first step, we then move into analyzing the structure needed for the build and start site
-				work.This includes deciding where the shell and core of the building should be placed. In this stage, we
+				work.This includes deciding where the shell and core of the building should be placed. In this
+				stage, we
 				also negotiate with vendors about pricing and consult MEP.
 			</p>
 			<p>Step 3: Design Development <br>
-				The next step in the process is designing the shell and core of the house and creating foundation and
+				The next step in the process is designing the shell and core of the house and creating foundation
+				and
 				framing
-				plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into the
+				plans. We also finalize who will be the MEP engineer and discuss how to integrate these systems into
+				the
 				building.</p>
 			<p>Step 4: Construction Documentation <br>
 				If our client chooses to integrate interior design into their space, this stage is dedicated to
@@ -225,7 +243,8 @@
 				and coordinate with engineers for mechanical, plumbing, and electrical plans.</p>
 			<p>Step 5: Construction Administration <br>
 				This final step is dedicated to guaranteeing everything is complete and finalizing both interior
-				and architectural finishes. This is also the stage where we finalize furniture for the interior design
+				and architectural finishes. This is also the stage where we finalize furniture for the interior
+				design
 				package.</p>
 		</div>
 	</div>
@@ -261,7 +280,8 @@
 							<div class="response" id="mce-success-response" style="display: none;"></div>
 						</div>
 						<div aria-hidden="true" style="position: absolute; left: -5000px;">
-							/* real people should not fill this in and expect good things - do not remove this or risk
+							/* real people should not fill this in and expect good things - do not remove this or
+							risk
 							form bot signups */
 							<input type="text" name="b_c84950591afda259787f3a3ba_9d1eaef23a" tabindex="-1" value="">
 						</div>

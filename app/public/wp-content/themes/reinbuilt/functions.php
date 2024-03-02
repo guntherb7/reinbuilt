@@ -19,6 +19,24 @@ require_once dirname(__FILE__) . '/includes/team.php'; // Custom Post Type Case 
  */
 
 
+// The proper way to enqueue GSAP script in WordPress
+
+// wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
+function theme_gsap_script()
+{
+	// The core GSAP library
+	wp_enqueue_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true);
+	// ScrollTrigger - with gsap.js passed as a dependency
+	wp_enqueue_script('gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true);
+	// Your animation code file - with gsap.js passed as a dependency
+	wp_enqueue_script('gsap-js2', get_template_directory_uri() . '/assets/js/app.min.js', array('gsap-js'), false, true);
+}
+
+add_action('wp_enqueue_scripts', 'theme_gsap_script');
+
+
+
+
 //Remove Block Library CSS from loading on the frontend
 function db_dequeue_block_styles_on_home()
 {
@@ -48,7 +66,7 @@ function bs_dequeue_dashicons()
 // 	 */
 // 	register_block_type(__DIR__ . '/blocks/contact');
 // }
-// // Here we call our reinbuilt_register_acf_block() function on init.
+// Here we call our reinbuilt_register_acf_block() function on init.
 // add_action('init', 'reinbuilt_register_acf_blocks');
 
 
@@ -75,6 +93,9 @@ function reinbuilt_child()
 
 	wp_register_script('swiper-scripts', get_stylesheet_directory_uri() . '/assets/js/swiper-files.min.js', array('jquery'), null, true);
 	wp_enqueue_script('swiper-scripts');
+
+	wp_register_script('gsap-scripts', get_stylesheet_directory_uri() . '/assets/js/app.min.js', array('jquery'), null, true);
+	wp_enqueue_script('gsap-scripts');
 
 	if (is_page_template('front-page.php')) {
 
