@@ -32,6 +32,7 @@ const heroSwiper = new Swiper(".hero-swiper", {
   autoplay: {
     delay: 4500,
     disableOnInteraction: true,
+    spaceBetween: 0,
   },
   breakpoints: {
     851: {

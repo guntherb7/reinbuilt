@@ -37,6 +37,26 @@ body {
   color: $dark-font;
 }
 
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 .content {
   margin-inline: auto;
 }
@@ -187,6 +207,7 @@ textarea:not([rows]) {
   margin-inline: auto;
   margin-block: 40px;
   font-size: 44px;
+  cursor: pointer;
 }
 
 .project-step {
@@ -202,22 +223,8 @@ textarea:not([rows]) {
   }
 }
 
-.contact {
-  #mc_embed_signup {
-    margin: 80px auto;
-    padding: 15px;
-    font: 16px $jost;
-    border-radius: 6px;
-    background: #fff;
-    clear: left;
-    width: 600px;
-    color: $dark-font;
-
-    .button {
-      font: 18px $jost;
-      background-color: $dark-background;
-    }
-  }
+.section-hero {
+  display: none;
 }
 
 .build-process {
@@ -269,16 +276,6 @@ textarea:not([rows]) {
   .project-title {
     font-size: 32px;
     margin-block: 20px;
-  }
-
-  .contact {
-    #mc_embed_signup {
-      width: 90vw;
-    }
-
-    .button {
-      margin: 0 auto;
-    }
   }
 
   .visualize-button {

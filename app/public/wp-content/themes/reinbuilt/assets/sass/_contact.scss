@@ -1,101 +1,59 @@
-.contact {
-  margin-inline: auto;
-  display: block;
-  max-width: 1600px;
-  width: 100%;
+.contact-wrapper {
+  position: relative;
 
-  #formwrap {
-    width: 80%;
-    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
-    margin-inline: auto;
-  }
+  .contact {
 
-  .contact-form {
-    max-width: 550px;
-    margin-inline: auto;
+    // margin-inline: auto;
+    // display: block;
+    // max-width: 1600px;
+    // width: 100%;
 
-    .contact-img {
-      max-width: 500px;
-      width: 100%;
-      height: auto;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    h3 {
-      @include heading-font;
-      font-size: 30px;
-      text-align: center;
-    }
-
-    form {
-      padding: 10px;
-    }
-
-    .nameinput,
-    .emailinput {
-      max-width: 550px;
-      height: 48px;
-      border: none;
-      border-radius: 10px;
-      background-clip: padding-box;
-      display: block;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 18px;
-      color: $primary-color;
-      padding: 0 20px;
-      margin-bottom: 20px;
-    }
-
-    input[type="submit"] {
-      cursor: pointer;
-    }
-  }
-
-  .btn {
-    border: none;
-    font-family: $jost;
-    font-size: 18px;
-    width: 200px;
-    height: 48px;
-    color: #000;
-    background: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 400;
-    position: relative;
-    outline: none;
-    border-radius: 2px;
-    margin-right: 6px;
-
-    &:hover {
+    #mc_embed_signup {
+      margin: 80px auto;
+      padding: 15px;
+      font: 16px $jost;
+      border-radius: 6px;
       background: #fff;
-      outline: none;
-      top: 2px;
-    }
+      clear: left;
+      width: 600px;
+      color: $dark-font;
 
-    &:active {
-      background: #fff;
-      outline: none;
-      box-shadow: 0 0 #cecece;
-      top: 6px;
+      .button {
+        font: 18px $jost;
+        background-color: $dark-background;
+      }
     }
   }
+}
 
-  .flat {
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    outline: none;
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
     position: relative;
-    transition: all 0.3s;
 
-    &:before {
-      position: absolute;
-      height: 100%;
+    .contact {
+      position: relative;
+      transform: translate(0);
       left: 0;
       top: 0;
-      line-height: 3;
-      font-size: 140%;
-      width: 60px;
+
+      #mc_embed_shell,
+      #mc_embed_signup {
+        width: 90vw;
+        margin: 80px auto;
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+
+      .button {
+        margin: 0 auto;
+      }
     }
   }
 }

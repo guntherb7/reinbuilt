@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     elHeroSwiper.classList.add("hero-swiper--active");
     elNav.classList.remove("nav--inactive");
     elBody.classList.remove("noscroll");
+    elBody.scrollTop = 0;
   }
 
   // Event Listeners
@@ -60,5 +61,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
     elHeroSwiper.classList.toggle("hero-swiper--active");
     elNav.classList.remove("nav--inactive");
     elBody.classList.toggle("noscroll");
+    elBody.scrollTop = 0;
   });
 });
+
+function heroSplash(e) {
+  var hero = document.getElementById("mountain-view-hero");
+  if (hero.style.display !== "block") {
+    hero.style.display = "block";
+  } else {
+    hero.style.display = "none";
+  }
+}

@@ -7,10 +7,10 @@ header {
 
   .nav {
     max-width: 1920px;
-    background-color: $light-background;
     height: 60px;
     margin: 0 auto;
     position: relative;
+    background-color: $light-background;
 
     .menu-items {
       flex-direction: column;
@@ -23,20 +23,20 @@ header {
       transform: translateY(-150%);
       transition: transform 0.6s ease-in-out;
       text-align: center;
-    }
 
-    .open {
-      display: block !important;
-    }
+      .open {
+        display: block !important;
+      }
 
-    a {
-      @include nav-font;
-      font-size: 2rem;
-      padding: 0.7rem;
-    }
+      a {
+        @include nav-font;
+        font-size: 2rem;
+        padding: 0.7rem;
+      }
 
-    a.active {
-      font-weight: 700 !important;
+      a.active {
+        font-weight: 700 !important;
+      }
     }
 
     .checkbox {
