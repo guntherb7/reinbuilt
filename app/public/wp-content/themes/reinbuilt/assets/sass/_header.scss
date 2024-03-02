@@ -34,9 +34,14 @@ header {
         padding: 0.7rem;
       }
 
+      :visited {
+        color: #737373;
+      }
+
       a.active {
         font-weight: 700 !important;
       }
+
     }
 
     .checkbox {
@@ -76,9 +81,7 @@ header {
       z-index: 2;
     }
 
-    .dark-icon {
-      display: none;
-    }
+
 
     .overlay {
       color: $dark-background;
@@ -133,9 +136,13 @@ header {
     }
   }
 
-  .nav--inactive {
-    display: none !important;
-  }
+  // .nav--inactive {
+  //   display: none !important;
+  // }
+}
+
+.dark-icon {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {

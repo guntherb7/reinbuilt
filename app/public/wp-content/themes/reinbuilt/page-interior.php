@@ -12,46 +12,50 @@
 <!-- HERO END -->
 <!-- START SLIDER 1 -->
 <section class="first-section">
-	<h2 class="text-center project-title">Greenwich</h2>
-	<div class="swiper mySwiper">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"
-					loading="lazy" alt="Mountain View Home Front Door" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+	<h2 class="text-center project-title" onclick="heroSplash()">Greenwich</h2>
+	<img class="section-hero hero--image" alt="Greenwich Hero"
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="eager" fetchpriority="high"
+		width="1920" height="1217" id="mountain-view-hero" />
+	<h2 class="text-center project-title">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"
+						loading="lazy" alt="Mountain View Home Front Door" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairwell-jpg.webp"
+						loading="lazy" alt="Mountain View Home Stairwell" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairs-jpg.webp"
+						loading="lazy" alt="Mountain View Home Stairs" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_HallwayExtended-jpg.webp"
+						loading="lazy" alt="Mountain View Home Hallway" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Kitchen-jpg.webp"
+						loading="lazy" alt="Mountain View Home Kitchen" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_BackDoor-jpg.webp"
+						loading="lazy" alt="Mountain View Home Patio" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_MasterBedrmToBath-jpg.webp"
+						loading="lazy" alt="Mountain View Home Master Bedroom" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
+				<div class="swiper-slide"><img
+						src="/wp-content/uploads/2024/02/MountainView_MasterBedrmSittingArea-jpg.webp" loading="lazy"
+						alt="Mountain View Home Master Sitting Area" width="326" height="415" />
+					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				</div>
 			</div>
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairwell-jpg.webp"
-					loading="lazy" alt="Mountain View Home Stairwell" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairs-jpg.webp" loading="lazy"
-					alt="Mountain View Home Stairs" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_HallwayExtended-jpg.webp"
-					loading="lazy" alt="Mountain View Home Hallway" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Kitchen-jpg.webp"
-					loading="lazy" alt="Mountain View Home Kitchen" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_BackDoor-jpg.webp"
-					loading="lazy" alt="Mountain View Home Patio" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
-			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_MasterBedrmToBath-jpg.webp"
-					loading="lazy" alt="Mountain View Home Master Bedroom" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
-			<div class="swiper-slide"><img
-					src="/wp-content/uploads/2024/02/MountainView_MasterBedrmSittingArea-jpg.webp" loading="lazy"
-					alt="Mountain View Home Master Sitting Area" width="326" height="415" />
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-	</div>
 </section>
 <!-- END SLIDER 1 -->
 <!-- START SLIDER 2 -->
@@ -152,7 +156,12 @@
 </section>
 <!-- END SLIDER 3 -->
 <section>
-	<h2 class="text-logo logo text-center">Reinbuilt</h2>
+	<div class="page--logo">
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="lazy" fetchpriority="low"
+			class="dark-icon" />
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="lazy" fetchpriority="low"
+			class="light-icon" />
+	</div>
 	<h3 class="text-center section--header">No detail is too small</h3>
 	<h3 class="text-center section--header">Interior design</h3>
 	<img src="/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png" loading="lazy"

@@ -64,6 +64,28 @@ html.lenis {
 .dark-mode {
   background-color: $dark-background !important;
   color: $light-font;
+
+  .page--logo {
+    .dark-icon {
+      display: none;
+      background-color: none;
+    }
+
+    .light-icon {
+      background-color: none;
+      display: block;
+    }
+  }
+}
+
+.page--logo {
+  .dark-icon {
+    display: block;
+  }
+
+  .light-icon {
+    display: none;
+  }
 }
 
 .text-center {
@@ -224,6 +246,9 @@ textarea:not([rows]) {
 }
 
 .section-hero {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
   display: none;
 }
 

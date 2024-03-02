@@ -15,7 +15,12 @@
         <!-- <li><a href="/calculators/">Calculators</a></li> -->
         <li><a href="/visualization/">Visualization</a></li>
     </ul>
-    <h2 class="text-logo logo text-center">Reinbuilt</h2>
+    <div class="page--logo">
+        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="lazy" fetchpriority="low"
+            class="dark-icon" />
+        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="lazy" fetchpriority="low"
+            class="light-icon" />
+    </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 

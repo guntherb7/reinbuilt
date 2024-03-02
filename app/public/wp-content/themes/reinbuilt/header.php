@@ -31,7 +31,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body class="noscroll" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
   <header>
     <nav class="nav nav--inactive">
       <!-- Menu Toggle Checkbox -->

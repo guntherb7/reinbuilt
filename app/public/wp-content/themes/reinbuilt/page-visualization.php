@@ -153,7 +153,12 @@
 </section>
 <!-- END SLIDER 3 -->
 <section>
-	<h2 class="text-logo logo text-center">Reinbuilt</h2>
+	<div class="page--logo">
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="lazy" fetchpriority="low"
+			class="dark-icon" />
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="lazy" fetchpriority="low"
+			class="light-icon" />
+	</div>
 	<h3 class="text-center section--header">Intelligent Alternatives, Better Communication</h3>
 	<h3 class="text-center section--header">Pre-Visualization</h3>
 	<img src="/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png" loading="lazy"
