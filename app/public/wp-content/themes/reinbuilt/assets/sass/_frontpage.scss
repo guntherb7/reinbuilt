@@ -57,16 +57,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .hero-swiper {
+        .hero--logo {
+            top: 20px;
+            font-size: 24px;
+        }
 
-    .hero--logo {
-        top: 20px;
-        font-size: 24px;
-    }
-
-    img.hero--image {
-        object-fit: cover;
-        max-height: 100svh;
-        width: auto;
+        img.hero--image {
+            object-fit: cover;
+            max-height: 100svh;
+            width: auto;
+        }
     }
 }
 

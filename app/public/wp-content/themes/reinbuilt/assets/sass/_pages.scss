@@ -2,7 +2,6 @@
     position: relative;
     margin-inline: auto;
     max-width: 1920px;
-    padding-top: 60px;
 
     img.hero--image {
         width: 100%;
@@ -47,5 +46,9 @@ section {
 @media screen and (max-width: 768px) {
     section {
         padding-block: 0;
+    }
+
+    .hero {
+        padding-top: 60px;
     }
 }
