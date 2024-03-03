@@ -65,21 +65,30 @@
 //   });
 // });
 
-function heroSplash(e) {
-  // Get all elements with the class "project-title"
-  var projectTitles = document.getElementsByClassName("project-title");
+function heroSplash1(e) {
+  var hero1 = document.getElementById("section-hero--1");
 
-  // Iterate through each projectTitle element
-  for (var i = 0; i < projectTitles.length; i++) {
-    // Get the parent div of the projectTitle element
-    var parentDiv = projectTitles[i].parentNode;
+  if (hero1.style.display !== "block") {
+    hero1.style.display = "block";
+  } else {
+    hero1.style.display = "none";
+  }
+}
+function heroSplash2(e) {
+  var hero2 = document.getElementById("section-hero--2");
 
-    // Check if the hero element exists within the same parent div
-    if (parentDiv.querySelector(".section-hero")) {
-      var hero = parentDiv.querySelector(".section-hero"); // Get the hero within the same div
+  if (hero2.style.display !== "block") {
+    hero2.style.display = "block";
+  } else {
+    hero2.style.display = "none";
+  }
+}
+function heroSplash3(e) {
+  var hero3 = document.getElementById("section-hero--3");
 
-      // Toggle the display of the hero element
-      hero.style.display = hero.style.display === "block" ? "none" : "block";
-    }
+  if (hero3.style.display !== "block") {
+    hero3.style.display = "block";
+  } else {
+    hero3.style.display = "none";
   }
 }

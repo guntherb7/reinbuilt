@@ -12,10 +12,10 @@
 <!-- HERO END -->
 <!-- START SLIDER 1 -->
 <section class="first-section">
-	<h2 class="text-center project-title" onclick="heroSplash()">Greenwich</h2>
+	<h2 class="text-center project-title" onclick="heroSplash1()">Greenwich</h2>
 	<img class="section-hero hero--image" alt="Greenwich Hero"
-		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="eager" fetchpriority="high"
-		width="1920" height="1217" id="mountain-view-hero" />
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
+		width="1920" height="1217" id="section-hero--1" />
 	<h2 class="text-center project-title">
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
@@ -60,7 +60,10 @@
 <!-- END SLIDER 1 -->
 <!-- START SLIDER 2 -->
 <section>
-	<h2 class="text-center project-title">London Terrace</h2>
+	<h2 class="text-center project-title" onclick="heroSplash2()">London Terrace</h2>
+	<img class="section-hero hero--image" alt="Greenwich Hero"
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
+		width="1920" height="1217" id="section-hero--2" />
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/Baxter-75-jpeg.webp" loading="lazy"
@@ -111,7 +114,10 @@
 <!-- END SLIDER 2 -->
 <!-- START SLIDER 3 -->
 <section>
-	<h2 class="text-center project-title">Atlantic</h2>
+	<h2 class="text-center project-title" onclick="heroSplash3()">Atlantic</h2>
+	<img class="section-hero hero--image" alt="Greenwich Hero"
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
+		width="1920" height="1217" id="section-hero--3" />
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">

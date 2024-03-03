@@ -5,13 +5,14 @@
   margin: 30px auto;
   top: 0;
 
-  .swiper-wrapper {
-    height: auto !important;
-  }
-
   .swiper-slide {
     width: 100%;
     height: auto !important;
+
+    img {
+      margin: 0;
+      object-fit: cover;
+    }
   }
 
   .swiper-button-next,

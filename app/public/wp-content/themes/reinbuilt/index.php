@@ -24,7 +24,7 @@
 		<h2 class="text-center project-title" onclick="heroSplash()">Mountain View</h2>
 		<img class="section-hero hero--image" alt=""
 			src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="eager"
-			fetchpriority="high" width="1920" height="1217" id="mountain-view-hero" />
+			fetchpriority="high" width="1920" height="1217" id="section-hero--1" />
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"

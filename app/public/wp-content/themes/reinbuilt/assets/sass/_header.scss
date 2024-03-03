@@ -32,10 +32,19 @@ header {
         @include nav-font;
         font-size: 2rem;
         padding: 0.7rem;
+        transition: font-size 0.1s ease-out;
       }
 
-      :visited {
-        color: #737373;
+      // :visited {
+      //   color: #737373;
+      // }
+
+      :hover {
+        font-size: 1.9rem;
+      }
+
+      :focus {
+        font-size: 1.5rem;
       }
 
       a.active {
@@ -152,6 +161,10 @@ header {
 
       a {
         font-size: 1.5rem;
+
+        :hover {
+          font-size: 1.4rem;
+        }
       }
     }
   }
