@@ -32,10 +32,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     },
     false
   );
-});
 
-// wait until DOM is ready
-document.addEventListener("DOMContentLoaded", function (event) {
   // create
   let mm = gsap.matchMedia();
 
@@ -54,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           {
             scrollTrigger: {
               trigger: ".contact-hero",
-              start: "center center",
+              start: "+75 center",
               end: "center center",
               markers: true,
             },
