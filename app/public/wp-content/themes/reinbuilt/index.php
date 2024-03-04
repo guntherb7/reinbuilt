@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <div class="swiper hero-swiper">
 	<div class="hero--logo light-icon">
-		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="eager" fetchpriority="high" />
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="eager" fetchpriority="high"
+			alt="Reinbuilt Luxury Homes Logo in White" />
 	</div>
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
@@ -172,9 +173,9 @@
 	<section>
 		<div class="page--logo">
 			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="lazy" fetchpriority="low"
-				class="dark-icon" />
+				class="dark-icon" alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
 			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="lazy" fetchpriority="low"
-				class="light-icon" />
+				class="light-icon" alt="Reinbuilt Luxury Homes Logo in Light Gray" />
 		</div>
 		<h3 class="text-center section--header">Inspired design impeccably built</h3>
 		<h3 class="text-center section--header">Design build process</h3>
