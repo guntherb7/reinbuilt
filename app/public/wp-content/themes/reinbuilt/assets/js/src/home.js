@@ -6,64 +6,71 @@
  */
 /*jshint esversion: 11 */
 
-// document.addEventListener("DOMContentLoaded", (event) => {
-//   const elHeroSwiper = document.querySelector(".hero-swiper");
-//   const elNav = document.querySelector(".nav");
+const elWelcome = document.querySelector(".hero-swiper");
+const elTagline = document.querySelector(".tagline");
+const elArrow = document.querySelector(".arrowdown");
 
-//   let elBody = document.body;
-//   let phone =
-//     "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)";
-//   let tablet =
-//     "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
+let timer;
 
-//   function heroSwiperActivated(e) {
-//     // take in the click ^ (e)vent
+let elBody = document.body;
+let phone =
+  "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)";
+let tablet =
+  "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
 
-//     // prevent browser from refreshing
-//     e.preventDefault();
+function welcomeActivated(e) {
+  // take in the click ^ (e)vent
 
-//     // grab id from event
-//     let { id } = e.target;
+  // prevent browser from refreshing
+  e.preventDefault();
 
-//     // if no id, assign index
-//     if (id === "" || e.type === "wheel" || e.type === "touchmove") {
-//       // to fetch data from
-//       id = "index";
-//       // to change url with
-//       url = "";
-//       // if there is an id, assign it to the url
-//     } else {
-//       // to change url with
-//       url = id;
-//     }
+  // grab id from event
+  let { id } = e.target;
 
-//     // For reference: history(data, title, url)
-//     history.pushState(id, null, url);
+  // if no id, assign index
+  if (id === "" || e.type === "wheel" || e.type === "touchmove") {
+    // to fetch data from
+    id = "index";
+    // to change url with
+    url = "";
+    // if there is an id, assign it to the url
+  } else {
+    // to change url with
+    url = id;
+  }
 
-//     // reveal content by toggling overlay & ability to scroll
-//     elHeroSwiper.classList.add("hero-swiper--active");
-//     elNav.classList.remove("nav--inactive");
-//     elBody.classList.remove("noscroll");
-//     elBody.scrollTop = 0;
-//   }
+  // For reference: history(data, title, url)
+  history.pushState(id, null, url);
 
-//   // Event Listeners
-//   elHeroSwiper.addEventListener("click", heroSwiperActivated);
+  // fetch data
+  // fetchData(id)
 
-//   // Scroll is disable (overflow:hidden) so we use `wheel` event
-//   elHeroSwiper.addEventListener("wheel", heroSwiperActivated);
+  // reveal content by toggling overlay & ability to scroll
+  elWelcome.classList.add("welcome--active");
+  elBody.classList.remove("noscroll");
+}
 
-//   // Swipe Event
-//   elHeroSwiper.addEventListener("touchmove", heroSwiperActivated);
+elTagline.addEventListener("click", welcomeActivated);
 
-//   window.addEventListener("popstate", (e) => {
-//     // reveal content by toggling overlay & ability to scroll
-//     elHeroSwiper.classList.toggle("hero-swiper--active");
-//     elNav.classList.remove("nav--inactive");
-//     elBody.classList.toggle("noscroll");
-//     elBody.scrollTop = 0;
-//   });
-// });
+elArrow.addEventListener("click", welcomeActivated);
+
+// Scroll is disable (overflow:hidden) so we use `wheel` event
+elWelcome.addEventListener("wheel", welcomeActivated);
+
+// Swipe Event
+elWelcome.addEventListener("touchmove", welcomeActivated);
+
+window.addEventListener("popstate", (e) => {
+  // reveal content by toggling overlay & ability to scroll
+  elWelcome.classList.toggle("welcome--active");
+  elBody.classList.toggle("noscroll");
+
+  // target state from event
+  // const { state } = e
+
+  // fetch data
+  // fetchData(state)
+});
 
 function heroSplash1(e) {
   var hero1 = document.getElementById("section-hero--1");
