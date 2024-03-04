@@ -18,6 +18,22 @@ let phone =
 let tablet =
   "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
 
+function lenisScroll() {
+  // Smooth Scroll library
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {
+    console.log(e);
+  });
+
+  lenis.on("scroll", ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
+}
 function welcomeActivated(e) {
   // take in the click ^ (e)vent
 
@@ -48,6 +64,7 @@ function welcomeActivated(e) {
   // reveal content by toggling overlay & ability to scroll
   elWelcome.classList.add("welcome--active");
   elBody.classList.remove("noscroll");
+  setTimeout(lenisScroll, 300);
 }
 
 elTagline.addEventListener("click", welcomeActivated);
