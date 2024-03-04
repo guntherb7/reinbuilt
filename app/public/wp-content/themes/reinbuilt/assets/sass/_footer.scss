@@ -6,32 +6,41 @@
 **/
 
 footer {
-  margin-top: 150px;
+  margin: 150px auto 0;
+  padding-bottom: 150px;
 
-  a {
-    @include nav-font;
-    text-align: center;
-    font-size: 60px;
+  ul {
+    li {
+      a {
+        @include nav-font;
+        text-align: center;
+        font-size: 60px;
+      }
+    }
   }
 
-  .text-logo {
-    margin: 150px auto 0;
+  .page--logo {
+    margin: 80px auto 0;
     padding-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
   footer {
-    margin-top: 50px;
+    margin: 50px auto 0;
 
-    a {
-      @include nav-font;
-      text-align: center;
-      font-size: 30px;
+    ul {
+      li {
+        a {
+          @include nav-font;
+          text-align: center;
+          font-size: 30px;
+        }
+      }
     }
 
-    .text-logo {
-      margin: 80px auto 0;
+    .page--logo {
+      margin: 60px auto 0;
       padding-bottom: 40px;
     }
   }
