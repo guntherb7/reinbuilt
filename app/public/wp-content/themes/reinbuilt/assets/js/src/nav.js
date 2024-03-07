@@ -98,5 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Remove the .nav--inactive class from each element
     navElements.forEach((element) => element.classList.remove("nav--inactive"));
+
+    // add smooth scrolling to page
+    lenisScroll();
   }
 });
