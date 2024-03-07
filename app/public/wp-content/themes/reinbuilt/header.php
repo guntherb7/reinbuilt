@@ -31,7 +31,9 @@
 
 <body <?php body_class(); ?> class="index-page noscroll">
   <header>
-    <nav class="nav">
+    <nav class="nav above-hero">
+      <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="eager" fetchpriority="high"
+        alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="page--logo">
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->

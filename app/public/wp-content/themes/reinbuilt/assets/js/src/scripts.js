@@ -6,9 +6,9 @@
  */
 /*jshint esversion: 11 */
 
-$(document).ready(function () {
-  var nav = $(".nav");
-  var heroSwiper = $(".hero-swiper");
+function handleNavOnScroll() {
+  var nav = $(".nav"); // Replace with your nav element's class
+  var heroSwiper = $(".hero-swiper"); // Replace with your hero-swiper element's class
   var initialScroll = $(window).scrollTop(); // Store initial scroll position
 
   $(window).scroll(function () {
@@ -24,4 +24,11 @@ $(document).ready(function () {
     // Update initial scroll for future checks
     initialScroll = currentScroll;
   });
+}
+
+$(document).ready(function () {
+  var path = window.location.pathname;
+  if (path !== "/" && path !== "/architecture") {
+    handleNavOnScroll(); // Call the function on page load
+  }
 });

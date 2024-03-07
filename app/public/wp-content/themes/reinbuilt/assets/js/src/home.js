@@ -9,7 +9,7 @@
 const elWelcome = document.querySelector(".hero-swiper");
 const elTagline = document.querySelector(".tagline");
 const elArrow = document.querySelector(".arrowdown");
-
+var nav = document.querySelector(".nav");
 let timer;
 
 let elBody = document.body;
@@ -22,10 +22,6 @@ function lenisScroll() {
   // Smooth Scroll library
   const lenis = new Lenis();
 
-  lenis.on("scroll", (e) => {
-    console.log(e);
-  });
-
   lenis.on("scroll", ScrollTrigger.update);
 
   gsap.ticker.add((time) => {
@@ -34,6 +30,9 @@ function lenisScroll() {
 
   gsap.ticker.lagSmoothing(0);
 }
+
+let startY;
+
 function welcomeActivated(e) {
   // take in the click ^ (e)vent
 
@@ -65,6 +64,10 @@ function welcomeActivated(e) {
   elWelcome.classList.add("welcome--active");
   elBody.classList.remove("noscroll");
   setTimeout(lenisScroll, 300);
+
+  // Reveal .nav.page--logo with a transition
+  let logo = document.querySelector(".nav .page--logo");
+  logo.style.opacity = "1";
 }
 
 elTagline.addEventListener("click", welcomeActivated);
@@ -72,16 +75,31 @@ elTagline.addEventListener("click", welcomeActivated);
 elArrow.addEventListener("click", welcomeActivated);
 
 // Scroll is disable (overflow:hidden) so we use `wheel` event
-elWelcome.addEventListener("wheel", welcomeActivated);
+elWelcome.addEventListener("wheel", function (event) {
+  if (event.deltaY > 0) {
+    welcomeActivated(event);
+    nav.classList.remove("above-hero"); // Remove class for styling
+  }
+});
 
 // Swipe Event
-elWelcome.addEventListener("touchmove", welcomeActivated);
+elWelcome.addEventListener("touchstart", function (event) {
+  startY = event.changedTouches[0].clientY;
+});
+
+elWelcome.addEventListener("touchmove", function (event) {
+  let touch = event.changedTouches[0];
+  if (touch.clientY < startY) {
+    welcomeActivated(event);
+    nav.classList.remove("above-hero"); // Remove class for styling
+  }
+});
 
 window.addEventListener("popstate", (e) => {
   // reveal content by toggling overlay & ability to scroll
   elWelcome.classList.toggle("welcome--active");
   elBody.classList.toggle("noscroll");
-
+  nav.classList.remove("above-hero"); // Remove class for styling
   // target state from event
   // const { state } = e
 
