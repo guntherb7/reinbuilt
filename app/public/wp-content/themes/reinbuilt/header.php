@@ -31,7 +31,7 @@
 
 <body <?php body_class(); ?> class="index-page noscroll">
   <header>
-    <nav class="nav nav--inactive">
+    <nav class="nav">
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->

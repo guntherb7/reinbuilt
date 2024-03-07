@@ -93,12 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.URL.includes("/visualization") ||
     document.URL.includes("/calculators")
   ) {
-    // Select all elements with the .nav class
-    const navElements = document.querySelectorAll(".nav");
-
-    // Remove the .nav--inactive class from each element
-    navElements.forEach((element) => element.classList.remove("nav--inactive"));
-
     // add smooth scrolling to page
     lenisScroll();
   }

@@ -12,27 +12,6 @@ gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin);
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM loaded");
 
-  //wait until images, links, fonts, stylesheets, and js is loaded
-  // window.addEventListener(
-  //   "load",
-  //   function (e) {
-  //     // Slide .hero-swiper off the top of the screen when scrolling down
-  //     gsap.to(".hero-swiper", {
-  //       yPercent: -100,
-  //       duration: 0.5,
-  //       ease: "power3.in",
-  //       scrollTrigger: {
-  //         trigger: ".hero-swiper",
-  //         start: "top top",
-  //         end: "+=70",
-  //         scrub: true,
-  //         markers: true,
-  //       },
-  //     });
-  //   },
-  //   false
-  // );
-
   // create
   let mm = gsap.matchMedia();
 
@@ -53,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
               trigger: ".contact-hero",
               start: "+75 center",
               end: "center center",
-              markers: true,
             },
             x: "0%", // end at the center
             opacity: 1,

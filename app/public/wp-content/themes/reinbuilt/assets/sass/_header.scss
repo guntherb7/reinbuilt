@@ -12,6 +12,9 @@ header {
     margin: 0 auto;
     position: relative;
 
+    .above-hero {
+      top: -60px;
+    }
 
     .menu-items {
       flex-direction: column;
@@ -145,10 +148,6 @@ header {
       }
     }
   }
-
-  // .nav--inactive {
-  //   display: none !important;
-  // }
 }
 
 .dark-icon {
