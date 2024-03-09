@@ -12,17 +12,22 @@ header {
     margin: 0 auto;
     position: relative;
 
-    .page--logo {
+    .nav--logo {
       max-width: 200px;
       padding-top: 14px;
-      opacity: 0;
-      transition: opacity 1.75s ease-in;
+      // opacity: 0;
+      // transition: opacity 1.75s ease-in;
       background-color: transparent !important;
 
       // &.dark-icon {
       //   opacity: 1 !important;
       //   transition: opacity 1.75s ease-in;
       // }
+
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+
     }
 
     .menu-items {
@@ -104,6 +109,10 @@ header {
       z-index: 2;
     }
 
+    .dark-icon {
+      display: none;
+    }
+
 
 
     .overlay {
@@ -159,15 +168,26 @@ header {
     }
   }
 
+  .nav.dark-mode {
+    .dark-icon {
+      display: block;
+    }
+
+    .light-icon {
+      display: none;
+    }
+  }
+
   .above-hero {
     position: absolute !important;
     top: -60px;
   }
+
+
 }
 
-.dark-icon {
-  display: none;
-}
+
+
 
 @media screen and (max-width: 768px) {
   header {

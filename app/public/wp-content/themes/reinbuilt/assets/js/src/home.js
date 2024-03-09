@@ -64,10 +64,6 @@ function welcomeActivated(e) {
   elWelcome.classList.add("welcome--active");
   elBody.classList.remove("noscroll");
   setTimeout(lenisScroll, 300);
-
-  // Reveal .nav.page--logo with a transition
-  let logo = document.querySelector(".nav .page--logo");
-  logo.style.opacity = "1";
 }
 
 elTagline.addEventListener("click", welcomeActivated);

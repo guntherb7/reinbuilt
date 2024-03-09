@@ -32,10 +32,12 @@
 <body <?php body_class(); ?> class="index-page noscroll">
   <header>
     <nav class="nav above-hero">
-      <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="eager" fetchpriority="high"
-        alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="page--logo page--logo--light">
-      <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="eager" fetchpriority="high"
-        alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="page--logo page--logo--dark">
+      <div class="nav--logo">
+        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="eager" fetchpriority="high"
+          alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="light-icon">
+        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="eager" fetchpriority="high"
+          alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="dark-icon">
+      </div>
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->
