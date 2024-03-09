@@ -17,6 +17,12 @@ header {
       padding-top: 14px;
       opacity: 0;
       transition: opacity 1.75s ease-in;
+      background-color: transparent !important;
+
+      // &.dark-icon {
+      //   opacity: 1 !important;
+      //   transition: opacity 1.75s ease-in;
+      // }
     }
 
     .menu-items {

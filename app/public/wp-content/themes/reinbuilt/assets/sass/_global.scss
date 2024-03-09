@@ -65,7 +65,7 @@ html.lenis {
   background-color: $dark-background !important;
   color: $light-font;
 
-  .page--logo {
+  .content-page--logo {
     .dark-icon {
       display: none;
       background-color: none;
@@ -78,7 +78,7 @@ html.lenis {
   }
 }
 
-.page--logo {
+.content-page--logo {
   .dark-icon {
     display: block;
   }

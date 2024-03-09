@@ -29,7 +29,7 @@
 		</section>
 		<!-- START SLIDER 1 -->
 		<section class="first-section">
-			<h2 class="text-center project-title" onclick="heroSplas1h()">Mountain View</h2>
+			<h2 class="text-center project-title" onclick="heroSplash1()">Mountain View</h2>
 			<img class="section-hero hero--image" alt=""
 				src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy"
 				fetchpriority="low" width="1920" height="1217" id="section-hero--1" />
