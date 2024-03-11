@@ -7,22 +7,13 @@
     img.hero--image {
         width: 100%;
         height: auto;
-        filter: brightness(0.8);
+        filter: brightness(0.75);
     }
 
     .hero--logo {
         @include hero-logo;
     }
 
-}
-
-.text-logo {
-    @include text-logo;
-    margin-block: 60px;
-
-    :hover {
-        cursor: pointer;
-    }
 }
 
 section {
@@ -46,5 +37,10 @@ section {
 
     .hero {
         padding-top: 60px;
+
+        .hero--logo {
+            top: 75px;
+            max-width: 200px;
+        }
     }
 }
