@@ -1,10 +1,9 @@
 header {
   position: fixed;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   max-width: 100vw;
   width: 100%;
   z-index: 999;
-  background-color: $light-background;
 
   .nav {
     max-width: 1920px;
@@ -13,21 +12,11 @@ header {
     position: relative;
 
     .nav--logo {
-      max-width: 200px;
-      padding-top: 14px;
-      // opacity: 0;
-      // transition: opacity 1.75s ease-in;
+      max-width: 275px;
       background-color: transparent !important;
-
-      // &.dark-icon {
-      //   opacity: 1 !important;
-      //   transition: opacity 1.75s ease-in;
-      // }
-
       width: 100%;
       height: auto;
-      margin: 0 auto;
-
+      margin: 0 auto 60px;
     }
 
     .menu-items {
@@ -54,10 +43,6 @@ header {
         transition: font-size 0.1s ease-out;
       }
 
-      // :visited {
-      //   color: #737373;
-      // }
-
       :hover {
         font-size: 1.9rem;
       }
@@ -69,7 +54,6 @@ header {
       a.active {
         font-weight: 700 !important;
       }
-
     }
 
     .checkbox {
@@ -112,8 +96,6 @@ header {
     .dark-icon {
       display: none;
     }
-
-
 
     .overlay {
       color: $dark-background;
@@ -177,25 +159,20 @@ header {
       display: none;
     }
   }
-
-
-
-
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   header {
     .nav {
       max-width: 100%;
 
-      a {
-        font-size: 1.5rem;
+      .menu-items {
+        a {
+          font-size: 1.5rem;
 
-        :hover {
-          font-size: 1.4rem;
+          :hover {
+            font-size: 1.4rem;
+          }
         }
       }
     }

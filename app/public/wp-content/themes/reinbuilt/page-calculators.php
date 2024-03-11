@@ -2,7 +2,8 @@
     <?php get_header(); ?>
     <div class="content">
         <a href="/">
-            <h1 class="hero--logo logo light-icon">Reinbuilt</h1>
+            <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="eager" fetchpriority="high"
+                alt="Reinbuilt Luxury Homes Logo in White" class="hero--logo light-icon tagline">
         </a>
         <p>Calculators</p>
         <section>

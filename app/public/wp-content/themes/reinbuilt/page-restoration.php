@@ -1,18 +1,20 @@
 <?php get_header(); ?>
 <!-- HERO START -->
-<section>
-	<div class="hero">
-		<a href="/">
-			<h1 class="hero--logo logo light-icon">Reinbuilt</h1>
-		</a>
-		<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/EL-PALACIO_WEST-WING-1-jpeg.webp"
-			data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1172" />
-	</div>
-</section>
+<div class="hero">
+	<a href="/">
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="eager" fetchpriority="high"
+			alt="Reinbuilt Luxury Homes Logo in White" class="hero--logo light-icon tagline">
+	</a>
+	<img class="hero--image" alt="" src="/wp-content/uploads/2024/03/EL-PALACIO_WEST-WING-1-jpeg.webp"
+		data-object-fit="cover" loading="eager" fetchpriority="high" width="1920" height="1172" />
+</div>
 <!-- HERO END -->
 <!-- START SLIDER 1 -->
 <section class="first-section">
-	<h2 class="text-center project-title">El Palacio</h2>
+	<h2 class="text-center project-title" onclick="heroSplash1()">El Palacio</h2>
+	<img class="section-hero hero--image" alt=""
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
+		width="1920" height="1217" id="section-hero--1" />
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"
@@ -56,7 +58,10 @@
 <!-- END SLIDER 1 -->
 <!-- START SLIDER 2 -->
 <section>
-	<h2 class="text-center project-title">The Nirvana</h2>
+	<h2 class="text-center project-title" onclick="heroSplash2()">The Nirvana</h2>
+	<img class="section-hero hero--image" alt=""
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
+		width="1920" height="1217" id="section-hero--1" />
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/Baxter-75-jpeg.webp" loading="lazy"
@@ -107,7 +112,10 @@
 <!-- END SLIDER 2 -->
 <!-- START SLIDER 3 -->
 <section>
-	<h2 class="text-center project-title">Villa Rosa</h2>
+	<h2 class="text-center project-title" onclick="heroSplash3()">Villa Rosa</h2>
+	<img class="section-hero hero--image" alt=""
+		src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
+		width="1920" height="1217" id="section-hero--1" />
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
