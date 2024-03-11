@@ -10,8 +10,6 @@ gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin);
 
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", function (event) {
-  console.log("DOM loaded");
-
   // create
   let mm = gsap.matchMedia();
 

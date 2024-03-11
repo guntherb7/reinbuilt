@@ -217,3 +217,18 @@ function my_login_logo()
 add_action('login_enqueue_scripts', 'my_login_logo');
 
 ?>
+
+
+<!-- Add custom CSS to the head of the page, only on the home page
+ -->
+<?php add_action('wp_head', 'my_head_css');
+function my_head_css()
+{
+	$page_id = get_queried_object_id();
+	if ($page_id == 0) {
+		echo "<style>   .above-hero {
+			position: absolute !important;
+			top: -60px;
+		  }    </style>";
+	}
+} ?>

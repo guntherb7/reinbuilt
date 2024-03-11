@@ -130,3 +130,7 @@ function heroSplash3(e) {
     hero3.style.display = "none";
   }
 }
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
