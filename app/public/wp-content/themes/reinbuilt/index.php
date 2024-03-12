@@ -32,23 +32,23 @@
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"
-						loading="lazy" alt="Mountain View Home Front Door" width="326" height="415" />
+						loading="eager" alt="Mountain View Home Front Door" width="326" height="415" />
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairwell-jpg.webp"
-						loading="lazy" alt="Mountain View Home Stairwell" width="326" height="415" />
+						loading="eager" alt="Mountain View Home Stairwell" width="326" height="415" />
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairs-jpg.webp"
-						loading="lazy" alt="Mountain View Home Stairs" width="326" height="415" />
+						loading="eager" alt="Mountain View Home Stairs" width="326" height="415" />
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_HallwayExtended-jpg.webp"
-						loading="lazy" alt="Mountain View Home Hallway" width="326" height="415" />
+						loading="eager" alt="Mountain View Home Hallway" width="326" height="415" />
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Kitchen-jpg.webp"
-						loading="lazy" alt="Mountain View Home Kitchen" width="326" height="415" />
+						loading="eager" alt="Mountain View Home Kitchen" width="326" height="415" />
 					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_BackDoor-jpg.webp"

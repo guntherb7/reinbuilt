@@ -13,25 +13,23 @@
 
 <head>
   <!-- Google Tag Manager -->
-
-
   <!-- End Google Tag Manager -->
   <meta name="description" content="Reinbuilt Luxury Homes">
   <meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>
-    <?php wp_title('|', true, 'right'); ?>
+    Reinbuilt | Luxury Homes
   </title>
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> class="index-page noscroll">
   <header>
-    <nav class="nav above-hero">
+    <nav class="nav">
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->
@@ -47,8 +45,8 @@
         <span class="line line3"></span>
       </div>
       <!-- Menu Items -->
-      <ul role="list" class="menu-items">
-        <a href="/">
+      <ul role="menu" class="menu-items">
+        <a href="/" role="menuitem">
           <div class="nav--logo">
             <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="eager" fetchpriority="high"
               alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="light-icon">
@@ -56,11 +54,11 @@
               alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="dark-icon">
           </div>
         </a>
-        <li><a href="/">Architecture</a></li>
-        <li><a href="/interior/">Interior</a></li>
-        <li><a href="/restoration/">Restoration</a></li>
-        <!-- <li><a href="/calculators/">Calculators</a></li> -->
-        <!-- <li><a href="/visualization/">Visualization</a></li> -->
+        <li role="menuitem"><a href="/" role="link">Architecture</a></li>
+        <li role="menuitem"><a href="/interior/" role="link">Interior</a></li>
+        <li role="menuitem"><a href="/restoration/" role="link">Restoration</a></li>
+        <!-- <li role="menuitem"><a href="/calculators/" role="link">Calculators</a></li> -->
+        <!-- <li role="menuitem"><a href="/visualization/" role="link">Visualization</a></li> -->
       </ul>
     </nav>
   </header>

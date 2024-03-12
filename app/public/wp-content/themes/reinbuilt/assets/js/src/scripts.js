@@ -15,7 +15,7 @@ function handleNavOnScroll() {
     var currentScroll = $(window).scrollTop();
 
     // Check if scrolling up and initial scroll was at 0
-    if (currentScroll < initialScroll && initialScroll === 0) {
+    if (currentScroll < initialScroll) {
       nav.addClass("above-hero"); // Add class for styling
     } else {
       nav.removeClass("above-hero"); // Remove class for styling

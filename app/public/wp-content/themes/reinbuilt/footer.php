@@ -17,9 +17,9 @@
     </ul>
     <div class="page--logo">
         <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="lazy" fetchpriority="low"
-            class="dark-icon" />
+            class="dark-icon" alt="Dark Footer Logo" />
         <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="lazy" fetchpriority="low"
-            class="light-icon" />
+            class="light-icon" alt="Light Footer Logo" />
     </div>
 </footer>
 
