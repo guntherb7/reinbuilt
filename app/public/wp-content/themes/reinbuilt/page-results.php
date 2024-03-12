@@ -224,7 +224,6 @@ get_header(); ?>
 			margin-top: 10px;
 		}
 	}
-
 </style>
 <script>
 	const tabs = document.querySelectorAll('[data-tab-target]')
