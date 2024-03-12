@@ -33,36 +33,28 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp"
 						loading="eager" alt="Mountain View Home Front Door" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairwell-jpg.webp"
 						loading="eager" alt="Mountain View Home Stairwell" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Stairs-jpg.webp"
 						loading="eager" alt="Mountain View Home Stairs" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_HallwayExtended-jpg.webp"
 						loading="eager" alt="Mountain View Home Hallway" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_Kitchen-jpg.webp"
 						loading="eager" alt="Mountain View Home Kitchen" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_BackDoor-jpg.webp"
 						loading="lazy" alt="Mountain View Home Patio" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img src="/wp-content/uploads/2024/02/MountainView_MasterBedrmToBath-jpg.webp"
 						loading="lazy" alt="Mountain View Home Master Bedroom" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 				<div class="swiper-slide"><img
 						src="/wp-content/uploads/2024/02/MountainView_MasterBedrmSittingArea-jpg.webp" loading="lazy"
 						alt="Mountain View Home Master Sitting Area" width="326" height="415" />
-					<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 				</div>
 			</div>
 			<div class="swiper-button-next"></div>

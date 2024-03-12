@@ -42,6 +42,7 @@ body.noscroll {
 
 .welcome--active {
     transform: translateY(-100%);
+    top: 0 !important;
 }
 
 .page--logo {
