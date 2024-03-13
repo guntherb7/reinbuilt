@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap">
   <link rel="preconnect" href="https://indestructibletype.com/fonts/Jost.css" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 

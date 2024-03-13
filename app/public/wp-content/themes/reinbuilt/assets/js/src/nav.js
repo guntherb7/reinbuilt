@@ -8,13 +8,6 @@
 
 // Dark Mode Function
 function darkMode() {
-  const element = document.body;
-  const nav = document.querySelector(".nav");
-  const navMenu = document.querySelector(".menu-items");
-  const pageLogo = document.querySelector(".page--logo");
-  const lightIcon = document.querySelector(".light-icon");
-  const darkIcon = document.querySelector(".dark-icon");
-
   element.classList.toggle("dark-mode");
   nav.classList.toggle("dark-mode");
   navMenu.classList.toggle("dark-mode");
@@ -61,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var menu = document.getElementById("menu");
   var menuItems = document.querySelector(".menu-items");
-  var heroLogo = document.querySelector(".hero--logo");
 
   function toggleMenu() {
     console.log("Toggling menu");

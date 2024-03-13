@@ -21,7 +21,7 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-const heroSwiper = new Swiper(".hero-swiper", {
+const heroImgSwiper = new Swiper(".hero-swiper", {
   cssMode: false,
   setWrapperSize: true,
   grabCursor: true,

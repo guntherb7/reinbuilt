@@ -293,18 +293,26 @@
 						<div id="mc_embed_signup_scroll">
 							<h2 class="text-center">Start Building With Us</h2>
 							<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-							<div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
-										class="asterisk">*</span></label><input type="email" name="EMAIL"
-									class="required email" id="mce-EMAIL" required="" value=""><span
-									id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-							<div class="mc-field-group"><label for="mce-FNAME">First Name <span
-										class="asterisk">*</span></label><input type="text" name="FNAME"
-									class="required text" id="mce-FNAME" required="" value=""></div>
-							<div class="mc-field-group"><label for="mce-LNAME">Last Name <span
-										class="asterisk">*</span></label><input type="text" name="LNAME"
-									class="required text" id="mce-LNAME" required="" value=""></div>
-							<div class="mc-field-group"><label for="mce-PHONE">Phone Number </label><input type="text"
-									name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""></div>
+							<div class="mc-field-group">
+								<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+								<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required=""
+									value="" autocomplete="email">
+								<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-FNAME">First Name <span class="asterisk">*</span></label>
+								<input type="text" name="FNAME" class="required text" id="mce-FNAME" required=""
+									value="" autocomplete="given-name">
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-LNAME">Last Name <span class="asterisk">*</span></label>
+								<input type="text" name="LNAME" class="required text" id="mce-LNAME" required=""
+									value="" autocomplete="family-name">
+							</div>
+							<div class="mc-field-group"><label for="mce-PHONE">Phone Number </label>
+								<input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""
+									autocomplete="tel-national">
+							</div>
 							<div id="mce-responses" class="clear foot">
 								<div class="response" id="mce-error-response" style="display: none;"></div>
 								<div class="response" id="mce-success-response" style="display: none;"></div>

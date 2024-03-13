@@ -10,6 +10,16 @@
         bottom: 0;
         transition: transform 750ms ease-in-out;
 
+        &.nav--drop {
+            top: 60px !important;
+            transition: top 0.1s ease-in;
+        }
+
+        &.welcome--active {
+            transform: translateY(-100%);
+            top: 0 !important;
+        }
+
         img.hero--image {
             filter: brightness(0.8);
             width: 100%;
@@ -40,10 +50,7 @@ body.noscroll {
     overflow: hidden
 }
 
-.welcome--active {
-    transform: translateY(-100%);
-    top: 0 !important;
-}
+
 
 .page--logo {
     max-width: 275px;

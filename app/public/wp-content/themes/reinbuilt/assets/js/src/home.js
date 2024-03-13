@@ -6,16 +6,6 @@
  */
 /*jshint esversion: 11 */
 
-const elWelcome = document.querySelector(".hero-swiper");
-const elTagline = document.querySelector(".tagline");
-var nav = document.querySelector(".nav");
-let timer;
-let elBody = document.body;
-let phone =
-  "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)";
-let tablet =
-  "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
-
 function lenisScroll() {
   // Smooth Scroll library
   const lenis = new Lenis();
@@ -35,8 +25,29 @@ if (
   path !== "/calculators/" &&
   path !== "/visualization/"
 ) {
-  // Your existing code...
-
+  {
+    // Function to check the scroll position and update the navigation bar
+    function checkScroll() {
+      // Get the current scroll position
+      const scroll = window.scrollY;
+      // If the scroll position is less than 1, we're at the top of the page
+      if (scroll < 1) {
+        // Change the navigation bar to be fully visible and positioned at the top of the page
+        heroSwiper.style.top = "60px";
+      } else if (scroll > 0) {
+        heroSwiper.style.top = "0";
+      }
+    }
+    // After a short delay
+    setTimeout(() => {
+      // Scroll the window slightly to trigger the scroll event
+      window.scrollTo(1, 1);
+      // Add the scroll event listener
+      window.addEventListener("scroll", checkScroll);
+      // Check the initial scroll position
+      checkScroll();
+    }, 100); // Delay of 100 milliseconds
+  }
   let startY;
 
   function welcomeActivated(e) {
@@ -45,61 +56,62 @@ if (
     // prevent browser from refreshing
     e.preventDefault();
 
-    // grab id from event
-    let { id } = e.target;
+    // // grab id from event
+    // let { id } = e.target;
 
-    // if no id, assign index
-    if (id === "" || e.type === "wheel" || e.type === "touchmove") {
-      // to fetch data from
-      id = "index";
-      // to change url with
-      url = "";
-      // if there is an id, assign it to the url
-    } else {
-      // to change url with
-      url = id;
-    }
+    // // if no id, assign index
+    // if (id === "" || e.type === "wheel" || e.type === "touchmove") {
+    //   // to fetch data from
+    //   id = "index";
+    //   // to change url with
+    //   url = "";
+    //   // if there is an id, assign it to the url
+    // } else {
+    //   // to change url with
+    //   url = id;
+    // }
 
-    // For reference: history(data, title, url)
-    history.pushState(id, null, url);
+    // // For reference: history(data, title, url)
+    // history.pushState(id, null, url);
 
     // fetch data
     // fetchData(id)
 
     // reveal content by toggling overlay & ability to scroll
-    elWelcome.classList.add("welcome--active");
-    elBody.classList.remove("noscroll");
+    heroSwiper.classList.add("welcome--active");
+    element.classList.remove("noscroll");
     setTimeout(lenisScroll, 300);
   }
 
-  elTagline.addEventListener("click", welcomeActivated);
+  heroTagline.addEventListener("click", welcomeActivated);
 
   // Scroll is disable (overflow:hidden) so we use `wheel` event
-  elWelcome.addEventListener("wheel", function (event) {
+  heroSwiper.addEventListener("wheel", function (event) {
     if (event.deltaY > 0) {
       welcomeActivated(event);
-      nav.classList.remove("above-hero"); // Remove class for styling
+      nav.classList.remove("nav--drop"); // Remove class for styling
     }
   });
 
   // Swipe Event
-  elWelcome.addEventListener("touchstart", function (event) {
+  heroSwiper.addEventListener("touchstart", function (event) {
     startY = event.changedTouches[0].clientY;
   });
 
-  elWelcome.addEventListener("touchmove", function (event) {
+  heroSwiper.addEventListener("touchmove", function (event) {
     let touch = event.changedTouches[0];
     if (touch.clientY < startY) {
       welcomeActivated(event);
-      nav.classList.remove("above-hero"); // Remove class for styling
+      nav.classList.remove("nav--drop"); // Remove class for styling
     }
   });
 }
+
 window.addEventListener("popstate", (e) => {
   // reveal content by toggling overlay & ability to scroll
-  elWelcome.classList.toggle("welcome--active");
-  elBody.classList.toggle("noscroll");
-  nav.classList.remove("above-hero"); // Remove class for styling
+  heroSwiper.classList.toggle("welcome--active");
+  element.classList.toggle("noscroll");
+  nav.classList.remove("nav--drop"); // Remove class for styling
 });
 
 function heroSplash1(e) {
