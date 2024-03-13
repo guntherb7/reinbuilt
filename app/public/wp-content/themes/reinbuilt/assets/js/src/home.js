@@ -86,25 +86,37 @@ if (
   heroTagline.addEventListener("click", welcomeActivated);
 
   // Scroll is disable (overflow:hidden) so we use `wheel` event
-  heroSwiper.addEventListener("wheel", function (event) {
-    if (event.deltaY > 0) {
-      welcomeActivated(event);
-      nav.classList.remove("nav--drop"); // Remove class for styling
-    }
-  });
+  heroSwiper.addEventListener(
+    "wheel",
+    function (event) {
+      if (event.deltaY > 0) {
+        welcomeActivated(event);
+        nav.classList.remove("nav--drop"); // Remove class for styling
+      }
+    },
+    { passive: false }
+  );
 
   // Swipe Event
-  heroSwiper.addEventListener("touchstart", function (event) {
-    startY = event.changedTouches[0].clientY;
-  });
+  heroSwiper.addEventListener(
+    "touchstart",
+    function (event) {
+      startY = event.changedTouches[0].clientY;
+    },
+    { passive: false }
+  );
 
-  heroSwiper.addEventListener("touchmove", function (event) {
-    let touch = event.changedTouches[0];
-    if (touch.clientY < startY) {
-      welcomeActivated(event);
-      nav.classList.remove("nav--drop"); // Remove class for styling
-    }
-  });
+  heroSwiper.addEventListener(
+    "touchmove",
+    function (event) {
+      let touch = event.changedTouches[0];
+      if (touch.clientY < startY) {
+        welcomeActivated(event);
+        nav.classList.remove("nav--drop"); // Remove class for styling
+      }
+    },
+    { passive: false }
+  );
 }
 
 window.addEventListener("popstate", (e) => {
