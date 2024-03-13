@@ -604,3 +604,12 @@
 [12-Mar-2024 14:53:21] NOTICE: exiting, bye-bye!
 [12-Mar-2024 17:11:47] NOTICE: fpm is running, pid 43363
 [12-Mar-2024 17:11:47] NOTICE: ready to handle connections
+[12-Mar-2024 17:40:42] NOTICE: Terminating ...
+[12-Mar-2024 17:40:42] NOTICE: Terminating ...
+[12-Mar-2024 17:40:42] NOTICE: exiting, bye-bye!
+[12-Mar-2024 17:40:43] NOTICE: fpm is running, pid 45450
+[12-Mar-2024 17:40:43] NOTICE: ready to handle connections
+[12-Mar-2024 17:40:53] NOTICE: Terminating ...
+[12-Mar-2024 17:40:53] NOTICE: exiting, bye-bye!
+[13-Mar-2024 09:18:22] NOTICE: fpm is running, pid 11173
+[13-Mar-2024 09:18:22] NOTICE: ready to handle connections
