@@ -9,7 +9,7 @@
 </div>
 <!-- END HERO -->
 <!-- COST CALCULATOR START -->
-<section class="cost">
+<section class="cost-calculator">
     <?php echo do_shortcode('[forminator_form id="29"]'); ?>
 </section>
 <!-- COST CALCULATOR END -->
