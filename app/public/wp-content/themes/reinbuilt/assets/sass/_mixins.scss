@@ -4,25 +4,28 @@
  * @package reinbuilt
  * @author Gunther Beam LLC
 **/
+@mixin responsive {
+  width: 100%;
+  height: auto;
+}
 
 @mixin nav-font {
-  color: currentColor;
+  color: $current;
   font-family: $syncopate;
   font-style: normal;
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: 3.6px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: $all-caps;
 }
 
 @mixin hero-logo {
-  position: absolute;
+  position: $abs;
   top: 85px;
   left: 50%;
   max-width: 300px;
-  width: 100%;
-  height: auto;
+  @include responsive;
   z-index: 998;
   transform: translate(-50%, 0);
   cursor: pointer;
@@ -30,12 +33,12 @@
 
 @mixin heading-font {
   font-family: $jost;
-  text-transform: uppercase;
+  text-transform: $all-caps;
   font-weight: 300;
 }
 
 @mixin paragraph-font {
-  color: currentColor;
   font-family: $jost;
+  color: $current;
   font-weight: 300;
 }

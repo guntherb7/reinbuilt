@@ -6,30 +6,29 @@ header {
   z-index: 999;
 
   .nav {
-    max-width: 1920px;
-    height: 60px;
-    margin: 0 auto;
-    position: relative;
+    max-width: $desktop-max-width;
+    height: $spacing-large;
+    margin: $margin-center;
+    position: $rel;
     background-color: $light-background;
 
     .nav--logo {
       max-width: 275px;
       background-color: transparent !important;
-      width: 100%;
-      height: auto;
-      margin: 0 auto 60px;
+      @include responsive;
+      margin: $margin-center $spacing-large;
     }
 
     .menu-items {
       flex-direction: column;
       background-color: $light-background;
-      margin: 0 auto;
+      margin: $margin-center;
       padding-top: 120px;
       height: 100vh;
       width: 100%;
-      max-width: 1920px;
+      max-width: $desktop-max-width;
       transform: translateY(-150%);
-      transition: transform 0.6s ease-in-out;
+      transition: $transition-slow;
       text-align: center;
       z-index: 995;
 
@@ -41,7 +40,7 @@ header {
         @include nav-font;
         font-size: 2rem;
         padding: 0.7rem;
-        transition: font-size 0.1s ease-out;
+        transition: font-size $transition-extrafast;
       }
 
       :hover {
@@ -58,7 +57,7 @@ header {
     }
 
     .checkbox {
-      position: absolute;
+      position: $abs;
       display: block;
       height: 32px;
       width: 32px;
@@ -70,7 +69,7 @@ header {
     }
 
     .hamburger-lines {
-      position: absolute;
+      position: $abs;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -82,11 +81,11 @@ header {
     }
 
     .nav-icon {
-      position: absolute;
+      position: $abs;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      fill: currentColor;
+      fill: $current;
       right: 75px;
       top: 14px;
       width: auto;
@@ -108,7 +107,7 @@ header {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: currentColor;
+        background: $current;
       }
 
       .line1 {
@@ -162,7 +161,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $phone-max-width) {
   header {
     .nav {
       max-width: 100%;

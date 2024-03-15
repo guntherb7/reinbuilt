@@ -1,11 +1,11 @@
 .contact-wrapper {
-  position: relative;
+  position: $rel;
 
   .contact {
-    position: absolute;
+    position: $abs;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: $transform-center;
 
     #mc_embed_signup {
       margin: 80px auto;
@@ -25,12 +25,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $phone-max-width) {
   .contact-wrapper {
-    position: relative;
+    position: $rel;
 
     .contact {
-      position: relative;
+      position: $rel;
       transform: translate(0);
       left: 0;
       top: 0;
@@ -46,7 +46,7 @@
       }
 
       .button {
-        margin: 0 auto;
+        margin: $margin-center;
       }
     }
   }

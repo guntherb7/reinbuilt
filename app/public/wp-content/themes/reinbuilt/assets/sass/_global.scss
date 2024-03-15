@@ -25,7 +25,7 @@ html {
 html,
 body {
   margin: 0;
-  position: relative;
+  position: $rel;
   display: block;
   min-height: 100vh;
 }
@@ -34,12 +34,12 @@ body {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  color: currentColor;
+  color: $current;
 }
 
 :root {
   margin: 0;
-  position: relative;
+  position: $rel;
   background-color: $light-background;
   font-family: $jost;
   color: $dark-font;
@@ -79,7 +79,7 @@ html.lenis {
 
 .grid {
   display: grid;
-  margin: 0 auto;
+  margin: $margin-center;
 }
 
 .grid-2 {
@@ -87,40 +87,6 @@ html.lenis {
   gap: 40px;
 }
 
-.content {
-  margin-inline: auto;
-
-  .section-hero {
-    max-width: 1920px;
-    width: 100%;
-    height: auto;
-    display: none;
-  }
-
-  .project-title {
-    @include heading-font;
-    margin-inline: auto;
-    margin-block: 40px;
-    font-size: 44px;
-    cursor: pointer;
-  }
-
-  .build-process {
-    max-width: 1300px;
-    width: 100%;
-    height: auto;
-    margin: 40px auto;
-  }
-
-  .project-outline {
-    margin-inline: 40px;
-    align-items: center;
-
-    p {
-      padding-block: 15px;
-    }
-  }
-}
 
 .dark-mode {
   background-color: $dark-background !important;
@@ -196,7 +162,7 @@ label {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: currentColor;
+  color: $current;
 }
 
 /* Make images easier to work with */
@@ -204,7 +170,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: $margin-center;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -225,7 +191,7 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $phone-max-width) {
   .nav {
     max-width: 100%;
   }
@@ -233,26 +199,5 @@ textarea:not([rows]) {
   .grid-2 {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  .content {
-    .section--header {
-      margin-block: 80px;
-      font-size: 24px;
-    }
-
-    .section-hero {
-      max-width: 100vw;
-    }
-
-    .project-outline {
-      margin: 30px;
-    }
-
-    .project-title {
-      text-align: center;
-      font-size: 32px;
-      margin-block: 20px;
-    }
   }
 }

@@ -5,32 +5,42 @@
  * @author Gunther Beam LLC
  */
 
-// Containers
+// Positioning
+$rel: relative;
+$abs: absolute;
 
+// Breakpoints
+$phone-max-width: 768px;
+$tablet-max-width: 1024px;
+$desktop-max-width: 1920px;
+
+// Containers
 $container-padding: 30px;
+
+// Margins
+$margin-center: 0 auto;
 
 // Transitions
 $transition-speed: 0.3s;
-$transition-fast: 0.3s ease-in-ease-out;
-$transition-slow: 0.5s ease-in-ease-out;
+$transition-extrafast: 0.1s ease-in-out;
+$transition-fast: 0.3s ease-in-out;
+$transition-slow: 0.5s ease-in-out;
 $link-transition-speed: 0.15s;
 $trans: 0.3s linear;
 $animationSpeed: 40s;
+$transform-center: translate(-50%, -50%);
 
 // Core Colors
-$black: #000;
-$white: #fff;
 $dark-font: #424040;
 $light-font: #dad3d1;
 $dark-background: rgb(34, 34, 34);
 $light-background: rgb(244, 238, 233);
-$primary-color: #d9d9d9;
-$nav-text: #f2f2f2;
-$quote-color: #bf8958;
+$current: currentColor;
 
 // Typography
 $body-line-height: 130%;
 $button-radius: 3px;
+$all-caps: uppercase;
 
 // Font Weight
 $light: 300;
@@ -42,4 +52,4 @@ $jost: "jost", sans-serif;
 $syncopate: "Syncopate", sans-serif;
 
 // Spacing
-$normal-spacing: 4vw auto;
+$spacing-large: 60px;

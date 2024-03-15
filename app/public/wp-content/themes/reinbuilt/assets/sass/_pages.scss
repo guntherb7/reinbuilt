@@ -1,12 +1,11 @@
 .hero {
-    position: relative;
+    position: $rel;
     margin-inline: auto;
-    max-width: 1920px;
-    padding-top: 60px;
+    max-width: $desktop-max-width;
+    padding-top: $spacing-large;
 
     img.hero--image {
-        width: 100%;
-        height: auto;
+        @include responsive;
         filter: brightness(0.75);
     }
 
@@ -16,10 +15,159 @@
 
 }
 
+.content {
+    margin-inline: auto;
+
+    .section-hero {
+        max-width: $desktop-max-width;
+        @include responsive;
+        display: none;
+    }
+
+    .project-title {
+        @include heading-font;
+        margin-inline: auto;
+        margin-block: 40px;
+        font-size: 44px;
+        cursor: pointer;
+    }
+
+    .build-process {
+        max-width: 1300px;
+        @include responsive;
+        margin: 40px auto;
+    }
+
+    .project-outline {
+        margin-inline: 40px;
+        align-items: center;
+
+        p {
+            padding-block: 15px;
+        }
+    }
+}
+
+.page--logo {
+    @include responsive;
+    max-width: 275px;
+    margin: $margin-center;
+}
+
 section {
     padding-block: 30px;
-    max-width: 1920px;
+    max-width: $desktop-max-width;
     margin-inline: auto;
+
+    &.cost-calculator {
+        text-align: center;
+        padding: 0;
+        margin-block: $spacing-large;
+
+        // Id for the cost calc form in Forminator
+        #forminator-module-29 {
+            text-transform: $all-caps;
+            font-weight: 400;
+            position: $rel;
+
+            // Class for the page content in Forminator
+            .forminator-pagination--content {
+                z-index: 999;
+                position: $abs;
+                top: 40%;
+                left: 50%;
+                transform: $transform-center;
+                width: 80%;
+
+                .ui-widget-content {
+                    background-color: white;
+                }
+
+                .forminator-field-slider {
+                    margin: $margin-center;
+                    max-width: 80%;
+
+                    .forminator-label,
+                    .forminator-slider-amount {
+                        color: $dark-font;
+                    }
+
+                    .ui-slider-handle {
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            // Class for pages themselves in Forminator
+            .forminator-pagination {}
+
+            // ids for each page individually in Forminator
+            #forminator-custom-form-29--page-0::before {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-1 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-2 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-3 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-4 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-5 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-6 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            #forminator-custom-form-29--page-7 {
+                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+            }
+
+            // Forminator navigation buttons
+            .forminator-pagination-footer {
+                position: $abs;
+                top: 90%;
+                left: 50%;
+                transform: $transform-center;
+
+                button,
+                .forminator-button {
+                    position: $rel;
+                    background-color: $dark-background;
+                    color: $light-font;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 10px 20px;
+                    margin: 0 20px;
+                }
+            }
+
+            .forminator-pagination-progress,
+            .forminator-pagination-label {
+                display: none;
+            }
+        }
+    }
+}
+
+.dark-mode {
+
+    button,
+    .forminator-button {
+        background-color: $light-background;
+        color: $dark-font;
+    }
 }
 
 .section--header {
@@ -27,20 +175,48 @@ section {
 }
 
 .first-section {
-    padding-top: 60px;
+    padding-top: $spacing-large;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: $phone-max-width) {
     section {
         padding-block: 0;
+
+        .cost-calculator {}
+    }
+
+    .page--logo {
+        max-width: 225px;
     }
 
     .hero {
-        padding-top: 60px;
+        padding-top: $spacing-large;
 
         .hero--logo {
             top: 75px;
             max-width: 200px;
+        }
+    }
+
+    .content {
+        .section--header {
+            margin-block: 80px;
+            font-size: 24px;
+        }
+
+        .section-hero {
+            max-width: 100vw;
+        }
+
+        .project-outline {
+            margin: 30px;
+        }
+
+        .project-title {
+            text-align: center;
+            font-size: 32px;
+            margin-block: 20px;
         }
     }
 }

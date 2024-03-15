@@ -12,8 +12,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: currentColor;
-  text-transform: uppercase;
+  color: $current;
+  text-transform: $all-caps;
   font-family: $syncopate;
   font-weight: $normal;
   line-height: 120%;

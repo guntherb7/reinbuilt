@@ -1,6 +1,6 @@
 .welcome {
     z-index: 999;
-    position: absolute;
+    position: $abs;
 
     .hero-swiper {
         position: fixed;
@@ -11,7 +11,7 @@
         transition: transform 750ms ease-in-out;
 
         &.nav--drop {
-            top: 60px !important;
+            top: $spacing-large !important;
             transition: top 0.1s ease-in;
         }
 
@@ -32,16 +32,11 @@
             width: 100%;
             height: auto;
             cursor: pointer;
-            position: absolute;
-            top: 60px;
+            position: $abs;
+            top: $spacing-large;
             left: 50%;
             z-index: 998;
             transform: translate(-50%, 0);
-
-            ´ :hover {
-                cursor: pointer;
-            }
-
         }
     }
 }
@@ -50,16 +45,7 @@ body.noscroll {
     overflow: hidden
 }
 
-
-
-.page--logo {
-    max-width: 275px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $phone-max-width) {
     .hero-swiper {
         .hero--logo {
             top: 20px;
@@ -67,13 +53,9 @@ body.noscroll {
         }
 
         img.hero--image {
-            object-fit: cover;
             max-height: 100svh;
             width: auto;
         }
     }
 
-    .page--logo {
-        max-width: 225px;
-    }
 }
