@@ -67,12 +67,12 @@ section {
         // Id for the cost calc form in Forminator
         #forminator-module-29 {
             text-transform: $all-caps;
-            font-weight: 400;
+            font-weight: $normal;
             position: $rel;
 
             // Class for the page content in Forminator
             .forminator-pagination--content {
-                z-index: 999;
+                z-index: 975 !important;
                 position: $abs;
                 top: 40%;
                 left: 50%;
@@ -81,6 +81,11 @@ section {
 
                 .ui-widget-content {
                     background-color: white;
+                }
+
+                .forminator-label {
+                    display: block;
+                    margin: 15px auto;
                 }
 
                 .forminator-field-slider {
@@ -96,6 +101,19 @@ section {
                         border-radius: 50%;
                     }
                 }
+
+                .forminator-field-radio {
+
+                    .forminator-cleared-value {
+                        appearance: none;
+                    }
+
+                    .forminator-radio {
+                        @include formButton;
+                        display: block;
+                        margin: $margin-center 10px;
+                    }
+                }
             }
 
             // Class for pages themselves in Forminator
@@ -106,31 +124,31 @@ section {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-1 {
+            #forminator-custom-form-29--page-1::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-2 {
+            #forminator-custom-form-29--page-2::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-3 {
+            #forminator-custom-form-29--page-3::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-4 {
+            #forminator-custom-form-29--page-4::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-5 {
+            #forminator-custom-form-29--page-5::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-6 {
+            #forminator-custom-form-29--page-6::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
-            #forminator-custom-form-29--page-7 {
+            #forminator-custom-form-29--page-7::before {
                 content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
             }
 
@@ -143,13 +161,7 @@ section {
 
                 button,
                 .forminator-button {
-                    position: $rel;
-                    background-color: $dark-background;
-                    color: $light-font;
-                    border: none;
-                    border-radius: 3px;
-                    padding: 10px 20px;
-                    margin: 0 20px;
+                    @include formButton;
                 }
             }
 

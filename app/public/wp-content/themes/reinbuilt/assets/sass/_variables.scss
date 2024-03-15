@@ -21,13 +21,9 @@ $container-padding: 30px;
 $margin-center: 0 auto;
 
 // Transitions
-$transition-speed: 0.3s;
 $transition-extrafast: 0.1s ease-in-out;
 $transition-fast: 0.3s ease-in-out;
 $transition-slow: 0.5s ease-in-out;
-$link-transition-speed: 0.15s;
-$trans: 0.3s linear;
-$animationSpeed: 40s;
 $transform-center: translate(-50%, -50%);
 
 // Core Colors
@@ -38,7 +34,6 @@ $light-background: rgb(244, 238, 233);
 $current: currentColor;
 
 // Typography
-$body-line-height: 130%;
 $button-radius: 3px;
 $all-caps: uppercase;
 
