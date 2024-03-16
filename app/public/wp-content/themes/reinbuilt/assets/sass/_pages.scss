@@ -92,6 +92,23 @@ section {
                     margin: $margin-center;
                     max-width: 80%;
 
+                    .ui-slider-horizontal .ui-slider-handle {
+                        top: -5px;
+                        margin-left: -1em;
+                    }
+
+                    .ui-widget-header {
+                        background-color: $dark-background;
+                    }
+
+                    .ui-corner-all {
+                        border-radius: 8px;
+
+                        &.ui-slider-horizontal {
+                            height: 30px !important;
+                        }
+                    }
+
                     .forminator-label,
                     .forminator-slider-amount {
                         color: $dark-font;
@@ -99,6 +116,8 @@ section {
 
                     .ui-slider-handle {
                         border-radius: 50%;
+                        height: 40px;
+                        width: 40px;
                     }
                 }
 
@@ -112,7 +131,13 @@ section {
                         @include formButton;
                         display: block;
                         margin: $margin-center 10px;
+
+                        input[type=radio]:checked {
+                            background-color: red !important;
+                        }
                     }
+
+
                 }
             }
 
