@@ -18,215 +18,203 @@
 .content {
     margin-inline: auto;
 
-    .section-hero {
+    section {
+        padding-block: 30px;
         max-width: $desktop-max-width;
-        @include responsive;
-        display: none;
-    }
-
-    .project-title {
-        @include heading-font;
         margin-inline: auto;
-        margin-block: 40px;
-        font-size: 44px;
-        cursor: pointer;
-    }
 
-    .build-process {
-        max-width: 1300px;
-        @include responsive;
-        margin: 40px auto;
-    }
-
-    .project-outline {
-        margin-inline: 40px;
-        align-items: center;
-
-        p {
-            padding-block: 15px;
+        .section-hero {
+            max-width: $desktop-max-width;
+            @include responsive;
+            display: none;
         }
-    }
-}
 
-.page--logo {
-    @include responsive;
-    max-width: 275px;
-    margin: $margin-center;
-}
+        .section--header {
+            margin-block: 150px;
+        }
 
-section {
-    padding-block: 30px;
-    max-width: $desktop-max-width;
-    margin-inline: auto;
+        .first-section {
+            padding-top: $spacing-large;
+        }
 
-    &.cost-calculator {
-        text-align: center;
-        padding: 0;
-        margin-block: $spacing-large;
+        .project-title {
+            @include heading-font;
+            margin-inline: auto;
+            margin-block: 40px;
+            font-size: 44px;
+            cursor: pointer;
+        }
 
-        // Id for the cost calc form in Forminator
-        #forminator-module-29 {
-            text-transform: $all-caps;
-            font-weight: $normal;
-            position: $rel;
+        .build-process {
+            max-width: 1300px;
+            @include responsive;
+            margin: 40px auto;
+        }
 
-            // Class for the page content in Forminator
-            .forminator-pagination--content {
-                z-index: 975 !important;
-                position: $abs;
-                top: 40%;
-                left: 50%;
-                transform: $transform-center;
-                width: 80%;
+        .project-outline {
+            margin-inline: 40px;
+            align-items: center;
 
-                .ui-widget-content {
-                    background-color: white;
-                }
+            p {
+                padding-block: 15px;
+            }
+        }
 
-                .forminator-label {
-                    display: block;
-                    margin: 15px auto;
-                }
+        .page--logo {
+            @include responsive;
+            max-width: 275px;
+            margin: $margin-center;
+        }
 
-                .forminator-field-slider {
-                    margin: $margin-center;
-                    max-width: 80%;
+        &.cost-calculator {
+            text-align: center;
+            padding: 0;
+            margin-block: $spacing-large;
 
-                    .ui-slider-horizontal .ui-slider-handle {
-                        top: -5px;
-                        margin-left: -1em;
+            // Id for the cost calc form in Forminator
+            #forminator-module-29 {
+                text-transform: $all-caps;
+                font-weight: $normal;
+                position: $rel;
+
+                // Class for the page content in Forminator
+                .forminator-pagination--content {
+                    z-index: 975 !important;
+                    position: $abs;
+                    top: 40%;
+                    left: 50%;
+                    transform: $transform-center;
+                    width: 80%;
+
+                    .ui-widget-content {
+                        background-color: white;
                     }
 
-                    .ui-widget-header {
-                        background-color: $dark-background;
-                    }
-
-                    .ui-corner-all {
-                        border-radius: 8px;
-
-                        &.ui-slider-horizontal {
-                            height: 30px !important;
-                        }
-                    }
-
-                    .forminator-label,
-                    .forminator-slider-amount {
-                        color: $dark-font;
-                    }
-
-                    .ui-slider-handle {
-                        border-radius: 50%;
-                        height: 40px;
-                        width: 40px;
-                    }
-                }
-
-                .forminator-field-radio {
-
-                    .forminator-cleared-value {
-                        appearance: none;
-                    }
-
-                    .forminator-radio {
-                        @include formButton;
+                    .forminator-label {
                         display: block;
-                        margin: $margin-center 10px;
+                        margin: 15px auto;
+                    }
 
-                        input[type=radio]:checked {
-                            background-color: red !important;
+                    .forminator-field-slider {
+                        margin: $margin-center;
+                        max-width: 80%;
+
+                        .ui-slider-horizontal .ui-slider-handle {
+                            top: -5px;
+                            margin-left: -1em;
+                        }
+
+                        .ui-widget-header {
+                            background-color: $dark-background;
+                        }
+
+                        .ui-corner-all {
+                            border-radius: 8px;
+
+                            &.ui-slider-horizontal {
+                                height: 30px !important;
+                            }
+                        }
+
+                        .forminator-label,
+                        .forminator-slider-amount {
+                            color: $dark-font;
+                        }
+
+                        .ui-slider-handle {
+                            border-radius: 50%;
+                            height: 40px;
+                            width: 40px;
                         }
                     }
 
+                    .forminator-field-radio {
 
+                        .forminator-cleared-value {
+                            appearance: none;
+                        }
+
+                        .forminator-radio-label {
+                            display: block;
+                            @include formButton;
+                            margin: $margin-center;
+                        }
+
+                        .forminator-radio input:checked~.forminator-radio-label {
+                            background-color: $light-background !important;
+                            color: $dark-font;
+                            border: .5px solid $dark-background;
+                            transition: $transition-extrafast;
+                        }
+                    }
+                }
+
+                // ids for each page individually in Forminator
+                #forminator-custom-form-29--page-0::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-1::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-2::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-3::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-4::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-5::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-6::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                #forminator-custom-form-29--page-7::before {
+                    content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                }
+
+                // Forminator navigation buttons
+                .forminator-pagination-footer {
+                    position: $abs;
+                    top: 90%;
+                    left: 50%;
+                    transform: $transform-center;
+
+                    button,
+                    .forminator-button {
+                        @include formButton;
+                    }
+                }
+
+                .forminator-pagination-progress,
+                .forminator-pagination-label {
+                    display: none;
                 }
             }
 
-            // Class for pages themselves in Forminator
-            .forminator-pagination {}
+            // .dark-mode {
 
-            // ids for each page individually in Forminator
-            #forminator-custom-form-29--page-0::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-1::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-2::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-3::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-4::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-5::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-6::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            #forminator-custom-form-29--page-7::before {
-                content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
-            }
-
-            // Forminator navigation buttons
-            .forminator-pagination-footer {
-                position: $abs;
-                top: 90%;
-                left: 50%;
-                transform: $transform-center;
-
-                button,
-                .forminator-button {
-                    @include formButton;
-                }
-            }
-
-            .forminator-pagination-progress,
-            .forminator-pagination-label {
-                display: none;
-            }
+            //     button,
+            //     .forminator-button {
+            //         background-color: $light-background;
+            //         color: $dark-font;
+            //     }
+            // }
         }
     }
-}
-
-.dark-mode {
-
-    button,
-    .forminator-button {
-        background-color: $light-background;
-        color: $dark-font;
-    }
-}
-
-.section--header {
-    margin-block: 150px;
-}
-
-.first-section {
-    padding-top: $spacing-large;
 }
 
 
 @media screen and (max-width: $phone-max-width) {
-    section {
-        padding-block: 0;
-
-        .cost-calculator {}
-    }
-
-    .page--logo {
-        max-width: 225px;
-    }
-
     .hero {
         padding-top: $spacing-large;
 
@@ -237,23 +225,82 @@ section {
     }
 
     .content {
-        .section--header {
-            margin-block: 80px;
-            font-size: 24px;
+        section {
+            overflow: scroll;
+            padding-block: 0;
+
+            .page--logo {
+                max-width: 225px;
+            }
+
+            &.cost-calculator {
+                #forminator-module-29 {
+
+                    ::before {
+                        content: none !important;
+                    }
+
+                    .forminator-pagination {
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        max-width: 100vw;
+                        min-height: 400px;
+                    }
+
+                    #forminator-custom-form-29--page-0 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-1 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-2 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-3 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-4 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-5 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-6 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+
+                    #forminator-custom-form-29--page-7 {
+                        background-image: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
+                    }
+                }
+            }
+
+            .section-hero {
+                max-width: 100vw;
+            }
+
+            .section--header {
+                margin-block: 80px;
+                font-size: 24px;
+            }
+
+            .project-outline {
+                margin: 30px;
+            }
+
+            .project-title {
+                text-align: center;
+                font-size: 32px;
+                margin-block: 20px;
+            }
         }
 
-        .section-hero {
-            max-width: 100vw;
-        }
-
-        .project-outline {
-            margin: 30px;
-        }
-
-        .project-title {
-            text-align: center;
-            font-size: 32px;
-            margin-block: 20px;
-        }
     }
 }

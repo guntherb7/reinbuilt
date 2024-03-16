@@ -28,6 +28,9 @@ body {
   position: $rel;
   display: block;
   min-height: 100vh;
+  background-color: $light-background;
+  font-family: $jost;
+  color: $dark-font;
 }
 
 /* Set core body defaults */
@@ -35,14 +38,6 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   color: $current;
-}
-
-:root {
-  margin: 0;
-  position: $rel;
-  background-color: $light-background;
-  font-family: $jost;
-  color: $dark-font;
 }
 
 .lenis {

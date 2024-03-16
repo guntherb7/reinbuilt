@@ -24,16 +24,41 @@ require_once dirname(__FILE__) . '/includes/team.php'; // Custom Post Type Case 
 
 
 //Remove Block Library CSS from loading on the frontend
-function db_dequeue_block_styles_on_home()
+function db_dequeue_block_styles()
 	{
-	if (is_home()) {
-		wp_dequeue_style('wp-block-library');
-		wp_dequeue_style('wp-block-library-theme');
-		wp_dequeue_style('wc-block-style'); // REMOVE WOOCOMMERCE BLOCK CSS
-		wp_dequeue_style('global-styles'); // REMOVE THEME.JSON
-		}
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
+	wp_dequeue_style('wc-block-style'); // REMOVE WOOCOMMERCE BLOCK CSS
+	wp_dequeue_style('global-styles'); // REMOVE THEME.JSON
 	}
-add_action('wp_enqueue_scripts', 'db_dequeue_block_styles_on_home', 100);
+add_action('wp_enqueue_scripts', 'db_dequeue_block_styles', 100);
+
+add_action('plugins_loaded', function () {
+	if (!defined('FORMINATOR_VERSION')) {
+		return; // Forminator is not installed/enabled.
+		}
+	// Current form ID:
+	add_action('forminator_after_form_render', function ($form_id, $form_type, $post_id, $form_fields, $form_settings) {
+		$GLOBALS['__fmt_current_form'] = $form_id;
+		}, 10, 5);
+	// Forminator styles:
+	add_filter('the_content', function ($content) {
+		$styles = [
+			'forminator-module-css-' . ($GLOBALS['__fmt_current_form'] ?? '0'),
+			'forminator-icons',
+			'forminator-utilities',
+			'forminator-grid-default',
+			'forminator-forms-default-base',
+			'intlTelInput-forminator-css'
+		];
+		foreach ($styles as $handle) {
+			if (wp_style_is($handle)) {
+				wp_dequeue_style($handle);
+				}
+			}
+		return $content;
+		}, 11);
+	});
 
 // Remove dashicons in frontend for unauthenticated users
 add_action('wp_enqueue_scripts', 'bs_dequeue_dashicons');

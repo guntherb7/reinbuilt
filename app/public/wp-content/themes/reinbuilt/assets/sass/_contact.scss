@@ -31,7 +31,7 @@
 
     .contact {
       position: $rel;
-      transform: translate(0);
+      transform: translate(0) !important;
       left: 0;
       top: 0;
 

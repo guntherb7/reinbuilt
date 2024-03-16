@@ -8,12 +8,14 @@
         loading="eager" fetchpriority="high" width="1920" height="1172" />
 </div>
 <!-- END HERO -->
-<!-- COST CALCULATOR START -->
-<section class="cost-calculator">
-    <?php echo do_shortcode('[forminator_form id="29"]'); ?>
-</section>
-<!-- COST CALCULATOR END -->
-
+<!-- CONTENT START -->
+<div class="content">
+    <!-- COST CALCULATOR START -->
+    <section class="cost-calculator">
+        <?php echo do_shortcode('[forminator_form id="29"]'); ?>
+    </section>
+    <!-- COST CALCULATOR END -->
+</div>
 <section>
     <div class="contact-wrapper">
         <img src="/wp-content/uploads/2024/02/Full-n_orange_drive-37-1-jpg.webp" loading="lazy" alt="placeholder"
@@ -76,5 +78,30 @@
     </div>
 </section>
 
+<?php
 
+if (!defined('ABSPATH')) {
+    exit;
+    } elseif (defined('WP_CLI') && WP_CLI) {
+    return;
+    }
+
+add_action('wp_footer', function () {
+
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(document).on("after.load.forminator", function (e, id) {
+                $(document).on('click', '.forminator-pagination-footer .forminator-button', function (e) {
+                    var wpmu_scroll_top = $(window).scrollTop();
+                    if (wpmu_scroll_top > 0) {
+                        $("html,body").stop();
+                    }
+                });
+            });
+        });
+    </script>
+    <?php
+
+    }, 9999); ?>
 <?php get_footer(); ?>

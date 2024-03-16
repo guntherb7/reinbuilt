@@ -12,7 +12,7 @@ function darkMode() {
   nav.classList.toggle("dark-mode");
   navMenu.classList.toggle("dark-mode");
   pageLogo.classList.toggle("dark-mode");
-
+  html.classList.toggle("dark-mode");
   if (element.classList.contains("dark-mode")) {
     lightIcon.style.display = "none";
     darkIcon.style.display = "block";
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
   var bodyBackgroundColor = getComputedStyle(document.body).backgroundColor;
 
   if (localStorage.getItem("darkMode") === "true") {
+    html.classList.add("dark-mode");
     document.body.classList.add("dark-mode");
     document.querySelector(".nav").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
