@@ -88,12 +88,6 @@ function reinbuilt_child()
 	{
 	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/sass/styles.min.css'); // Enqueue child theme styles.css
 
-	wp_register_style('jost', 'https://indestructibletype.com/fonts/Jost.css', array());
-	wp_enqueue_style('jost');
-
-	wp_register_style('syncopate', 'https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap', array());
-	wp_enqueue_style('syncopate');
-
 	// Compiled .js using Grunt.js
 	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), null, true);
 	wp_enqueue_script('custom-scripts');

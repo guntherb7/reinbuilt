@@ -36,12 +36,16 @@
   font-family: $jost;
   text-transform: $all-caps;
   font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @mixin paragraph-font {
   font-family: $jost;
   color: $current;
   font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @mixin formButton {

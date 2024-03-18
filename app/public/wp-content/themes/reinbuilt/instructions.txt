@@ -27,19 +27,11 @@ Run these commands in this order
 Grunt can be used as a CSS and JS watching compiler, more information at the link below
 https://github.com/gruntjs/grunt-contrib-watch
 
-Slick
-Slick has been included but commented out in the functions.php, only enqueue this on templates where it is necessary
-http://kenwheeler.github.io/slick/
-
-block-banner.php is a base example of how to use a repeating design element through the website without coding it over and over, to call this block or any other just use the below php command
-<php get_template_part('block', 'banner');?>
-
-block-banner.php also has an example of how to set a default image with ACF Pro to default to if no featured image has been set
 
 Getting Started
 
 1) Replace line 2 in the /wp-content/themes/reinbuilt-child/styles.css file with the Clients Name
-2) Add a screenshot.png to the 
+2) Add a screenshot.png to the
 3) Advanced Custom Fields created for this site build should be stored in the /wp-contents/themes/reinbuilt-child/acf-json/ field for easy environment moving
 
 Thats all for now, you're ready to start building
