@@ -21,11 +21,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap">
   <link rel="preconnect" href="https://indestructibletype.com/fonts/Jost.css" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  {#
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> #}
 
   <title>
     Reinbuilt | Luxury Homes
   </title>
+
   <?php wp_head(); ?>
 </head>
 
@@ -50,10 +52,10 @@
       <ul role="menu" class="menu-items">
         <a href="/" role="menuitem">
           <div class="nav--logo">
-            <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="eager" fetchpriority="high"
-              alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="light-icon">
-            <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="eager" fetchpriority="high"
-              alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="dark-icon">
+            <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42" loading="eager"
+              fetchpriority="high" alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="light-icon">
+            <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" width="275" height="42" loading="eager"
+              fetchpriority="high" alt="Reinbuilt Luxury Homes Logo in Dark Gray" class="dark-icon">
           </div>
         </a>
         <li role="menuitem"><a href="/" role="link">Architecture</a></li>

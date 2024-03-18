@@ -16,10 +16,10 @@
         <!-- <li><a href="/visualization/">Visualization</a></li> -->
     </ul>
     <div class="page--logo">
-        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" loading="lazy" fetchpriority="low"
-            class="dark-icon" alt="Dark Footer Logo" />
-        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" loading="lazy" fetchpriority="low"
-            class="light-icon" alt="Light Footer Logo" />
+        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42" loading="lazy"
+            fetchpriority="low" class="dark-icon" alt="Dark Footer Logo" />
+        <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" width="275" height="42" loading="lazy"
+            fetchpriority="low" class="light-icon" alt="Light Footer Logo" />
     </div>
 </footer>
 
