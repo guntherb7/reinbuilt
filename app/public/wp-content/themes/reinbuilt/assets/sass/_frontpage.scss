@@ -10,6 +10,10 @@
         bottom: 0;
         transition: transform 750ms ease-in-out;
 
+        a.hero-link {
+            position: absolute;
+        }
+
         &.nav--drop {
             top: $spacing-large !important;
             transition: top 0.1s ease-in;

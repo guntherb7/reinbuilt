@@ -8,9 +8,15 @@
 		</div>
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<img class="hero--image" alt=""
-					src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="eager"
-					fetchpriority="high" width="1920" height="1217" />
+				<a href="/" class="hero-link">
+					<img class="hero--image" alt=""
+						src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="eager"
+						fetchpriority="high" width="1920" height="1217" /> Architecture
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
+					height="1280" />
 			</div>
 			<div class="swiper-slide">
 				<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
