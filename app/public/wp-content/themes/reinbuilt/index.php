@@ -284,7 +284,7 @@
 			width=“415” height=“300” class="contact-hero" />
 		<div class="contact">
 			<div id="mc_embed_shell">
-				<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+				<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
 				<div id="mc_embed_signup">
 					<form
 						action="https://guntherbeam.us22.list-manage.com/subscribe/post?u=c84950591afda259787f3a3ba&amp;id=9d1eaef23a&amp;f_id=0070c2e1f0"

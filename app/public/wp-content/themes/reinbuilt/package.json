@@ -11,8 +11,7 @@
     "grunt-contrib-sass": "2.0.0",
     "grunt-contrib-uglify": "^5.2.2",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-modernizr": "^4.0.1",
-    "purgecss": "^5.0.0"
+    "grunt-modernizr": "^4.0.1"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
