@@ -12,7 +12,6 @@
     .hero--logo {
         @include hero-logo;
     }
-
 }
 
 .content {
@@ -225,6 +224,10 @@
     }
 
     .content {
+        .first-section {
+            padding-block: 30px;
+        }
+
         section {
             overflow: scroll;
             padding-block: 0;
@@ -301,6 +304,5 @@
                 margin-block: 20px;
             }
         }
-
     }
 }
