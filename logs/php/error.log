@@ -2738,3 +2738,5 @@ Stack trace:
 [13-Mar-2024 13:18:22 UTC] Flywheel::DatabaseConnection
 [13-Mar-2024 13:18:22 UTC] Flywheel::DatabaseConnection
 [17-Mar-2024 15:06:31 UTC] Flywheel::DatabaseConnection
+[20-Mar-2024 16:25:19 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[20-Mar-2024 16:31:27 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}

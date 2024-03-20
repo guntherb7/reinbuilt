@@ -22,6 +22,13 @@
 </div>
 <div class="content">
 	<section class="first-section">
+		<!-- REINBUILT -->
+		<p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deleniti, officiis quasi
+			sint quia veritatis,
+			dolor earum cupiditate praesentium doloremque accusamus architecto rerum quod a placeat consequatur illo
+			dicta quis et iste quos, at alias magni enim. Enim sint animi aut iusto dolorem, maxime totam reprehenderit
+			aspernatur cupiditate vitae, est neque ipsa, dolor beatae officiis odio nobis minima perferendis aperiam eum
+			dolores suscipit quasi mollitia?</p>
 	</section>
 	<!-- START SLIDER 1 -->
 	<section class="first-section">
@@ -173,6 +180,12 @@
 				fetchpriority="low" class="light-icon" alt="Reinbuilt Luxury Homes Logo in Light Gray" />
 		</div>
 		<h3 class="text-center section--header">Inspired design impeccably built</h3>
+		<!-- IMG GOES UNDER TEXT -->
+		<img src="/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy" alt="placeholder" width=“415”
+			height=“300” />
+		<button class="text-center">START A PROJECT</button>
+	</section>
+	<section>
 		<h3 class="text-center section--header">Design build process</h3>
 		<img src="/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png"
 			loading="lazy" alt="Design Build Process Schematic" class="build-process" width="1200" height="525" />

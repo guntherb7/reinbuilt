@@ -14,8 +14,8 @@ footer {
       a {
         @include nav-font;
         text-align: center;
-        font-size: 50px;
-        line-height: 1.5;
+        font-size: 2rem;
+        padding: 0.7rem;
       }
     }
   }
@@ -33,18 +33,21 @@ footer {
     margin: 50px auto 0 !important;
     padding-bottom: $spacing-large;
 
-    ul {
+    ul.menu-items {
       li {
         a {
           @include nav-font;
-          text-align: center;
-          font-size: 30px !important;
+          font-size: 1.5rem;
+
+          :hover {
+            font-size: 1.4rem;
+          }
         }
       }
     }
+  }
 
-    .page--logo {
-      margin: 60px auto 0;
-    }
+  .page--logo {
+    margin: 60px auto 0;
   }
 }
