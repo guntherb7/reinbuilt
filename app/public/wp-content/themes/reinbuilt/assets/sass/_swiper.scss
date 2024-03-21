@@ -33,13 +33,11 @@
 
     .swiper-slide {
       img {
-        margin: $margin-center;
+        margin: 0 25px;
 
         &.swiper-horizontal {
           max-width: 326px;
-
-          height: 100%;
-          width: auto;
+          height: 415px;
           object-fit: cover;
         }
       }

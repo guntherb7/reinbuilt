@@ -150,34 +150,34 @@
 			src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
 			width="1920" height="1217" id="section-hero--3" />
 		<div class="swiper mySwiper">
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper ">
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-3-jpeg.webp" width=“415” height=“300”
-						loading="eager" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-3-jpeg.webp"
+						width=“415” height=“300” loading="eager" alt="placeholder" />
 				</div>
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-37-jpeg.webp" width=“415” height=“300”
-						loading="eager" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-37-jpeg.webp"
+						width=“415” height=“300” loading="eager" alt="placeholder" />
 				</div>
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-15-jpeg.webp" width=“415” height=“300”
-						loading="eager" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-15-jpeg.webp"
+						width=“415” height=“300” loading="eager" alt="placeholder" />
 				</div>
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-12-jpeg.webp" width=“415” height=“300”
-						loading="eager" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-12-jpeg.webp"
+						width=“415” height=“300” loading="eager" alt="placeholder" />
 				</div>
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-11-jpeg.webp" width=“415” height=“300”
-						loading="eager" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-11-jpeg.webp"
+						width=“415” height=“300” loading="eager" alt="placeholder" />
 				</div>
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-8-jpeg.webp" width=“415” height=“300”
-						loading="lazy" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-8-jpeg.webp"
+						width=“415” height=“300” loading="lazy" alt="placeholder" />
 				</div>
 				<div class="swiper-slide">
-					<img src="/wp-content/uploads/2024/02/n_orange_drive-27-jpeg.webp" width=“415” height=“300”
-						loading="lazy" alt="placeholder" />
+					<img class="swiper-horizontal" src="/wp-content/uploads/2024/02/n_orange_drive-27-jpeg.webp"
+						width=“415” height=“300” loading="lazy" alt="placeholder" />
 				</div>
 			</div>
 			<div class="swiper-button-next"></div>
