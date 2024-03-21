@@ -235,6 +235,8 @@
             overflow: scroll;
             padding-block: 0;
 
+            .start-project--text {}
+
             .page--logo {
                 max-width: 225px;
             }
@@ -242,6 +244,11 @@
             &.text-box {
                 margin: 0 30px;
                 padding: 85px 0 10vw;
+            }
+
+            .start-project {
+                max-width: $mobile-image;
+                margin: $margin-center;
             }
 
             &.cost-calculator {
@@ -293,10 +300,9 @@
                 }
             }
 
-
-
             .section-hero {
-                max-width: 100vw;
+                max-width: $mobile-image;
+                margin: $margin-center;
             }
 
             .section--header {

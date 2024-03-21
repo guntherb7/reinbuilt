@@ -1,4 +1,4 @@
-.contact-wrapper {
+.contact-section {
   position: $rel;
 
   .contact {
@@ -26,8 +26,11 @@
 }
 
 @media screen and (max-width: $phone-max-width) {
-  .contact-wrapper {
-    position: $rel;
+  .contact-section {
+    .contact-hero {
+      max-width: 90vw;
+      margin: $margin-center;
+    }
 
     .contact {
       position: $rel;
