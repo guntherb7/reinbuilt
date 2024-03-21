@@ -10,8 +10,16 @@
         bottom: 0;
         transition: transform 750ms ease-in-out;
 
-        a.hero-link {
+        p.hero-link {
+            @include heading-font;
+            font-weight: $bold;
+            font-size: 2rem;
+            color: white;
             position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin: 0;
         }
 
         &.nav--drop {
@@ -50,15 +58,29 @@ body.noscroll {
 }
 
 @media screen and (max-width: $phone-max-width) {
-    .hero-swiper {
-        .hero--logo {
-            top: 20px;
-            font-size: 24px;
-        }
+    .welcome {
+        .hero-swiper {
+            a {
+                display: unset;
+            }
 
-        img.hero--image {
-            max-height: 100svh;
-            width: auto;
+            .hero--logo {
+                top: 20px;
+
+                img {
+                    max-width: 200px;
+                }
+            }
+
+            img.hero--image {
+                max-height: 100svh;
+                width: auto;
+            }
+
+            p.hero-link {
+                bottom: 20px;
+                font-size: 1.4rem;
+            }
         }
     }
 }

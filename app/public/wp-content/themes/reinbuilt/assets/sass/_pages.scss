@@ -16,9 +16,12 @@
 
 .content {
     margin-inline: auto;
+    scroll-snap-type: y mandatory;
 
     section {
-        padding-block: 30px;
+
+        scroll-snap-align: center;
+        padding-block: 80px;
         max-width: $desktop-max-width;
         margin-inline: auto;
 
@@ -236,6 +239,11 @@
                 max-width: 225px;
             }
 
+            &.text-box {
+                margin: 0 30px;
+                padding: 85px 0 10vw;
+            }
+
             &.cost-calculator {
                 #forminator-module-29 {
 
@@ -284,6 +292,8 @@
                     }
                 }
             }
+
+
 
             .section-hero {
                 max-width: 100vw;

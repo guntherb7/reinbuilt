@@ -20,7 +20,9 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: $dark-font;
+    color: $current;
+
+    &::after {}
   }
 }
 
@@ -32,6 +34,23 @@
     .swiper-slide {
       img {
         margin: $margin-center;
+
+        &.swiper-horizontal {
+          max-width: 326px;
+
+          height: 100%;
+          width: auto;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 0vw;
+
+      &::after {
+        font-size: 1.8rem;
       }
     }
   }

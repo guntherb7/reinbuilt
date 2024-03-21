@@ -8,28 +8,35 @@
 		</div>
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<a href="/" class="hero-link">
+				<a href="/" class="">
 					<img class="hero--image" alt=""
 						src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="eager"
-						fetchpriority="high" width="1920" height="1217" /> Architecture
+						fetchpriority="high" width="1920" height="1217" />
+					<p class="hero-link">Architecture</p>
 				</a>
 			</div>
 			<div class="swiper-slide">
-				<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
-					height="1280" />
+				<a href="/interior" class="">
+					<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
+						width="1920" height="1280" />
+					<p class="hero-link">Interior</p>
+				</a>
 			</div>
 			<div class="swiper-slide">
-				<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
-					height="1280" />
+				<a href="/restoration" class="">
+					<img class="hero--image" alt="" src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp"
+						width="1920" height="1280" />
+					<p class="hero-link">Restoration</p>
+				</a>
 			</div>
 		</div>
 	</div>
 	<i class="fas fa-chevron-down arrowdown"></i>
 </div>
 <div class="content">
-	<section class="first-section">
+	<section class="text-box">
 		<!-- REINBUILT -->
-		<p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deleniti, officiis quasi
+		<p class="text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deleniti, officiis quasi
 			sint quia veritatis,
 			dolor earum cupiditate praesentium doloremque accusamus architecto rerum quod a placeat consequatur illo
 			dicta quis et iste quos, at alias magni enim. Enim sint animi aut iusto dolorem, maxime totam reprehenderit

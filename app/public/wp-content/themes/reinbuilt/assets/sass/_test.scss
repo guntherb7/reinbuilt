@@ -1,0 +1,19 @@
+.panel {
+    height: 100vh;
+    /*   position: sticky; */
+    /* causes problems! */
+    top: 0;
+
+
+    &:nth-child(1) {
+        background-color: red;
+    }
+
+    &:nth-child(2) {
+        background-color: green;
+    }
+
+    &:nth-child(3) {
+        background-color: blue;
+    }
+}

@@ -56,27 +56,6 @@ if (
     // prevent browser from refreshing
     e.preventDefault();
 
-    // // grab id from event
-    // let { id } = e.target;
-
-    // // if no id, assign index
-    // if (id === "" || e.type === "wheel" || e.type === "touchmove") {
-    //   // to fetch data from
-    //   id = "index";
-    //   // to change url with
-    //   url = "";
-    //   // if there is an id, assign it to the url
-    // } else {
-    //   // to change url with
-    //   url = id;
-    // }
-
-    // // For reference: history(data, title, url)
-    // history.pushState(id, null, url);
-
-    // fetch data
-    // fetchData(id)
-
     // reveal content by toggling overlay & ability to scroll
     heroSwiper.classList.add("welcome--active");
     element.classList.remove("noscroll");

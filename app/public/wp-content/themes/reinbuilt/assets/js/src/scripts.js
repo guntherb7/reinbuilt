@@ -12,7 +12,8 @@ const heroTagline = document.querySelector(".tagline");
 const html = document.querySelector("html");
 const lightIcon = document.querySelector(".light-icon");
 const nav = document.querySelector(".nav");
-const navMenu = document.querySelector(".menu-items");
+var menu = document.getElementById("menu");
+var menuItems = document.querySelector(".menu-items");
 const pageLogo = document.querySelector(".page--logo");
 const phone =
   "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)";

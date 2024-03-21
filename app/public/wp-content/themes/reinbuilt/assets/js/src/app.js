@@ -22,18 +22,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         gsap.fromTo(
           ".contact",
           {
-            x: "-100%", // start from offscreen left
+            y: "+100%", // start from offscreen left
             opacity: 0,
           },
           {
             scrollTrigger: {
               trigger: ".contact-hero",
-              start: "+75 center",
+              start: "+100 center",
               end: "center center",
             },
-            x: "0%", // end at the center
+            y: "0%", // end at the center
             opacity: 1,
-            duration: 1,
+            duration: 2,
           }
         );
       },

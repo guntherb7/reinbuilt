@@ -10,7 +10,7 @@
 function darkMode() {
   element.classList.toggle("dark-mode");
   nav.classList.toggle("dark-mode");
-  navMenu.classList.toggle("dark-mode");
+  menuItems.classList.toggle("dark-mode");
   pageLogo.classList.toggle("dark-mode");
   html.classList.toggle("dark-mode");
   if (element.classList.contains("dark-mode")) {
@@ -53,9 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     darkModeButton.addEventListener("click", darkMode);
   }
 
-  var menu = document.getElementById("menu");
-  var menuItems = document.querySelector(".menu-items");
-
   function toggleMenu() {
     console.log("Toggling menu");
     menuItems.classList.toggle("open");
@@ -67,16 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Menu element not found");
   }
 });
-
-// add a class of active to the current page link
-// const currentLocation = location.href;
-// const menuItem = document.querySelectorAll(".menu-items a");
-// const menuLength = menuItem.length;
-// for (let i = 0; i < menuLength; i++) {
-//   if (menuItem[i].href === currentLocation) {
-//     menuItem[i].className = "active";
-//   }
-// }
 
 document.addEventListener("DOMContentLoaded", function () {
   // Check if the current page is one of the target pages
