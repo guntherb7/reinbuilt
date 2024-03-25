@@ -6,6 +6,12 @@
  */
 /*jshint esversion: 11 */
 
+// Menu Toggle Function
+function toggleMenu() {
+  console.log("Toggling menu");
+  menuItems.classList.toggle("open");
+}
+
 // Dark Mode Function
 function darkMode() {
   element.classList.toggle("dark-mode");
@@ -13,6 +19,8 @@ function darkMode() {
   menuItems.classList.toggle("dark-mode");
   pageLogo.classList.toggle("dark-mode");
   html.classList.toggle("dark-mode");
+
+  // Check if dark mode is enabled as icon is clicked, then set the icon accordingly and save the state in local storage
   if (element.classList.contains("dark-mode")) {
     lightIcon.style.display = "none";
     darkIcon.style.display = "block";
@@ -28,11 +36,12 @@ function darkMode() {
 document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
   var bodyBackgroundColor = getComputedStyle(document.body).backgroundColor;
 
+  // Check if dark mode is enabled in local storage
   if (localStorage.getItem("darkMode") === "true") {
     html.classList.add("dark-mode");
     document.body.classList.add("dark-mode");
     document.querySelector(".nav").classList.add("dark-mode");
-    document.querySelector(".bg").classList.add("dark-mode");
+    // document.querySelector(".bg").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
     document.querySelector(".light-icon").style.display = "none";
     document.querySelector(".dark-icon").style.display = "block";
@@ -40,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
     localStorage.getItem("darkMode") === "false" ||
     bodyBackgroundColor === "rgb(244, 238, 233)"
   ) {
-    document.querySelector(".bg").classList.remove("dark-mode");
+    // document.querySelector(".bg").classList.remove("dark-mode");
     document.querySelector(".light-icon").style.display = "block";
     document.querySelector(".dark-icon").style.display = "none";
   }
@@ -55,20 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
     darkModeButton.addEventListener("click", darkMode);
   }
 
-  function toggleMenu() {
-    console.log("Toggling menu");
-    menuItems.classList.toggle("open");
-  }
-
   if (menu) {
     menu.addEventListener("click", toggleMenu);
   } else {
     console.log("Menu element not found");
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page is one of the target pages
   if (
     document.URL.includes("/interior") ||
     document.URL.includes("/restoration") ||

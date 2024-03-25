@@ -6,8 +6,8 @@
  */
 /*jshint esversion: 11 */
 
+// Smooth Scroll library
 function lenisScroll() {
-  // Smooth Scroll library
   const lenis = new Lenis();
 
   lenis.on("scroll", ScrollTrigger.update);
@@ -18,6 +18,7 @@ function lenisScroll() {
 
   gsap.ticker.lagSmoothing(0);
 }
+
 let path = window.location.pathname;
 if (
   path !== "/interior/" &&
@@ -33,8 +34,8 @@ if (
       const scroll = window.scrollY;
       // If the scroll position is less than 1, we're at the top of the page
       if (scroll < 1) {
-        // Change the navigation bar to be fully visible and positioned at the top of the page
-        heroSwiper.style.top = "60px";
+        menuItems.classList.toggle("open");
+        toggleMenu();
       } else if (scroll > 0) {
         heroSwiper.style.top = "0";
       }

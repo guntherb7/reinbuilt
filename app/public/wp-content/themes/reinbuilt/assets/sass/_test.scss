@@ -88,25 +88,27 @@
         }
 
         &.seventh {
-            display: grid;
+
             // grid-template-areas: ".bg";
 
             .bg {
                 // position: $rel;
                 // background-color: $light-background;
-                place-items: center;
+                display: grid;
+
+                grid-template-areas: "img";
 
                 >* {
-                    grid-area: ".bg";
+                    grid-area: "img";
+                    place-items: center;
                 }
 
                 .visualize-button {
                     // position: $abs;
                     background-color: $dark-background;
                     color: $light-font;
-                    bottom: 20%;
-                    left: 50%;
-                    transform: translate(-50%, 0);
+                    max-width: 250px;
+                    margin: -100px auto 60px;
                     text-transform: $all-caps;
                     padding: .6rem 1.5rem;
                     border-radius: 4px;
