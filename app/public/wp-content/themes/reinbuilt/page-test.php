@@ -278,10 +278,10 @@
     <section class="ninth">
         <div class="outer">
             <div class="inner">
-                <div class="bg"></div>
+                <div class="bg">
+                    <?php get_footer(); ?>
+                </div>
             </div>
         </div>
     </section>
 </div>
-
-<?php get_footer(); ?>

@@ -75,20 +75,11 @@ function gotoSection(index, direction) {
       { autoAlpha: 0 }
     );
 
-    // if (
-    // sections[currentIndex].classList.contains("sixth") ||
-    //   sections[currentIndex].classList.contains("seventh");
-    // ) {
-    //   gsap.set(".hold", {
-    //     zIndex: 1,
-    //     opacity: 0,
-    //   });
-    // }
-
     if (
       sections[currentIndex].classList.contains("sixth") ||
-      sections[currentIndex].classList.contains("seventh") ||
-      sections[currentIndex].classList.contains("eighth")
+      sections[currentIndex].classList.contains("seventh")
+      // ||
+      // sections[currentIndex].classList.contains("eighth")
     ) {
       tl.to(".hold", {
         autoAlpha: 1,
@@ -96,8 +87,13 @@ function gotoSection(index, direction) {
         opacity: 1,
         visibility: "visible",
         overwrite: "true",
-        backgroundColor: "inherit",
       });
+    }
+    if (
+      sections[currentIndex].classList.contains("seventh") ||
+      sections[currentIndex].classList.contains("fourth")
+    ) {
+      document.querySelector(".hold").style.display = "none";
     }
   }
   gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });

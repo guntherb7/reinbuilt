@@ -52,8 +52,13 @@
             .outer {
                 .inner {
                     .bg {
-                        position: $rel;
-                        background-color: transparent;
+                        // position: $rel;
+                        // background-color: $light-background;
+                        place-items: center;
+
+                        >* {
+                            grid-area: ".bg";
+                        }
 
                         .start-project {
                             position: $rel;
@@ -61,20 +66,20 @@
                             color: $dark-font;
 
                             .page--logo {
-                                position: $abs;
-                                top: 120px;
-                                left: 50%;
-                                transform: translate(-50%, 0);
+                                position: $rel;
+                                // top: 120px;
+                                // left: 50%;
+                                // transform: translate(-50%, 0);
 
                             }
 
-                            .section--header {
-                                bottom: 75px;
-                                position: $abs;
-                                font-size: 1.7rem;
-                                left: 50%;
-                                transform: translate(-50%, 0);
-                            }
+                            // .section--header {
+                            //     bottom: 75px;
+                            //     position: $abs;
+                            //     font-size: 1.7rem;
+                            //     left: 50%;
+                            //     transform: translate(-50%, 0);
+                            // }
                         }
 
                     }
@@ -83,13 +88,20 @@
         }
 
         &.seventh {
+            display: grid;
+            // grid-template-areas: ".bg";
+
             .bg {
-                position: $rel;
-                background-color: $light-background;
+                // position: $rel;
+                // background-color: $light-background;
+                place-items: center;
 
+                >* {
+                    grid-area: ".bg";
+                }
 
-                a .visualize-button {
-                    position: $abs;
+                .visualize-button {
+                    // position: $abs;
                     background-color: $dark-background;
                     color: $light-font;
                     bottom: 20%;
