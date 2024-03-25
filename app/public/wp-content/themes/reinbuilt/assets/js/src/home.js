@@ -20,6 +20,7 @@ function lenisScroll() {
 }
 
 let path = window.location.pathname;
+let hasRun = false;
 if (
   path !== "/interior/" &&
   path !== "/restoration/" &&
@@ -28,16 +29,15 @@ if (
   path !== "/test/"
 ) {
   {
-    // Function to check the scroll position and update the navigation bar
     function checkScroll() {
       // Get the current scroll position
       const scroll = window.scrollY;
+
       // If the scroll position is less than 1, we're at the top of the page
-      if (scroll < 1) {
-        menuItems.classList.toggle("open");
-        toggleMenu();
-      } else if (scroll > 0) {
-        heroSwiper.style.top = "0";
+
+      if (!hasRun && scroll < 1) {
+        document.getElementById("menu").checked = true;
+        hasRun = true;
       }
     }
     // After a short delay

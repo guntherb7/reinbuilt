@@ -12,12 +12,11 @@
 
 
         .bg {
-            align-items: center;
-            justify-content: center;
             height: 100%;
             width: 100%;
             display: block;
             align-content: center;
+            place-items: center;
 
             .clip-text {
                 overflow: hidden;
@@ -54,11 +53,10 @@
                     .bg {
                         // position: $rel;
                         // background-color: $light-background;
-                        place-items: center;
+                        display: grid;
+                        grid-template-areas: "bg";
 
-                        >* {
-                            grid-area: ".bg";
-                        }
+
 
                         .start-project {
                             position: $rel;
@@ -66,22 +64,20 @@
                             color: $dark-font;
 
                             .page--logo {
+                                align-self: start;
                                 position: $rel;
-                                // top: 120px;
-                                // left: 50%;
-                                // transform: translate(-50%, 0);
-
                             }
 
-                            // .section--header {
-                            //     bottom: 75px;
-                            //     position: $abs;
-                            //     font-size: 1.7rem;
-                            //     left: 50%;
-                            //     transform: translate(-50%, 0);
-                            // }
+                            .section--header {
+                                bottom: 75px;
+                                font-size: 1.7rem;
+                            }
                         }
 
+                    }
+
+                    .bg>* {
+                        grid-area: "bg";
                     }
                 }
             }
@@ -89,19 +85,14 @@
 
         &.seventh {
 
-            // grid-template-areas: ".bg";
+            display: grid;
+            grid-template-areas: "bg";
 
             .bg {
                 // position: $rel;
                 // background-color: $light-background;
-                display: grid;
 
-                grid-template-areas: "img";
 
-                >* {
-                    grid-area: "img";
-                    place-items: center;
-                }
 
                 .visualize-button {
                     // position: $abs;
@@ -114,6 +105,10 @@
                     border-radius: 4px;
                     border: .3px solid $light-background;
                 }
+            }
+
+            .bg>* {
+                grid-area: "bg";
             }
         }
 

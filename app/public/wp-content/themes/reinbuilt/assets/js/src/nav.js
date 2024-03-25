@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
   if (localStorage.getItem("darkMode") === "true") {
     html.classList.add("dark-mode");
     document.body.classList.add("dark-mode");
+    header.classList.add("dark-mode");
     document.querySelector(".nav").classList.add("dark-mode");
     // document.querySelector(".bg").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
