@@ -12,7 +12,6 @@
 
         p.hero-link {
             @include heading-font;
-            font-weight: $bold;
             font-size: 2rem;
             color: white;
             position: absolute;

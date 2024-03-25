@@ -31,7 +31,7 @@
 			</div>
 		</div>
 	</div>
-	<i class="fas fa-chevron-down arrowdown"></i>
+	<!-- <i class="fas fa-chevron-down arrowdown"></i> -->
 </div>
 <div class="content">
 	<section class="text-box">

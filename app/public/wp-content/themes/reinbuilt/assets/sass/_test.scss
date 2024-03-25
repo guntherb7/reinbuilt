@@ -1,10 +1,119 @@
 .test {
+    position: $rel;
+    z-index: 100;
+    text-align: center;
+
+
     section {
         height: 100%;
         width: 100%;
-        top: 0;
+        top: 60px;
         position: fixed;
 
+
+        .bg {
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            display: block;
+            align-content: center;
+
+            .clip-text {
+                overflow: hidden;
+            }
+
+            .text-box {
+                padding-inline: 60px;
+            }
+        }
+
+        &.first {
+            .bg {}
+        }
+
+        &.second {
+            .bg {}
+        }
+
+        &.third {
+            .bg {}
+        }
+
+        &.fourth {
+            .bg {}
+        }
+
+        &.fifth {
+            .bg {}
+        }
+
+        &.sixth {
+            .outer {
+                .inner {
+                    .bg {
+                        position: $rel;
+                        background-color: transparent;
+
+                        .start-project {
+                            position: $rel;
+                            z-index: 1000;
+                            color: $dark-font;
+
+                            .page--logo {
+                                position: $abs;
+                                top: 120px;
+                                left: 50%;
+                                transform: translate(-50%, 0);
+
+                            }
+
+                            .section--header {
+                                bottom: 75px;
+                                position: $abs;
+                                font-size: 1.7rem;
+                                left: 50%;
+                                transform: translate(-50%, 0);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        &.seventh {
+            .bg {
+                position: $rel;
+                background-color: $light-background;
+
+
+                a .visualize-button {
+                    position: $abs;
+                    background-color: $dark-background;
+                    color: $light-font;
+                    bottom: 20%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    text-transform: $all-caps;
+                    padding: .6rem 1.5rem;
+                    border-radius: 4px;
+                    border: .3px solid $light-background;
+                }
+            }
+        }
+
+        &.eighth {}
+
+        &.ninth {}
+
+        &.tenth {}
+
+        .section-hero {
+            max-width: $desktop-max-width;
+            @include responsive;
+            display: none;
+        }
 
         .outer,
         .inner {
@@ -13,55 +122,6 @@
             overflow-y: hidden;
         }
 
-        .bg {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            background-size: cover;
-            background-position: center;
 
-            h2 {
-                z-index: 2;
-            }
-
-            .clip-text {
-                overflow: hidden;
-            }
-        }
-    }
-
-    .first {
-        .bg {
-            background-color: red;
-        }
-    }
-
-    .second {
-        .bg {
-            background-color: green;
-        }
-    }
-
-    .third {
-        .bg {
-            background-color: blue;
-        }
-    }
-
-    .fourth {
-        .bg {
-            background-color: yellow;
-        }
-    }
-
-    .fifth {
-        .bg {
-            background-color: yellowgreen;
-
-        }
     }
 }

@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
     html.classList.add("dark-mode");
     document.body.classList.add("dark-mode");
     document.querySelector(".nav").classList.add("dark-mode");
+    document.querySelector(".bg").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
     document.querySelector(".light-icon").style.display = "none";
     document.querySelector(".dark-icon").style.display = "block";
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
     localStorage.getItem("darkMode") === "false" ||
     bodyBackgroundColor === "rgb(244, 238, 233)"
   ) {
+    document.querySelector(".bg").classList.remove("dark-mode");
     document.querySelector(".light-icon").style.display = "block";
     document.querySelector(".dark-icon").style.display = "none";
   }
@@ -71,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.URL.includes("/interior") ||
     document.URL.includes("/restoration") ||
     document.URL.includes("/visualization") ||
-    document.URL.includes("/calculators")
+    document.URL.includes("/calculators") ||
+    document.URL.includes("/test")
   ) {
     // add smooth scrolling to page
     lenisScroll();

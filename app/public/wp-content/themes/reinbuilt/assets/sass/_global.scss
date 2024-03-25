@@ -19,7 +19,6 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-
 }
 
 html,
@@ -81,6 +80,28 @@ html.lenis {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+
+// @media (prefers-color-scheme: dark) {
+
+//   body,
+//   html,
+//   .nav {
+//     background-color: $dark-background !important;
+//     color: $light-font;
+//   }
+
+//   .page--logo {
+//     .dark-icon {
+//       display: none;
+//       background-color: none;
+//     }
+
+//     .light-icon {
+//       background-color: none;
+//       display: block;
+//     }
+//   }
+// }
 
 
 .dark-mode {
@@ -158,6 +179,10 @@ label {
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: $current;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */

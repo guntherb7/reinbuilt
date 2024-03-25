@@ -46,3 +46,12 @@ const heroImgSwiper = new Swiper(".hero-swiper", {
     },
   },
 });
+
+// const vertical = new Swiper(".vertical", {
+//   direction: "vertical", // Set the direction to vertical
+//   mousewheel: true, // Enable scrolling with the mouse wheel
+//   slidesPerView: 1.2, // Set the number of slides visible at a time
+//   spaceBetween: 0, // Add spacing between slides
+//   loop: true, // Enable the loop mode
+//   centeredSlides: true, // Center the slides
+// });

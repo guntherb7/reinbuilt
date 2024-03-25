@@ -23,7 +23,8 @@ if (
   path !== "/interior/" &&
   path !== "/restoration/" &&
   path !== "/calculators/" &&
-  path !== "/visualization/"
+  path !== "/visualization/" &&
+  path !== "/test/"
 ) {
   {
     // Function to check the scroll position and update the navigation bar
