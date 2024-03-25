@@ -83,6 +83,8 @@
             }
         }
 
+
+
         &.seventh {
 
             display: grid;
@@ -110,6 +112,10 @@
             .bg>* {
                 grid-area: "bg";
             }
+        }
+
+        :current(&.sixth, &.seventh) {
+            background-color: pink;
         }
 
         &.eighth {}

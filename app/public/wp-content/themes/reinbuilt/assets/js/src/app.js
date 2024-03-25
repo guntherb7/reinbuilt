@@ -70,7 +70,7 @@ function gotoSection(index, direction) {
   if (currentIndex >= 0) {
     // The first time this function runs, current is -1
     gsap.set(sections[currentIndex], { zIndex: 1 });
-    tl.to(images[currentIndex], { yPercent: -15 * dFactor }).set(
+    tl.to(images[currentIndex], { yPercent: 0 * dFactor }).set(
       sections[currentIndex],
       { autoAlpha: 0 }
     );
@@ -81,6 +81,7 @@ function gotoSection(index, direction) {
       // ||
       // sections[currentIndex].classList.contains("eighth")
     ) {
+      document.querySelector(".hold").style.display = "block";
       tl.to(".hold", {
         autoAlpha: 1,
         zIndex: 1000,
@@ -95,9 +96,9 @@ function gotoSection(index, direction) {
     ) {
       document.querySelector(".hold").style.display = "none";
       tl.to(".hold", {
-        autoAlpha: 0,
-        zIndex: 0,
-        opacity: 0,
+        autoAlpha: 1,
+        zIndex: 1000,
+        opacity: 1,
         visibility: "visible",
         overwrite: "true",
       });
