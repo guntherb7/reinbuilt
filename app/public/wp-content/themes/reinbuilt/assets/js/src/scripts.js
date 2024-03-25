@@ -7,6 +7,7 @@
 /*jshint esversion: 11 */
 const darkIcon = document.querySelector(".dark-icon");
 const element = document.body;
+const header = document.querySelector("header");
 const heroSwiper = document.querySelector(".hero-swiper");
 const heroTagline = document.querySelector(".tagline");
 const html = document.querySelector("html");
