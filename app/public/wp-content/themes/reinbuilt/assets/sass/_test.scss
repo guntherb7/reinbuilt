@@ -48,11 +48,16 @@
         }
 
         &.sixth {
+            z-index: 1000;
+
+
             .outer {
                 .inner {
+                    // background-color: $light-background;
+
                     .bg {
                         // position: $rel;
-                        // background-color: $light-background;
+
                         display: grid;
                         grid-template-areas: "bg";
 
@@ -89,6 +94,7 @@
 
             display: grid;
             grid-template-areas: "bg";
+            z-index: 900;
 
             .bg {
                 // position: $rel;
