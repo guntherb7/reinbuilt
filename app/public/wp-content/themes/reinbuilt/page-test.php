@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <div class="test">
+    <!-- <div class="hold">TEST TEST</div> -->
     <!-- <section class="first">
         <div class="outer">
             <div class="inner">
@@ -229,21 +230,10 @@
             </div>
         </div>
     </section>
-    <section class="sixth hold">
+    <section class="sixth">
         <div class="outer">
             <div class="inner">
                 <div class="bg">
-                    <div class="start-project">
-                        <div class="start-project--text">
-                            <div class="page--logo">
-                                <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275"
-                                    height="42" loading="lazy" fetchpriority="low" class="dark-icon"
-                                    alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
-                            </div>
-                            <h3 class="text-center section--header">Inspired design <br> impeccably built</h3>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -253,7 +243,6 @@
             <div class="inner">
                 <div class="bg">
                     <!-- IMG GOES UNDER TEXT -->
-
                     <img src="/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy" alt="placeholder"
                         width=“415” height=“300” />
                     <a href="/visualize" role="button" class="visualize-button">Start a project</a>
@@ -262,7 +251,6 @@
         </div>
     </section>
     <section class="eighth">
-
         <div class="outer">
             <div class="inner">
                 <div class="bg">
@@ -273,7 +261,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="ninth">
         <div class="outer">
@@ -284,4 +271,16 @@
             </div>
         </div>
     </section>
+    <div class="hold">
+        <div class="start-project ">
+            <div class="start-project--text">
+                <div class="page--logo">
+                    <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42"
+                        loading="lazy" fetchpriority="low" class="dark-icon"
+                        alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
+                </div>
+                <h3 class="text-center section--header">Inspired design <br> impeccably built</h3>
+            </div>
+        </div>
+    </div>
 </div>

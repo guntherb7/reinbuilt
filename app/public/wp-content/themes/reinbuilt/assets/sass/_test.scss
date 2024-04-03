@@ -4,6 +4,7 @@
     text-align: center;
 
 
+
     section {
         height: 100%;
         width: 100%;
@@ -14,7 +15,6 @@
         .bg {
             height: 100%;
             width: 100%;
-            display: block;
             align-content: center;
             place-items: center;
 
@@ -48,80 +48,39 @@
         }
 
         &.sixth {
-            z-index: 1000;
-
-
             .outer {
                 .inner {
                     // background-color: $light-background;
 
                     .bg {
                         // position: $rel;
-
-                        display: grid;
-                        grid-template-areas: "bg";
-
-
-
-                        .start-project {
-                            position: $rel;
-                            z-index: 1000;
-                            color: $dark-font;
-
-                            .page--logo {
-                                align-self: start;
-                                position: $rel;
-                            }
-
-                            .section--header {
-                                bottom: 75px;
-                                font-size: 1.7rem;
-                            }
-                        }
-
-                    }
-
-                    .bg>* {
-                        grid-area: "bg";
                     }
                 }
             }
         }
 
-
-
         &.seventh {
 
-            display: grid;
-            grid-template-areas: "bg";
-            z-index: 900;
-
             .bg {
-                // position: $rel;
-                // background-color: $light-background;
-
+                position: relative;
 
 
                 .visualize-button {
-                    // position: $abs;
+                    position: $abs;
+                    left: 50%;
+                    top: 75%;
+                    transform: translate(-50%, 0);
                     background-color: $dark-background;
                     color: $light-font;
                     max-width: 250px;
-                    margin: -100px auto 60px;
+                    margin: 0 auto 60px;
                     text-transform: $all-caps;
                     padding: .6rem 1.5rem;
                     border-radius: 4px;
                     border: .3px solid $light-background;
+                    cursor: pointer;
                 }
             }
-
-            .bg>* {
-                grid-area: "bg";
-            }
-        }
-
-        :current(&.sixth, &.seventh) {
-            background-color: pink;
         }
 
         &.eighth {}
@@ -144,5 +103,43 @@
         }
 
 
+    }
+
+}
+
+.hold {
+    position: relative;
+    z-index: 1001;
+    display: none;
+    width: 100%;
+    height: 100vh;
+
+
+    .start-project {
+        z-index: 1001;
+        color: $dark-font;
+        text-align: center;
+
+
+
+        .start-project--text {
+            >* {
+                position: absolute;
+            }
+
+            .page--logo {
+                transform: translate(-50%, -50%);
+
+                left: 50%;
+                top: 15%;
+            }
+
+            .section--header {
+                left: 50%;
+                transform: translate(-50%, 0);
+                top: 50%;
+                font-size: 1.7rem;
+            }
+        }
     }
 }

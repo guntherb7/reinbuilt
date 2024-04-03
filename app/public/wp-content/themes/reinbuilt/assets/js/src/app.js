@@ -41,109 +41,70 @@
 //     );
 //   });
 // });
+document.addEventListener("DOMContentLoaded", function (event) {
+  gsap.registerPlugin(Observer);
 
-gsap.registerPlugin(Observer);
+  let sections = document.querySelectorAll("section"),
+    images = document.querySelectorAll(".bg"),
+    outerWrappers = gsap.utils.toArray(".outer"),
+    innerWrappers = gsap.utils.toArray(".inner"),
+    hold = gsap.utils.toArray(".hold"),
+    currentIndex = -1,
+    wrap = gsap.utils.wrap(0, sections.length),
+    animating;
 
-let sections = document.querySelectorAll("section"),
-  images = document.querySelectorAll(".bg"),
-  outerWrappers = gsap.utils.toArray(".outer"),
-  innerWrappers = gsap.utils.toArray(".inner"),
-  hold = gsap.utils.toArray(".hold"),
-  currentIndex = -1,
-  wrap = gsap.utils.wrap(0, sections.length),
-  animating;
+  gsap.set(outerWrappers, { yPercent: 100 });
+  gsap.set(innerWrappers, { yPercent: -100 });
+  gsap.set(hold, { yPercent: 0 });
 
-gsap.set(outerWrappers, { yPercent: 100 });
-gsap.set(innerWrappers, { yPercent: -100 });
-gsap.set(hold, { yPercent: 0 });
+  function gotoSection(index, direction) {
+    index = wrap(index); // make sure it's valid
+    animating = true;
+    let fromTop = direction === -1,
+      dFactor = fromTop ? -1 : 1,
+      tl = gsap.timeline({
+        defaults: { duration: 0.75, ease: "power1.inOut" },
+        onComplete: () => (animating = false),
+      });
+    if (currentIndex >= 0) {
+      // The first time this function runs, current is -1
+      gsap.set(sections[currentIndex], { zIndex: 1 });
+      tl.to(images[currentIndex], { yPercent: 0 * dFactor }).set(
+        sections[currentIndex],
+        { autoAlpha: 0 }
+      );
 
-function gotoSection(index, direction) {
-  index = wrap(index); // make sure it's valid
-  animating = true;
-  let fromTop = direction === -1,
-    dFactor = fromTop ? -1 : 1,
-    tl = gsap.timeline({
-      defaults: { duration: 0.75, ease: "power1.inOut" },
-      onComplete: () => (animating = false),
-    });
+      if (index == 1 || index == 2) {
+        document.querySelector(".hold").style.display = "block";
+      } else {
+        document.querySelector(".hold").style.display = "none";
+      }
+    }
+    gsap.set(sections[index], { autoAlpha: 1 });
+    tl.fromTo(
+      [outerWrappers[index], innerWrappers[index]],
+      {
+        yPercent: (i) => (i ? -100 * dFactor : 100 * dFactor),
+      },
+      {
+        yPercent: 0,
+      },
+      0
+    ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
 
-  if ((sections[currentIndex] = 2)) {
-    // set the background color of sections[1]> .inner to transparent
-    gsap.to(sections[1].querySelector(".inner"), {
-      backgroundColor: "transparent",
-    });
+    currentIndex = index;
+    console.log(currentIndex);
+    console.log(sections[currentIndex].classList);
   }
-  if (sections[currentIndex] != 2) {
-    // set the background color of sections[1]> .inner to transparent
-    gsap.to(sections[1].querySelector(".inner"), {
-      backgroundColor: "pink !important",
-    });
-  }
 
-  gsap.to(".seventh", {
-    /* your animation properties here */
+  Observer.create({
+    type: "wheel,touch,pointer",
+    wheelSpeed: -1,
+    onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+    onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+    tolerance: 10,
+    preventDefault: true,
   });
-  // if (currentIndex >= 0) {
-  //   // The first time this function runs, current is -1
-  //   gsap.set(sections[currentIndex], { zIndex: 1 });
-  //   tl.to(images[currentIndex], { yPercent: 0 * dFactor }).set(
-  //     sections[currentIndex],
-  //     { autoAlpha: 0 }
-  //   );
 
-  //   if (
-  //     sections[currentIndex].classList.contains("sixth") ||
-  //     sections[currentIndex].classList.contains("seventh")
-  //     // ||
-  //     // sections[currentIndex].classList.contains("eighth")
-  //   ) {
-  //     document.querySelector(".hold").style.display = "block";
-  //     tl.to(".hold", {
-  //       autoAlpha: 1,
-  //       zIndex: 1000,
-  //       opacity: 1,
-  //       visibility: "visible",
-  //       overwrite: "true",
-  //     });
-  //   }
-  //   if (
-  //     sections[currentIndex].classList.contains("eighth") ||
-  //     sections[currentIndex].classList.contains("fourth")
-  //   ) {
-  //     document.querySelector(".hold").style.display = "none";
-  //     tl.to(".hold", {
-  //       autoAlpha: 1,
-  //       zIndex: 1000,
-  //       opacity: 1,
-  //       visibility: "visible",
-  //       overwrite: "true",
-  //     });
-  //   }
-  // }
-  gsap.set(sections[index], { autoAlpha: 1 });
-  tl.fromTo(
-    [outerWrappers[index], innerWrappers[index]],
-    {
-      yPercent: (i) => (i ? -100 * dFactor : 100 * dFactor),
-    },
-    {
-      yPercent: 0,
-    },
-    0
-  ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
-
-  currentIndex = index;
-  console.log(currentIndex);
-  console.log(sections[currentIndex].classList);
-}
-
-Observer.create({
-  type: "wheel,touch,pointer",
-  wheelSpeed: -1,
-  onDown: () => !animating && gotoSection(currentIndex - 1, -1),
-  onUp: () => !animating && gotoSection(currentIndex + 1, 1),
-  tolerance: 10,
-  preventDefault: true,
+  gotoSection(0, 1);
 });
-
-gotoSection(0, 1);
