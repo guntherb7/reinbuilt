@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function initializeDarkMode() {
     document.body.classList.add("dark-mode");
     header.classList.add("dark-mode");
     document.querySelector(".nav").classList.add("dark-mode");
-    // document.querySelector(".bg").classList.add("dark-mode");
     document.querySelector(".menu-items").classList.add("dark-mode");
+    section.classList.add("dark-mode");
     document.querySelector(".light-icon").style.display = "none";
     document.querySelector(".dark-icon").style.display = "block";
   } else if (

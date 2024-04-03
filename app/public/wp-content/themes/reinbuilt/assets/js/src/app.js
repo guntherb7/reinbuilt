@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let fromTop = direction === -1,
       dFactor = fromTop ? -1 : 1,
       tl = gsap.timeline({
-        defaults: { duration: 0.75, ease: "power1.inOut" },
+        defaults: { duration: 0.5, ease: "sine.inOut" },
         onComplete: () => (animating = false),
       });
     if (currentIndex >= 0) {
@@ -75,9 +75,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       );
 
       if (index == 1 || index == 2) {
-        document.querySelector(".hold").style.display = "block";
+        document.querySelector(".hold").style.opacity = "1";
+        document.querySelector(".hold").style.visibility = "visible";
       } else {
-        document.querySelector(".hold").style.display = "none";
+        document.querySelector(".hold").style.opacity = "0";
+        document.querySelector(".hold").style.visibility = "hidden";
       }
     }
     gsap.set(sections[index], { autoAlpha: 1 });
