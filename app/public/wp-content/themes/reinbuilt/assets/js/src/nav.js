@@ -17,6 +17,7 @@ function darkMode() {
   element.classList.toggle("dark-mode");
   header.classList.toggle("dark-mode");
   nav.classList.toggle("dark-mode");
+  section.classList.add("dark-mode");
   menuItems.classList.toggle("dark-mode");
   pageLogo.classList.toggle("dark-mode");
   html.classList.toggle("dark-mode");

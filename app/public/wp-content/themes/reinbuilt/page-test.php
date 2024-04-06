@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <div class="test">
-    <!-- <div class="hold">TEST TEST</div> -->
-    <!-- <section class="first">
+
+    <section class="first">
         <div class="outer">
             <div class="inner">
                 <div class="bg one">
@@ -13,33 +13,27 @@
                                     fetchpriority="high" alt="Reinbuilt Luxury Homes Logo in White" class="tagline">
                             </div>
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="/" class="">
-                                        <img class="hero--image" alt=""
-                                            src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
-                                            loading="eager" fetchpriority="high" width="1920" height="1217" />
-                                        <p class="hero-link">Architecture</p>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="/interior" class="">
-                                        <img class="hero--image" alt=""
-                                            src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
-                                            height="1280" />
-                                        <p class="hero-link">Interior</p>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="/restoration" class="">
-                                        <img class="hero--image" alt=""
-                                            src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
-                                            height="1280" />
-                                        <p class="hero-link">Restoration</p>
-                                    </a>
-                                </div>
+                                <a href="/" class="swiper-slide">
+                                    <img class="hero--image" alt=""
+                                        src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp"
+                                        loading="eager" fetchpriority="high" width="1920" height="1217" />
+                                    <p class="hero-link">Architecture</p>
+                                </a>
+                                <a href="/interior" class="swiper-slide">
+                                    <img class="hero--image" alt=""
+                                        src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
+                                        height="1280" />
+                                    <p class="hero-link">Interior</p>
+                                </a>
+                                <a href="/restoration" class="swiper-slide">
+                                    <img class="hero--image" alt=""
+                                        src="/wp-content/uploads/2024/02/n_orange_drive-9-jpg.webp" width="1920"
+                                        height="1280" />
+                                    <p class="hero-link">Restoration</p>
+                                </a>
                             </div>
                         </div>
-
+                        <!-- <i class="fas fa-chevron-down arrowdown"></i> -->
                     </div>
                 </div>
             </div>

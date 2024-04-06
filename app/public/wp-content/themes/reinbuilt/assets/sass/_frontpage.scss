@@ -9,16 +9,21 @@
         right: 0;
         bottom: 0;
         transition: transform 750ms ease-in-out;
+        cursor: pointer;
 
-        p.hero-link {
-            @include heading-font;
-            font-size: 2rem;
-            color: white;
-            position: absolute;
-            bottom: 60px;
-            left: 50%;
-            transform: translate(-50%, 0);
-            margin: 0;
+        .swiper-slide {
+            position: $rel;
+
+            p.hero-link {
+                @include heading-font;
+                font-size: 2rem;
+                color: white;
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                margin: 0;
+            }
         }
 
         &.nav--drop {
