@@ -8,12 +8,12 @@
         width: 100%;
         top: 60px;
         position: fixed;
+        // background-color: $light-background;
 
         &.dark-mode {
-            background-color: $dark-background;
+            // background-color: $dark-background;
             color: $light-font;
         }
-
 
         .bg {
             z-index: 750;
@@ -114,8 +114,10 @@
     position: relative;
     z-index: 1001;
     opacity: 0;
+    margin: $margin-center;
     visibility: hidden;
     width: 100%;
+    max-width: 768px;
     height: 100vh;
     transition: opacity 0.5s, visibility 0.5s;
 

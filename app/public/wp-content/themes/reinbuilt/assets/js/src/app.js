@@ -6,41 +6,41 @@
  */
 /*jshint esversion: 11 */
 
-// gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin);
 
-// // wait until DOM is ready
-// document.addEventListener("DOMContentLoaded", function (event) {
-//   // create
-//   let mm = gsap.matchMedia();
+// wait until DOM is ready
+document.addEventListener("DOMContentLoaded", function (event) {
+  // create
+  let mm = gsap.matchMedia();
 
-//   // add a media query. When it matches, the associated function will run
-//   mm.add("(min-width: 800px)", () => {
-//     //wait until images, links, fonts, stylesheets, and js is loaded
-//     window.addEventListener(
-//       "load",
-//       function (e) {
-//         gsap.fromTo(
-//           ".contact",
-//           {
-//             y: "+100%", // start from offscreen left
-//             opacity: 0,
-//           },
-//           {
-//             scrollTrigger: {
-//               trigger: ".contact-hero",
-//               start: "+100 center",
-//               end: "center center",
-//             },
-//             y: "0%", // end at the center
-//             opacity: 1,
-//             duration: 2,
-//           }
-//         );
-//       },
-//       false
-//     );
-//   });
-// });
+  // add a media query. When it matches, the associated function will run
+  mm.add("(min-width: 800px)", () => {
+    //wait until images, links, fonts, stylesheets, and js is loaded
+    window.addEventListener(
+      "load",
+      function (e) {
+        gsap.fromTo(
+          ".ninth",
+          {
+            y: "+100%", // start from offscreen bottom
+            opacity: 0,
+          },
+          {
+            scrollTrigger: {
+              trigger: ".tenth",
+              start: "top top", // start when the bottom of the .contact-hero element is at the bottom of the viewport
+              end: "center center",
+            },
+            y: "0%", // end at the center
+            opacity: 1,
+            duration: 2,
+          }
+        );
+      },
+      false
+    );
+  });
+});
 document.addEventListener("DOMContentLoaded", function (event) {
   gsap.registerPlugin(Observer);
 
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         { autoAlpha: 0 }
       );
 
-      if (index == 1 || index == 2) {
+      if (index == 5 || index == 6) {
         document.querySelector(".hold").style.opacity = "1";
         document.querySelector(".hold").style.visibility = "visible";
       } else {
