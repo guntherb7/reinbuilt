@@ -2776,3 +2776,20 @@ Stack trace:
 [08-Apr-2024 13:05:27 UTC] Flywheel::DatabaseConnection
 [08-Apr-2024 13:05:28 UTC] Flywheel::DatabaseConnection
 [08-Apr-2024 13:05:29 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 13:27:31 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query 
+INSERT INTO wp_ky7oc37vaj_actionscheduler_actions ( `hook`, `status`, `scheduled_date_gmt`, `scheduled_date_local`, `schedule`, `group_id`, `priority`, `args` )
+SELECT 'forminator_daily_cron', 'pending', '2024-04-09 14:27:31', '2024-04-09 14:27:31', 'O:30:\"ActionScheduler_SimpleSchedule\":2:{s:22:\"\0*\0scheduled_timestamp\";i:1712672851;s:41:\"\0ActionScheduler_SimpleSchedule\0timestamp\";i:1712672851;}', 1, 10, '[]' FROM DUAL
+WHERE ( 
+SELECT action_id FROM wp_ky7oc37vaj_actionscheduler_actions
+WHERE status IN ( 'pending', 'in-progress' )
+AND hook = 'forminator_daily_cron'
+AND `group_id` = 1
+ LIMIT 1 ) IS NULL made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Forminator_Fields->schedule_forminator_daily_cron, as_schedule_single_action, ActionScheduler_ActionFactory->create, ActionScheduler_ActionFactory->store_unique_action, ActionScheduler_DBStore->save_unique_action, ActionScheduler_DBStore->save_action_to_db
+[08-Apr-2024 14:06:54 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:06:55 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:06:55 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:41:13 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:43:11 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:43:41 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:43:43 UTC] Flywheel::DatabaseConnection
+[08-Apr-2024 14:43:43 UTC] Flywheel::DatabaseConnection
