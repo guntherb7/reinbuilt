@@ -6,41 +6,41 @@
  */
 /*jshint esversion: 11 */
 
-gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin);
+// gsap.registerPlugin(ScrollTrigger, Observer, ScrollToPlugin);
 
-// wait until DOM is ready
-document.addEventListener("DOMContentLoaded", function (event) {
-  // create
-  let mm = gsap.matchMedia();
+// // wait until DOM is ready
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   // create
+//   let mm = gsap.matchMedia();
 
-  // add a media query. When it matches, the associated function will run
-  mm.add("(min-width: 800px)", () => {
-    //wait until images, links, fonts, stylesheets, and js is loaded
-    window.addEventListener(
-      "load",
-      function (e) {
-        gsap.fromTo(
-          ".ninth",
-          {
-            y: "+100%", // start from offscreen bottom
-            opacity: 0,
-          },
-          {
-            scrollTrigger: {
-              trigger: ".tenth",
-              start: "top top", // start when the bottom of the .contact-hero element is at the bottom of the viewport
-              end: "center center",
-            },
-            y: "0%", // end at the center
-            opacity: 1,
-            duration: 2,
-          }
-        );
-      },
-      false
-    );
-  });
-});
+//   // add a media query. When it matches, the associated function will run
+//   mm.add("(min-width: 800px)", () => {
+//     //wait until images, links, fonts, stylesheets, and js is loaded
+//     window.addEventListener(
+//       "load",
+//       function (e) {
+//         gsap.fromTo(
+//           ".ninth",
+//           {
+//             y: "+100%", // start from offscreen bottom
+//           },
+//           {
+//             scrollTrigger: {
+//               trigger: ".contact",
+//               start: "top top", // start when the bottom of the .contact-hero element is at the bottom of the viewport
+//               end: "center center",
+//             },
+//             y: "0%", // end at the center
+//             opacity: 1,
+//             duration: 2,
+//           }
+//         );
+//       },
+//       false
+//     );
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function (event) {
   gsap.registerPlugin(Observer);
 

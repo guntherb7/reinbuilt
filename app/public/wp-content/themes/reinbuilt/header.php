@@ -37,6 +37,7 @@
 <body <?php body_class(); ?> class="index-page noscroll">
   <header>
     <nav class="nav">
+      <a href="/" target="_blank" class="is-uppercase">Start Project</a>
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->

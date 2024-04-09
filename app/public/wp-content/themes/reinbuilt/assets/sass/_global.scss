@@ -107,6 +107,12 @@ html.lenis {
   background-color: $dark-background !important;
   color: $light-font;
 
+  header,
+  .nav {
+    background-color: $dark-background !important;
+    color: $light-font;
+  }
+
   .page--logo {
     .dark-icon {
       display: none;

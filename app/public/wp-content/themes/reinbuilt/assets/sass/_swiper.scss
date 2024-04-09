@@ -1,7 +1,7 @@
 .mySwiper {
   max-width: $desktop-max-width;
   @include responsive;
-  margin: 30px auto;
+  margin: 30px auto 0;
   top: 0;
 
   .swiper-slide {
@@ -21,8 +21,6 @@
   .swiper-button-next,
   .swiper-button-prev {
     color: $current;
-
-    &::after {}
   }
 }
 

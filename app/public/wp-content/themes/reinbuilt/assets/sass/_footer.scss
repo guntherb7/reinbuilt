@@ -45,9 +45,10 @@ footer {
         }
       }
     }
-  }
 
-  .page--logo {
-    margin: 60px auto 0;
+    .page--logo {
+      margin: 60px auto 0;
+      max-width: 200px;
+    }
   }
 }

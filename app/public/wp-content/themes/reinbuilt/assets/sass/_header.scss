@@ -7,16 +7,21 @@ header {
   z-index: 999;
   background-color: $light-background;
 
-  &.dark-mode {
-    background-color: $dark-background;
-  }
-
   .nav {
     max-width: $desktop-max-width;
     height: $spacing-large;
     margin: $margin-center;
     position: $rel;
     background-color: $light-background;
+
+    a {
+      @include nav-font;
+      font-size: 1.2rem;
+      padding: 0.8rem 0;
+      position: absolute;
+      top: 7px;
+      right: 120px;
+    }
 
     .nav--logo {
       max-width: 275px;

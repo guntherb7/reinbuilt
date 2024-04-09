@@ -43,7 +43,6 @@
         <div class="outer">
             <div class="inner">
                 <div class="bg">
-
                     <div class="text-box">
                         <p class="text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deleniti,
                             officiis quasi
@@ -256,7 +255,7 @@
             </div>
         </div>
     </section>
-    <section class="tenth">
+    <section class="ninth">
         <div class="outer">
             <div class="inner">
                 <div class="bg">
@@ -331,7 +330,7 @@
             </div>
         </div>
     </section>
-    <section class="ninth">
+    <section class="tenth">
         <div class="outer">
             <div class="inner">
                 <div class="bg">
