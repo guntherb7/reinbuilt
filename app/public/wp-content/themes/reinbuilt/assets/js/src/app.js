@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     if (currentIndex >= 0) {
       // The first time this function runs, current is -1
-      gsap.set(sections[currentIndex], { zIndex: 1 });
+      gsap.set(sections[index], { zIndex: 1000 });
       tl.to(images[currentIndex], { yPercent: 0 * dFactor }).set(
         sections[currentIndex],
         { autoAlpha: 0 }

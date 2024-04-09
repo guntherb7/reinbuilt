@@ -9,6 +9,7 @@
 // Swiper JS
 const swiper = new Swiper(".mySwiper", {
   lazy: false,
+  grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -25,8 +26,8 @@ const heroImgSwiper = new Swiper(".hero-swiper", {
   cssMode: false,
   setWrapperSize: true,
   grabCursor: true,
-  mousewheel: true,
-  keyboard: true,
+  mousewheel: false,
+  keyboard: false,
   longSwipes: true,
   longSwipesRatio: 0.25,
   autoplay: {
@@ -36,8 +37,6 @@ const heroImgSwiper = new Swiper(".hero-swiper", {
   },
   breakpoints: {
     851: {
-      mousewheel: false,
-      keyboard: false,
       watchSlidesProgress: true,
       watchSlidesVisibility: true,
       slidesPerView: 1,

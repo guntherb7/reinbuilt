@@ -9,8 +9,10 @@
 					<div class="welcome">
 						<div class="swiper hero-swiper">
 							<div class="hero--logo light-icon">
-								<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="eager"
-									fetchpriority="high" alt="Reinbuilt Luxury Homes Logo in White" class="tagline">
+								<a href="/"><img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg"
+										loading="eager" fetchpriority="high" alt="Reinbuilt Luxury Homes Logo in White"
+										class="tagline">
+								</a>
 							</div>
 							<div class="swiper-wrapper">
 								<a href="/" class="swiper-slide">
@@ -105,9 +107,9 @@
 									height="415" />
 							</div>
 						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
 				</div>
 			</div>
 		</div>
@@ -163,9 +165,9 @@
 									width=“400” height=“300” loading="lazy" alt="placeholder" />
 							</div>
 						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
 				</div>
 			</div>
 		</div>
@@ -216,9 +218,10 @@
 									height=“300” loading="lazy" alt="placeholder" />
 							</div>
 						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
+
 				</div>
 			</div>
 		</div>
