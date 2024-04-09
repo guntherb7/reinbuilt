@@ -77,8 +77,8 @@ html.lenis {
 }
 
 .grid-2 {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(2, auto);
+  gap: 5%;
 }
 
 // @media (prefers-color-scheme: dark) {

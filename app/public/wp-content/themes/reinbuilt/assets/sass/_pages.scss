@@ -15,11 +15,11 @@
 }
 
 .content {
+    margin-top: 13%;
     margin-inline: auto;
-    // scroll-snap-type: y mandatory;
+    padding: 0 5vw;
 
     section {
-
         scroll-snap-align: center;
         padding-block: 80px;
         max-width: $desktop-max-width;
@@ -35,10 +35,6 @@
             margin-block: 150px;
         }
 
-        .first-section {
-            padding-top: $spacing-large;
-        }
-
         .project-title {
             @include heading-font;
             margin-inline: auto;
@@ -48,7 +44,7 @@
         }
 
         .build-process {
-            max-width: 1300px;
+            max-width: 1920px;
             @include responsive;
             margin: 40px auto;
         }
@@ -73,13 +69,11 @@
             padding: 0;
             margin-block: $spacing-large;
 
-            // Id for the cost calc form in Forminator
             #forminator-module-29 {
                 text-transform: $all-caps;
                 font-weight: $normal;
                 position: $rel;
 
-                // Class for the page content in Forminator
                 .forminator-pagination--content {
                     z-index: 975 !important;
                     position: $abs;
@@ -184,7 +178,6 @@
                     content: url(/wp-content/uploads/2024/03/9-7-jpeg.webp);
                 }
 
-                // Forminator navigation buttons
                 .forminator-pagination-footer {
                     position: $abs;
                     top: 90%;
@@ -202,15 +195,6 @@
                     display: none;
                 }
             }
-
-            // .dark-mode {
-
-            //     button,
-            //     .forminator-button {
-            //         background-color: $light-background;
-            //         color: $dark-font;
-            //     }
-            // }
         }
     }
 }
@@ -227,23 +211,14 @@
     }
 
     .content {
-        .first-section {
-            padding-block: 30px;
-        }
+        margin-top: 10vh;
+        padding: 0 10vw;
 
         section {
-            overflow: scroll;
-            padding-block: 0;
-
-            .start-project--text {}
+            padding-block: 10%;
 
             .page--logo {
                 max-width: 200px;
-            }
-
-            &.text-box {
-                margin: 0 30px;
-                padding: 85px 0 10vw;
             }
 
             .start-project {
@@ -311,7 +286,7 @@
             }
 
             .project-outline {
-                margin: 30px;
+                margin: 0;
             }
 
             .project-title {

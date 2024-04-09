@@ -898,3 +898,8 @@
 [09-Apr-2024 09:27:18] NOTICE: exiting, bye-bye!
 [09-Apr-2024 09:32:19] NOTICE: fpm is running, pid 32075
 [09-Apr-2024 09:32:19] NOTICE: ready to handle connections
+[09-Apr-2024 11:32:13] NOTICE: Terminating ...
+[09-Apr-2024 11:32:13] NOTICE: Terminating ...
+[09-Apr-2024 11:32:13] NOTICE: exiting, bye-bye!
+[09-Apr-2024 11:32:27] NOTICE: fpm is running, pid 38848
+[09-Apr-2024 11:32:27] NOTICE: ready to handle connections

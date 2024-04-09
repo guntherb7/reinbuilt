@@ -32,19 +32,20 @@
 <div class="content">
 	<section class="text-box">
 		<!-- REINBUILT -->
-		<p class="text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deleniti, officiis quasi
-			sint quia veritatis,
-			dolor earum cupiditate praesentium doloremque accusamus architecto rerum quod a placeat consequatur illo
-			dicta quis et iste quos, at alias magni enim. Enim sint animi aut iusto dolorem, maxime totam reprehenderit
-			aspernatur cupiditate vitae, est neque ipsa, dolor beatae officiis odio nobis minima perferendis aperiam eum
-			dolores suscipit quasi mollitia?</p>
+		<div class="page--logo">
+			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42" loading="lazy"
+				fetchpriority="low" class="dark-icon" alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
+			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_LIGHT-GRAY.svg" width="275" height="42" loading="lazy"
+				fetchpriority="low" class="light-icon" alt="Reinbuilt Luxury Homes Logo in Light Gray" />
+		</div>
+		<p class="text-left">WHO WE ARE</p>
 	</section>
 	<!-- START SLIDER 1 -->
 	<section class="first-section">
 		<h2 class="text-center project-title" onclick="heroSplash1()">Mountain View</h2>
 		<img class="section-hero hero--image" alt=""
 			src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
-			width="1920" height="1217" id="section-hero--1" />
+			width="1920" height="1217" id="section-hero--1" onclick="heroSplash1()" />
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
@@ -90,7 +91,7 @@
 		<h2 class="text-center project-title" onclick="heroSplash2()">Baxter</h2>
 		<img class="section-hero hero--image" alt=""
 			src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
-			width="1920" height="1217" id="section-hero--2" />
+			width="1920" height="1217" id="section-hero--2" onclick="heroSplash2()" />
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
@@ -144,7 +145,7 @@
 		<h2 class="text-center project-title" onclick="heroSplash3()">Orange</h2>
 		<img class="section-hero hero--image" alt=""
 			src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy" fetchpriority="low"
-			width="1920" height="1217" id="section-hero--3" />
+			width="1920" height="1217" id="section-hero--3" onclick="heroSplash3()" />
 		<div class="swiper mySwiper">
 			<div class="swiper-wrapper ">
 				<div class="swiper-slide">
