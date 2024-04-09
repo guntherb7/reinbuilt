@@ -46,4 +46,4 @@ error.log
 *.zip
 
 # Ignore Sass cache directory
-sass-cache/
+*.sass-cache
