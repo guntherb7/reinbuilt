@@ -1,7 +1,7 @@
 .mySwiper {
   max-width: $desktop-max-width;
   @include responsive;
-  margin: 30px auto 0;
+  margin: 30px auto;
   top: 0;
 
   .swiper-slide {
@@ -19,20 +19,11 @@
   }
 }
 
-.swiper-button-next-outer,
-.swiper-button-prev-outer {
+.swiper-button-next,
+.swiper-button-prev {
   color: $current;
-  position: absolute;
-  z-index: 1005;
-  top: 50%;
-}
 
-.swiper-button-next-outer {
-  left: 0;
-}
-
-.swiper-button-prev-outer {
-  right: 0;
+  &::after {}
 }
 
 @media screen and (max-width: $phone-max-width) {
@@ -51,14 +42,14 @@
         }
       }
     }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 0vw;
 
     &::after {
       font-size: 1.8rem;
     }
-  }
-
-  .swiper-button-next-outer,
-  .swiper-button-prev-outer {
-    width: 0vw;
   }
 }

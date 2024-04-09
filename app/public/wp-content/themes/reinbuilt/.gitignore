@@ -44,3 +44,6 @@ error.log
 # Ignore exported files
 *.tar.gz
 *.zip
+
+# Ignore Sass cache directory
+sass-cache/

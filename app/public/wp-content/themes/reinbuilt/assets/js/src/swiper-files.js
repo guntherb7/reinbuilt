@@ -8,10 +8,10 @@
 
 // Swiper JS
 const swiper = new Swiper(".mySwiper", {
-  lazy: true,
+  lazy: false,
   navigation: {
-    nextEl: ".swiper-button-next-outer",
-    prevEl: ".swiper-button-prev-outer",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     320: { slidesPerView: 1, spaceBetween: 20 },

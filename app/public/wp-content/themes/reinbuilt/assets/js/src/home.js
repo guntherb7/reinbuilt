@@ -26,6 +26,7 @@ if (
   path !== "/restoration/" &&
   path !== "/calculators/" &&
   path !== "/visualization/" &&
+  path !== "/" &&
   path !== "/test/"
 ) {
   {
