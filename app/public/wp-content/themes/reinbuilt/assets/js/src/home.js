@@ -25,9 +25,7 @@ if (
   path !== "/interior/" &&
   path !== "/restoration/" &&
   path !== "/calculators/" &&
-  path !== "/visualization/" &&
-  path !== "/" &&
-  path !== "/test/"
+  path !== "/visualization/"
 ) {
   {
     function checkScroll() {
