@@ -36,6 +36,7 @@ Desktop.ini
 Icon?
 
 # Ignore log files and databases
+error.log
 *.log
 *.sql
 *.sqlite
