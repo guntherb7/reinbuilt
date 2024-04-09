@@ -48,14 +48,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     images = document.querySelectorAll(".bg"),
     outerWrappers = gsap.utils.toArray(".outer"),
     innerWrappers = gsap.utils.toArray(".inner"),
-    hold = gsap.utils.toArray(".hold"),
     currentIndex = -1,
     wrap = gsap.utils.wrap(0, sections.length),
     animating;
-
   gsap.set(outerWrappers, { yPercent: 100 });
   gsap.set(innerWrappers, { yPercent: -100 });
-  gsap.set(hold, { yPercent: 0 });
 
   function gotoSection(index, direction) {
     index = wrap(index); // make sure it's valid
@@ -63,9 +60,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let fromTop = direction === -1,
       dFactor = fromTop ? -1 : 1,
       tl = gsap.timeline({
-        defaults: { duration: 0.5, ease: "sine.inOut" },
+        defaults: { duration: 0.4, ease: "power1.inOut" },
         onComplete: () => (animating = false),
       });
+
     if (currentIndex >= 0) {
       // The first time this function runs, current is -1
       gsap.set(sections[currentIndex], { zIndex: 1 });
@@ -92,16 +90,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         yPercent: 0,
       },
       0
-    ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
+    );
 
     currentIndex = index;
-    console.log(currentIndex);
-    console.log(sections[currentIndex].classList);
   }
 
   Observer.create({
-    type: "wheel,touch,pointer",
+    type: "wheel,touch,scroll",
     wheelSpeed: -1,
+    lockAxis: true,
     onDown: () => !animating && gotoSection(currentIndex - 1, -1),
     onUp: () => !animating && gotoSection(currentIndex + 1, 1),
     tolerance: 10,

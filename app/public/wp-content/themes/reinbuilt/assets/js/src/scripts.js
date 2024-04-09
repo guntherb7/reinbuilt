@@ -17,8 +17,18 @@ const nav = document.querySelector(".nav");
 var menu = document.getElementById("menu");
 var menuItems = document.querySelector(".menu-items");
 const pageLogo = document.querySelector(".page--logo");
+const menuProjectLink = document.querySelector(".menu-project--link");
+const navProjectLink = document.querySelector(".nav-project--link");
 const phone =
   "only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)";
 const tablet =
   "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
 let timer;
+
+menuProjectLink.addEventListener("click", function () {
+  alert("This is a mobile popup contact form. It is not functional.");
+});
+
+navProjectLink.addEventListener("click", function () {
+  alert("This is the desktop popup contact form. It is not functional.");
+});

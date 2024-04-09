@@ -12,16 +12,20 @@
         transform: translate(-50%, 0);
         position: fixed;
 
+        .outer,
+        .inner {
+            height: auto;
+        }
+
         .bg {
             z-index: 750;
             height: auto;
             margin: 30px 0;
             width: 100%;
-            // align-content: center;
+            align-content: center;
             place-items: center;
             // transition: opacity 0.5s, visibility 0.5s;
-            // background-color: $light-background;
-
+            background-color: $light-background;
 
             .clip-text {
                 overflow: hidden;
@@ -39,7 +43,6 @@
             .outer,
             .inner {
                 height: 100%;
-
 
                 .bg {
                     height: 100%;
@@ -102,7 +105,10 @@
             }
         }
 
-        &.ninth {}
+        &.ninth {
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
 
         &.tenth {
             // .bg {
@@ -159,7 +165,7 @@
                 transform: translate(-50%, -50%);
                 left: 50%;
                 top: 15%;
-                max-width: 200px;
+                max-width: 275px;
                 width: 100%;
             }
 

@@ -108,7 +108,8 @@ html.lenis {
   color: $light-font;
 
   header,
-  .nav {
+  .nav,
+  .test section .bg {
     background-color: $dark-background !important;
     color: $light-font;
   }

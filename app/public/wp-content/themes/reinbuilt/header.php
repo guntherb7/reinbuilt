@@ -37,7 +37,7 @@
 <body <?php body_class(); ?> class="index-page noscroll">
   <header>
     <nav class="nav">
-      <a href="/" target="_blank" class="is-uppercase">Start Project</a>
+      <a href="/" target="_blank" class="nav-project--link">Start Project</a>
       <!-- Menu Toggle Checkbox -->
       <input class="checkbox" type="checkbox" aria-label="Menu" id="menu" />
       <!-- Dark Mode Icon -->
@@ -65,6 +65,7 @@
         <li role="menuitem"><a href="/" role="link">Architecture</a></li>
         <li role="menuitem"><a href="/interior/" role="link">Interior</a></li>
         <li role="menuitem"><a href="/restoration/" role="link">Restoration</a></li>
+        <li role="menuitem" class="menu-project--link"><a href="/" role="link">Start A Project</a></li>
         <!-- <li role="menuitem"><a href="/calculators/" role="link">Calculators</a></li> -->
         <!-- <li role="menuitem"><a href="/visualization/" role="link">Visualization</a></li> -->
       </ul>

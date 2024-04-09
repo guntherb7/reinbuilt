@@ -17,13 +17,23 @@
       }
     }
   }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: $current;
-  }
 }
 
+.swiper-button-next-outer,
+.swiper-button-prev-outer {
+  color: $current;
+  position: absolute;
+  z-index: 1005;
+  top: 50%;
+}
+
+.swiper-button-next-outer {
+  left: 0;
+}
+
+.swiper-button-prev-outer {
+  right: 0;
+}
 
 @media screen and (max-width: $phone-max-width) {
   .mySwiper {
@@ -42,13 +52,13 @@
       }
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 0vw;
-
-      &::after {
-        font-size: 1.8rem;
-      }
+    &::after {
+      font-size: 1.8rem;
     }
+  }
+
+  .swiper-button-next-outer,
+  .swiper-button-prev-outer {
+    width: 0vw;
   }
 }

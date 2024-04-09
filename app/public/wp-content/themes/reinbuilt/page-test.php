@@ -105,9 +105,9 @@
                                     height="415" />
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
+                    <div class="swiper-button-next-outer"></div>
+                    <div class="swiper-button-prev-outer"></div>
                 </div>
             </div>
         </div>
@@ -163,9 +163,9 @@
                                     width=“400” height=“300” loading="lazy" alt="placeholder" />
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
+                    <div class="swiper-button-next-outer"></div>
+                    <div class="swiper-button-prev-outer"></div>
                 </div>
             </div>
         </div>
@@ -216,9 +216,9 @@
                                     height=“300” loading="lazy" alt="placeholder" />
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
+                    <div class="swiper-button-next-outer"></div>
+                    <div class="swiper-button-prev-outer"></div>
                 </div>
             </div>
         </div>
