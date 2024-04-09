@@ -1,0 +1,45 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore configuration files that may contain sensitive information
+wp-config.php
+
+# Ignore everything in the "wp-content" directory, except for "mu-plugins", "plugins", "themes" directory
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore specific themes or plugins
+# wp-content/themes/some-theme/*
+# wp-content/plugins/some-plugin/*
+
+# Ignore node dependency directories
+node_modules/
+
+# Ignore PHP dependency directories
+vendor/
+
+# Ignore Composer's .env file
+.env
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore OS generated files
+ehthumbs.db
+Desktop.ini
+
+# Ignore Icon file
+Icon?
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore exported files
+*.tar.gz
+*.zip
