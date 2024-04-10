@@ -237,10 +237,11 @@
 		height=“300” />
 	<div class="start-project--absolute">
 		<div class="page--logo">
-			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="eager" fetchpriority="high"
-				alt="Reinbuilt Luxury Homes Logo in White" class="tagline">
+			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42" loading="lazy"
+				fetchpriority="low" class="dark-icon" alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
+			<!-- <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="lazy" fetchpriority="low"
+				alt="Reinbuilt Luxury Homes Logo in White" class="tagline"> -->
 		</div>
-
 		<div class="text-box">
 			<h3 class="text-center section--header text-box">Inspired design impeccably built</h3>
 		</div>

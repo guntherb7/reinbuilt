@@ -73,8 +73,6 @@
             }
         }
 
-
-
         &.cost-calculator {
             text-align: center;
             padding: 0;
@@ -219,6 +217,20 @@
 .start-project {
     position: $rel;
 
+    >img {
+        max-width: 100vw;
+        width: 100%;
+
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    .start-project--absolute {
+        position: $abs;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 
 }
 
