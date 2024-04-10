@@ -133,6 +133,15 @@ function heroSplash3(e) {
     hero3.style.display = "none";
   }
 }
+function heroSplash4(e) {
+  var hero4 = document.getElementById("section-hero--4");
+
+  if (hero4.style.display !== "block") {
+    hero4.style.display = "block";
+  } else {
+    hero4.style.display = "none";
+  }
+}
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);

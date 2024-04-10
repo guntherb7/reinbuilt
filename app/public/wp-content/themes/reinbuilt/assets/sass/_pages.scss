@@ -15,54 +15,65 @@
 }
 
 .content {
-    margin-top: 13%;
+    margin-top: 15%;
     margin-inline: auto;
     padding: 0 5vw;
+    max-width: $desktop-max-width;
 
     section {
-        scroll-snap-align: center;
-        padding-block: 80px;
-        max-width: $desktop-max-width;
-        margin-inline: auto;
+        padding-block: 10%;
+
+        &.text-box {
+            margin: $margin-center;
+            max-width: min(60vw, 1120px);
+        }
 
         .section-hero {
-            max-width: $desktop-max-width;
             @include responsive;
             display: none;
+            margin: 20px auto;
+            cursor: pointer;
         }
 
         .section--header {
-            margin-block: 150px;
+            font-size: 44px;
+        }
+
+        &.page-swipers {
+            .page-swipers--container {
+                margin: 0 0 9%
+            }
         }
 
         .project-title {
             @include heading-font;
             margin-inline: auto;
-            margin-block: 40px;
             font-size: 44px;
             cursor: pointer;
         }
 
         .build-process {
-            max-width: 1920px;
             @include responsive;
-            margin: 40px auto;
+            margin: 20px 0 0;
         }
 
+
+
         .project-outline {
-            margin-inline: 40px;
+            margin-inline: auto;
             align-items: center;
 
             p {
                 padding-block: 15px;
             }
+
+            img {
+                aspect-ratio: 3/4;
+                object-fit: cover;
+            }
         }
 
-        .page--logo {
-            @include responsive;
-            max-width: 275px;
-            margin: $margin-center;
-        }
+
 
         &.cost-calculator {
             text-align: center;
@@ -199,6 +210,18 @@
     }
 }
 
+.page--logo {
+    @include responsive;
+    max-width: 275px;
+    margin: $margin-center;
+}
+
+.start-project {
+    position: $rel;
+
+
+}
+
 
 @media screen and (max-width: $phone-max-width) {
     .hero {
@@ -215,16 +238,12 @@
         padding: 0 10vw;
 
         section {
-            padding-block: 10%;
 
             .page--logo {
                 max-width: 200px;
             }
 
-            .start-project {
-                max-width: $mobile-image;
-                margin: $margin-center;
-            }
+
 
             &.cost-calculator {
                 #forminator-module-29 {
@@ -295,5 +314,10 @@
                 margin-block: 20px;
             }
         }
+    }
+
+    .start-project {
+        max-width: $mobile-image;
+        margin: $margin-center;
     }
 }
