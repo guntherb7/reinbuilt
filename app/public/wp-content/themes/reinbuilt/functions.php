@@ -86,7 +86,7 @@ function bs_dequeue_dashicons()
 add_action('wp_enqueue_scripts', 'reinbuilt_child');
 function reinbuilt_child()
 	{
-	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/sass/styles.min.css'); // Enqueue child theme styles.css
+	wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/sass/styles.css'); // Enqueue child theme styles.css
 
 	// Compiled .js using Grunt.js
 	wp_register_script('custom-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), null, true);

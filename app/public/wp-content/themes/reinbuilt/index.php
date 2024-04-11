@@ -85,9 +85,9 @@
 							loading="lazy" alt="Mountain View Home Master Sitting Area" width="326" height="415" />
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 		<!-- END SLIDER 1 -->
 		<!-- START SLIDER 2 -->
@@ -139,9 +139,9 @@
 							height=“300” loading="lazy" alt="placeholder" />
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 		<!-- END SLIDER 2 -->
 		<!-- START SLIDER 3 -->
@@ -181,13 +181,13 @@
 							width=“415” height=“300” loading="lazy" alt="placeholder" />
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 		<!-- END SLIDER 3 -->
 		<!-- START SLIDER 4 -->
-		<div class="page-swipers--container">
+		<div class="page-swipers--container" id="--container-4">
 			<h2 class="text-center project-title" onclick="heroSplash4()">Visualizations</h2>
 			<img class="section-hero hero--image" alt=""
 				src="/wp-content/uploads/2024/02/MountainViewAve_Master_daytime-jpg.webp" loading="lazy"
@@ -223,9 +223,9 @@
 							width=“415” height=“300” loading="lazy" alt="placeholder" />
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 		<!-- END SLIDER 4 -->
 	</section>
@@ -233,22 +233,22 @@
 </div>
 <!-- IMG GOES UNDER TEXT -->
 <section class="start-project">
-	<img src="/wp-content/uploads/2024/02/n_orange_drive-36-1-jpg.webp" loading="lazy" alt="placeholder" width=“415”
-		height=“300” />
+	<img src="/wp-content/uploads/2024/04/bspk-design-architecture-california-6000-residenital-courtyard-house-courtyard-4-scaled.webp"
+		loading="lazy" alt="placeholder" width=“415” height=“300” class="start-project--background-image" />
+	<div class="page--logo">
+		<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42" loading="lazy"
+			fetchpriority="low" class="dark-icon" alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
+	</div>
 	<div class="start-project--absolute">
 		<div class="page--logo">
-			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_DARK-GRAY.svg" width="275" height="42" loading="lazy"
-				fetchpriority="low" class="dark-icon" alt="Reinbuilt Luxury Homes Logo in Dark Gray" />
-			<!-- <img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="lazy" fetchpriority="low"
-				alt="Reinbuilt Luxury Homes Logo in White" class="tagline"> -->
+			<img src="/wp-content/uploads/2024/03/REINBUILT_LOGO_WHITE.svg" loading="lazy" fetchpriority="low"
+				alt="Reinbuilt Luxury Homes Logo in White" class="tagline">
 		</div>
-		<div class="text-box">
-			<h3 class="text-center section--header text-box">Inspired design impeccably built</h3>
-		</div>
-		<a class="text-center" role='button'>Start a project</a>
+		<h3 class="text-center section--header">Inspired design, impeccably built</h3>
+		<a class="text-center section--header" role="link">Start a project</a>
 	</div>
 </section>
-<div class="content">
+<div class="content-bottom">
 	<section>
 		<h3 class="text-center section--header">Design build process</h3>
 		<img src="/wp-content/uploads/2024/02/modern-home-design-architecture-process-timeline-phases.png"

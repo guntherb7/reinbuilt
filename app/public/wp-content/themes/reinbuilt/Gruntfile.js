@@ -61,27 +61,13 @@ module.exports = function (grunt) {
         },
       },
     },
-    cssmin: {
-      target: {
-        files: [
-          {
-            expand: true,
-            src: "assets/sass/styles.css",
-            dest: "./",
-            ext: ".min.css",
-          },
-        ],
-      },
-    }, // This can be run as a watch task which looks for changes to files and compiles in real time
+    // This can be run as a watch task which looks for changes to files and compiles in real time
     watch: {
       scss: {
         files: ["assets/sass/*.scss"],
         tasks: ["sass"],
       },
-      css: {
-        files: ["assets/sass/styles.css"],
-        tasks: ["cssmin"],
-      },
+
       scripts: {
         files: ["assets/js/src/*.js/*", "assets/js/src/*.js"],
         tasks: ["jshint", "concat", "uglify"],
@@ -93,7 +79,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-sass");
-  grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-modernizr");
   grunt.loadNpmTasks("grunt-contrib-watch");
@@ -103,7 +88,6 @@ module.exports = function (grunt) {
     "jshint",
     "uglify",
     "sass",
-    "cssmin",
     "concat",
     "modernizr",
     "watch",

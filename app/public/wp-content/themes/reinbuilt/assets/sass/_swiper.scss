@@ -2,6 +2,7 @@
   max-width: $desktop-max-width;
   @include responsive;
   margin: 30px auto 0;
+  position: relative;
 
   .swiper-slide {
     @include responsive;
@@ -19,9 +20,20 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: $current;
+  top: calc(50% + 45px);
 
   &::after {}
 }
+
+.swiper-button-next {
+  right: -4vw;
+}
+
+.swiper-button-prev {
+  left: -4vw;
+}
+
+.swiper-button-prev {}
 
 @media screen and (max-width: $phone-max-width) {
   .mySwiper {
@@ -30,14 +42,22 @@
     .swiper-slide {
 
       img {
-        margin: 0 25px;
+        margin: 0;
       }
     }
   }
 
-  .swiper-button-next,
+  .swiper-button-next {
+    right: -8.8vw;
+
+    &::after {
+      font-size: 1.8rem;
+    }
+  }
+
   .swiper-button-prev {
-    width: 0vw;
+
+    left: -8.8vw;
 
     &::after {
       font-size: 1.8rem;
