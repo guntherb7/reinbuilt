@@ -2,17 +2,24 @@
     z-index: 959;
     position: $abs;
 
+
     .hero-swiper {
         position: fixed;
         top: 60px;
         left: 0;
         right: 0;
         bottom: 0;
+
         transition: transform 750ms ease-in-out;
         cursor: pointer;
 
         .swiper-slide {
             position: $rel;
+
+            img {
+                width: 100%;
+                height: 100svh;
+            }
 
             p.hero-link {
                 @include heading-font;
@@ -39,7 +46,7 @@
         img.hero--image {
             filter: brightness(0.8);
             width: 100%;
-            height: 100%;
+            height: 100vh;
             object-fit: cover;
         }
 

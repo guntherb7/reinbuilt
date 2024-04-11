@@ -14,6 +14,12 @@ header {
     position: $rel;
     background-color: $light-background;
 
+
+    // &.nav--drop {
+    //   top: -60px
+    // }
+
+
     .nav-project--link {
       @include nav-font;
       font-size: 1.2rem;

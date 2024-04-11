@@ -146,3 +146,19 @@ function heroSplash4(e) {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+
+window.addEventListener("load", function () {
+  // Get the height of the slide
+  var slideHeight = document.querySelector(
+    ".mySwiper .swiper-slide"
+  ).offsetHeight;
+
+  // Calculate the top position for the arrow
+  var arrowTopPosition = slideHeight / 2;
+
+  // Get the swiper arrow element
+  var swiperArrow = document.querySelector(".swiper-button-next");
+
+  // Set the top position of the swiper arrow
+  swiperArrow.style.height = arrowTopPosition;
+});
