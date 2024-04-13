@@ -4,7 +4,7 @@
  *
  * @category Theme
  * @package  Reinbuilt
- * @author   Gunther Beam <gunther@guntherbeam.com>
+ * @author   X <X>
  * @version  1.0
  */
 ?>

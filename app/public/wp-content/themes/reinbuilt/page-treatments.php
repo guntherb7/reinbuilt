@@ -4,7 +4,7 @@
  * Template Name: Treatments
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 $image = get_field('hero_image');
 $intro = get_field('intro');

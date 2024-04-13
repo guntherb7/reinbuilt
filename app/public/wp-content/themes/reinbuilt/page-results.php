@@ -4,7 +4,7 @@
  * Template Name: Results
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 $contact = get_field('contact_block_copy');
 get_header(); ?>

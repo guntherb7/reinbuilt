@@ -4,7 +4,7 @@
  * Template Name: Contact
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 $phone = get_field('phone', 'options');
 $email = get_field('email', 'options');

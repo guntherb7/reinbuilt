@@ -52,7 +52,7 @@
 				fetchpriority="low" width="1920" height="1217" id="section-hero--1" onclick="heroSplash1()" />
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
+					<div class="swiper-slide  onclick=" heroSplash1()">
 						<img src="/wp-content/uploads/2024/02/MountainView_FrontDoor-jpg.webp" loading="eager"
 							alt="Mountain View Home Front Door" width="326" height="415" />
 					</div>
@@ -362,12 +362,10 @@
 		<div id="mc_embed_shell">
 			<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
 			<div id="mc_embed_signup">
-				<form
-					action="https://guntherbeam.us22.list-manage.com/subscribe/post?u=c84950591afda259787f3a3ba&amp;id=9d1eaef23a&amp;f_id=0070c2e1f0"
-					method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-					target="_blank">
+				<form action="X" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+					class="validate" target="_blank">
 					<div id="mc_embed_signup_scroll">
-						<h2 class="text-center">Start Building With Us</h2>
+						<h2 class="text-center">Contact Us</h2>
 						<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 						<div class="mc-field-group">
 							<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>

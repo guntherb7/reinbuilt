@@ -3,7 +3,7 @@
  * Single template
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 get_header(); ?>
 
@@ -31,8 +31,8 @@ get_header(); ?>
 						//
 						the_content();
 						//
-					} // end while
-				} ?>
+						} // end while
+					} ?>
 			</div>
 
 		</div>

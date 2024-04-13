@@ -3,7 +3,7 @@
  * 404 template
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 get_header(); ?>
 

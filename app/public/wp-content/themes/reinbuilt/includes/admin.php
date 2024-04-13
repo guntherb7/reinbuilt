@@ -3,7 +3,7 @@
  * Customizations to the WordPress administration area.
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 
 /**
@@ -12,12 +12,13 @@
  * @param array $buttons Buttons for this row of the TinyMCE toolbar.
  * @return array The filtered $buttons array.
  */
-function reinbuilt_add_style_select_to_tinymce( $buttons ) {
-	array_unshift( $buttons, 'styleselect' );
+function reinbuilt_add_style_select_to_tinymce($buttons)
+	{
+	array_unshift($buttons, 'styleselect');
 
 	return $buttons;
-}
-add_filter( 'mce_buttons_2', 'reinbuilt_add_style_select_to_tinymce' );
+	}
+add_filter('mce_buttons_2', 'reinbuilt_add_style_select_to_tinymce');
 
 /**
  * Customize the TinyMCE WYSIWYG editor settings.
@@ -29,7 +30,8 @@ add_filter( 'mce_buttons_2', 'reinbuilt_add_style_select_to_tinymce' );
  * @link http://wpengineer.com/1963/customize-wordpress-wysiwyg-editor/
  * @link http://wiki.moxiecode.com/index.php/TinyMCE:Control_reference
  */
-function reinbuilt_change_mce_buttons( $init ) {
+function reinbuilt_change_mce_buttons($init)
+	{
 	$block_formats = array(
 		'Paragraph=p',
 		'Address=address',
@@ -40,21 +42,21 @@ function reinbuilt_change_mce_buttons( $init ) {
 		'Heading 5=h5',
 		'Heading 6=h6',
 	);
-	$init['block_formats'] = implode( ';', $block_formats );
+	$init['block_formats'] = implode(';', $block_formats);
 
 	$style_formats = array(
 		array(
-			'title'    => __( 'Blockquote citation', 'reinbuilt' ),
+			'title' => __('Blockquote citation', 'reinbuilt'),
 			'selector' => 'blockquote p',
-			'classes'  => 'cite',
-			'wrapper'  => false,
+			'classes' => 'cite',
+			'wrapper' => false,
 		),
 	);
-	$init['style_formats'] = wp_json_encode( $style_formats );
+	$init['style_formats'] = wp_json_encode($style_formats);
 
 	return $init;
-}
-add_filter( 'tiny_mce_before_init', 'reinbuilt_change_mce_buttons' );
+	}
+add_filter('tiny_mce_before_init', 'reinbuilt_change_mce_buttons');
 
 /**
  * Remove the "Text Color" TinyMCE button.
@@ -62,10 +64,11 @@ add_filter( 'tiny_mce_before_init', 'reinbuilt_change_mce_buttons' );
  * @param array $buttons Buttons for this row of the TinyMCE toolbar.
  * @return array The filtered $buttons array.
  */
-function reinbuilt_remove_forecolor_button( $buttons ) {
-	if ( $key = array_search( 'forecolor', $buttons ) ) {
-		unset( $buttons[ $key ] );
-	}
+function reinbuilt_remove_forecolor_button($buttons)
+	{
+	if ($key = array_search('forecolor', $buttons)) {
+		unset($buttons[$key]);
+		}
 	return $buttons;
-}
-add_filter( 'mce_buttons_2', 'reinbuilt_remove_forecolor_button' );
+	}
+add_filter('mce_buttons_2', 'reinbuilt_remove_forecolor_button');

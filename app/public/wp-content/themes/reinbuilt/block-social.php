@@ -2,7 +2,7 @@
 /**
  * Social Media Block
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 
 ?>

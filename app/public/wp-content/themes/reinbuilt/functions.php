@@ -3,7 +3,7 @@
  * Theme functions.
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 require_once dirname(__FILE__) . '/includes/admin.php';
 require_once dirname(__FILE__) . '/includes/utility.php';

@@ -264,10 +264,8 @@
 			<div id="mc_embed_shell">
 				<link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 				<div id="mc_embed_signup">
-					<form
-						action="https://guntherbeam.us22.list-manage.com/subscribe/post?u=c84950591afda259787f3a3ba&amp;id=9d1eaef23a&amp;f_id=0070c2e1f0"
-						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-						target="_blank">
+					<form action="X" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+						class="validate" target="_blank">
 						<div id="mc_embed_signup_scroll">
 							<h2 class="text-center">Start Building With Us</h2>
 							<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>

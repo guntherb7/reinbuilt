@@ -3,7 +3,7 @@
  * Theme footer
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  **/
 ?>
 

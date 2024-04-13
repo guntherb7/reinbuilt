@@ -9,9 +9,6 @@ http://compass-style.org/help/
 
 To compile your JS use the command link and Grunt
 
-The link below is our mobile menu snippet, it should be customized and used as needed based on the themes design. The code should be which should be inserted into /js/scr/scripts.js and minimized with Grunt
-https://codepen.io/tylermeansbusiness/pen/KEpooq
-
 Grunt
 https://gruntjs.com/getting-started
 

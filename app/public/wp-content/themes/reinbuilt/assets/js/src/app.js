@@ -2,7 +2,7 @@
  * Theme scripting
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 /*jshint esversion: 11 */
 

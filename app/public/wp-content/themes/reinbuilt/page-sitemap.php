@@ -4,7 +4,7 @@
  * Template Name: Sitemap
  *
  * @package reinbuilt
- * @author Gunther Beam LLC
+ * @author X
  */
 get_header(); ?>
 
@@ -18,7 +18,7 @@ get_header(); ?>
 				<div class="yoast-bc-wrap">
 					<?php if (function_exists('yoast_breadcrumb')) {
 						yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
-					} ?>
+						} ?>
 				</div>
 				<p class="banner-large-text">
 					<?php the_title(); ?>
